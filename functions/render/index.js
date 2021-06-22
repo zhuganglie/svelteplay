@@ -5,9 +5,6 @@ var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
-var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
 var __export = (target, all) => {
   __markAsModule(target);
   for (var name in all)
@@ -24,117 +21,6 @@ var __reExport = (target, module2, desc) => {
 var __toModule = (module2) => {
   return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
 };
-
-// node_modules/cookie/index.js
-var require_cookie = __commonJS({
-  "node_modules/cookie/index.js"(exports) {
-    "use strict";
-    exports.parse = parse;
-    exports.serialize = serialize;
-    var decode = decodeURIComponent;
-    var encode = encodeURIComponent;
-    var pairSplitRegExp = /; */;
-    var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
-    function parse(str, options2) {
-      if (typeof str !== "string") {
-        throw new TypeError("argument str must be a string");
-      }
-      var obj = {};
-      var opt = options2 || {};
-      var pairs = str.split(pairSplitRegExp);
-      var dec = opt.decode || decode;
-      for (var i = 0; i < pairs.length; i++) {
-        var pair = pairs[i];
-        var eq_idx = pair.indexOf("=");
-        if (eq_idx < 0) {
-          continue;
-        }
-        var key = pair.substr(0, eq_idx).trim();
-        var val = pair.substr(++eq_idx, pair.length).trim();
-        if (val[0] == '"') {
-          val = val.slice(1, -1);
-        }
-        if (obj[key] == void 0) {
-          obj[key] = tryDecode(val, dec);
-        }
-      }
-      return obj;
-    }
-    function serialize(name, val, options2) {
-      var opt = options2 || {};
-      var enc = opt.encode || encode;
-      if (typeof enc !== "function") {
-        throw new TypeError("option encode is invalid");
-      }
-      if (!fieldContentRegExp.test(name)) {
-        throw new TypeError("argument name is invalid");
-      }
-      var value = enc(val);
-      if (value && !fieldContentRegExp.test(value)) {
-        throw new TypeError("argument val is invalid");
-      }
-      var str = name + "=" + value;
-      if (opt.maxAge != null) {
-        var maxAge = opt.maxAge - 0;
-        if (isNaN(maxAge) || !isFinite(maxAge)) {
-          throw new TypeError("option maxAge is invalid");
-        }
-        str += "; Max-Age=" + Math.floor(maxAge);
-      }
-      if (opt.domain) {
-        if (!fieldContentRegExp.test(opt.domain)) {
-          throw new TypeError("option domain is invalid");
-        }
-        str += "; Domain=" + opt.domain;
-      }
-      if (opt.path) {
-        if (!fieldContentRegExp.test(opt.path)) {
-          throw new TypeError("option path is invalid");
-        }
-        str += "; Path=" + opt.path;
-      }
-      if (opt.expires) {
-        if (typeof opt.expires.toUTCString !== "function") {
-          throw new TypeError("option expires is invalid");
-        }
-        str += "; Expires=" + opt.expires.toUTCString();
-      }
-      if (opt.httpOnly) {
-        str += "; HttpOnly";
-      }
-      if (opt.secure) {
-        str += "; Secure";
-      }
-      if (opt.sameSite) {
-        var sameSite = typeof opt.sameSite === "string" ? opt.sameSite.toLowerCase() : opt.sameSite;
-        switch (sameSite) {
-          case true:
-            str += "; SameSite=Strict";
-            break;
-          case "lax":
-            str += "; SameSite=Lax";
-            break;
-          case "strict":
-            str += "; SameSite=Strict";
-            break;
-          case "none":
-            str += "; SameSite=None";
-            break;
-          default:
-            throw new TypeError("option sameSite is invalid");
-        }
-      }
-      return str;
-    }
-    function tryDecode(str, decode2) {
-      try {
-        return decode2(str);
-      } catch (e) {
-        return str;
-      }
-    }
-  }
-});
 
 // .svelte-kit/netlify/entry.js
 __export(exports, {
@@ -1189,8 +1075,8 @@ function devalue(value) {
   var names = new Map();
   Array.from(counts).filter(function(entry) {
     return entry[1] > 1;
-  }).sort(function(a, b) {
-    return b[1] - a[1];
+  }).sort(function(a2, b2) {
+    return b2[1] - a2[1];
   }).forEach(function(entry, i) {
     names.set(entry[0], getName(i));
   });
@@ -1350,8 +1236,8 @@ function stringifyString(str) {
 }
 function noop() {
 }
-function safe_not_equal(a, b) {
-  return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
+function safe_not_equal(a2, b2) {
+  return a2 != a2 ? b2 == b2 : a2 !== b2 || (a2 && typeof a2 === "object" || typeof a2 === "function");
 }
 var subscriber_queue = [];
 function writable(value, start = noop) {
@@ -1595,8 +1481,8 @@ function normalize(loaded) {
   }
   return loaded;
 }
-function resolve(base2, path) {
-  const baseparts = path[0] === "/" ? [] : base2.slice(1).split("/");
+function resolve(base, path) {
+  const baseparts = path[0] === "/" ? [] : base.slice(1).split("/");
   const pathparts = path[0] === "/" ? path.slice(1).split("/") : path.split("/");
   baseparts.pop();
   for (let i = 0; i < pathparts.length; i += 1) {
@@ -1669,7 +1555,7 @@ async function load_node({
           const resolved = resolve(request.path, path);
           const filename = resolved.slice(1);
           const filename_html = `${filename}/index.html`;
-          const asset = options2.manifest.assets.find((d2) => d2.file === filename || d2.file === filename_html);
+          const asset = options2.manifest.assets.find((d) => d.file === filename || d.file === filename_html);
           if (asset) {
             if (options2.read) {
               response = new Response(options2.read(asset.file), {
@@ -2321,9 +2207,6 @@ function run_all(fns) {
 function is_function(thing) {
   return typeof thing === "function";
 }
-function safe_not_equal2(a, b) {
-  return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
-}
 function is_empty(obj) {
   return Object.keys(obj).length === 0;
 }
@@ -2334,33 +2217,7 @@ function subscribe(store, ...callbacks) {
   const unsub = store.subscribe(...callbacks);
   return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
 }
-var is_client = typeof window !== "undefined";
-var now = is_client ? () => window.performance.now() : () => Date.now();
-var raf = is_client ? (cb) => requestAnimationFrame(cb) : noop2;
 var tasks = new Set();
-function run_tasks(now2) {
-  tasks.forEach((task) => {
-    if (!task.c(now2)) {
-      tasks.delete(task);
-      task.f();
-    }
-  });
-  if (tasks.size !== 0)
-    raf(run_tasks);
-}
-function loop(callback) {
-  let task;
-  if (tasks.size === 0)
-    raf(run_tasks);
-  return {
-    promise: new Promise((fulfill) => {
-      tasks.add(task = { c: callback, f: fulfill });
-    }),
-    abort() {
-      tasks.delete(task);
-    }
-  };
-}
 var active_docs = new Set();
 var current_component;
 function set_current_component(component) {
@@ -2534,186 +2391,7 @@ if (typeof HTMLElement === "function") {
 }
 
 // .svelte-kit/output/server/app.js
-var import_cookie = __toModule(require_cookie());
-
-// node_modules/@lukeed/uuid/dist/index.mjs
-var IDX = 256;
-var HEX = [];
-var BUFFER;
-while (IDX--)
-  HEX[IDX] = (IDX + 256).toString(16).substring(1);
-function v4() {
-  var i = 0, num, out = "";
-  if (!BUFFER || IDX + 16 > 256) {
-    BUFFER = Array(i = 256);
-    while (i--)
-      BUFFER[i] = 256 * Math.random() | 0;
-    i = IDX = 0;
-  }
-  for (; i < 16; i++) {
-    num = BUFFER[IDX + i];
-    if (i == 6)
-      out += HEX[num & 15 | 64];
-    else if (i == 8)
-      out += HEX[num & 63 | 128];
-    else
-      out += HEX[num];
-    if (i & 1 && i > 1 && i < 11)
-      out += "-";
-  }
-  IDX++;
-  return out;
-}
-
-// node_modules/svelte/store/index.mjs
-var subscriber_queue2 = [];
-function writable2(value, start = noop2) {
-  let stop;
-  const subscribers = [];
-  function set(new_value) {
-    if (safe_not_equal2(value, new_value)) {
-      value = new_value;
-      if (stop) {
-        const run_queue = !subscriber_queue2.length;
-        for (let i = 0; i < subscribers.length; i += 1) {
-          const s2 = subscribers[i];
-          s2[1]();
-          subscriber_queue2.push(s2, value);
-        }
-        if (run_queue) {
-          for (let i = 0; i < subscriber_queue2.length; i += 2) {
-            subscriber_queue2[i][0](subscriber_queue2[i + 1]);
-          }
-          subscriber_queue2.length = 0;
-        }
-      }
-    }
-  }
-  function update(fn) {
-    set(fn(value));
-  }
-  function subscribe2(run2, invalidate = noop2) {
-    const subscriber = [run2, invalidate];
-    subscribers.push(subscriber);
-    if (subscribers.length === 1) {
-      stop = start(set) || noop2;
-    }
-    run2(value);
-    return () => {
-      const index2 = subscribers.indexOf(subscriber);
-      if (index2 !== -1) {
-        subscribers.splice(index2, 1);
-      }
-      if (subscribers.length === 0) {
-        stop();
-        stop = null;
-      }
-    };
-  }
-  return { set, update, subscribe: subscribe2 };
-}
-
-// node_modules/svelte/motion/index.mjs
-function is_date(obj) {
-  return Object.prototype.toString.call(obj) === "[object Date]";
-}
-function tick_spring(ctx, last_value, current_value, target_value) {
-  if (typeof current_value === "number" || is_date(current_value)) {
-    const delta = target_value - current_value;
-    const velocity = (current_value - last_value) / (ctx.dt || 1 / 60);
-    const spring2 = ctx.opts.stiffness * delta;
-    const damper = ctx.opts.damping * velocity;
-    const acceleration = (spring2 - damper) * ctx.inv_mass;
-    const d2 = (velocity + acceleration) * ctx.dt;
-    if (Math.abs(d2) < ctx.opts.precision && Math.abs(delta) < ctx.opts.precision) {
-      return target_value;
-    } else {
-      ctx.settled = false;
-      return is_date(current_value) ? new Date(current_value.getTime() + d2) : current_value + d2;
-    }
-  } else if (Array.isArray(current_value)) {
-    return current_value.map((_, i) => tick_spring(ctx, last_value[i], current_value[i], target_value[i]));
-  } else if (typeof current_value === "object") {
-    const next_value = {};
-    for (const k in current_value) {
-      next_value[k] = tick_spring(ctx, last_value[k], current_value[k], target_value[k]);
-    }
-    return next_value;
-  } else {
-    throw new Error(`Cannot spring ${typeof current_value} values`);
-  }
-}
-function spring(value, opts = {}) {
-  const store = writable2(value);
-  const { stiffness = 0.15, damping = 0.8, precision = 0.01 } = opts;
-  let last_time;
-  let task;
-  let current_token;
-  let last_value = value;
-  let target_value = value;
-  let inv_mass = 1;
-  let inv_mass_recovery_rate = 0;
-  let cancel_task = false;
-  function set(new_value, opts2 = {}) {
-    target_value = new_value;
-    const token = current_token = {};
-    if (value == null || opts2.hard || spring2.stiffness >= 1 && spring2.damping >= 1) {
-      cancel_task = true;
-      last_time = now();
-      last_value = new_value;
-      store.set(value = target_value);
-      return Promise.resolve();
-    } else if (opts2.soft) {
-      const rate = opts2.soft === true ? 0.5 : +opts2.soft;
-      inv_mass_recovery_rate = 1 / (rate * 60);
-      inv_mass = 0;
-    }
-    if (!task) {
-      last_time = now();
-      cancel_task = false;
-      task = loop((now2) => {
-        if (cancel_task) {
-          cancel_task = false;
-          task = null;
-          return false;
-        }
-        inv_mass = Math.min(inv_mass + inv_mass_recovery_rate, 1);
-        const ctx = {
-          inv_mass,
-          opts: spring2,
-          settled: true,
-          dt: (now2 - last_time) * 60 / 1e3
-        };
-        const next_value = tick_spring(ctx, last_value, value, target_value);
-        last_time = now2;
-        last_value = value;
-        store.set(value = next_value);
-        if (ctx.settled) {
-          task = null;
-        }
-        return !ctx.settled;
-      });
-    }
-    return new Promise((fulfil) => {
-      task.promise.then(() => {
-        if (token === current_token)
-          fulfil();
-      });
-    });
-  }
-  const spring2 = {
-    set,
-    update: (fn, opts2) => set(fn(target_value, value), opts2),
-    subscribe: store.subscribe,
-    stiffness,
-    damping,
-    precision
-  };
-  return spring2;
-}
-
-// .svelte-kit/output/server/app.js
-var css$5 = {
+var css$3 = {
   code: "#svelte-announcer.svelte-1j55zn5{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}",
   map: `{"version":3,"file":"root.svelte","sources":["root.svelte"],"sourcesContent":["<!-- This file is generated by @sveltejs/kit \u2014 do not edit it! -->\\n<script>\\n\\timport { setContext, afterUpdate, onMount } from 'svelte';\\n\\n\\t// stores\\n\\texport let stores;\\n\\texport let page;\\n\\n\\texport let components;\\n\\texport let props_0 = null;\\n\\texport let props_1 = null;\\n\\texport let props_2 = null;\\n\\n\\tsetContext('__svelte__', stores);\\n\\n\\t$: stores.page.set(page);\\n\\tafterUpdate(stores.page.notify);\\n\\n\\tlet mounted = false;\\n\\tlet navigated = false;\\n\\tlet title = null;\\n\\n\\tonMount(() => {\\n\\t\\tconst unsubscribe = stores.page.subscribe(() => {\\n\\t\\t\\tif (mounted) {\\n\\t\\t\\t\\tnavigated = true;\\n\\t\\t\\t\\ttitle = document.title || 'untitled page';\\n\\t\\t\\t}\\n\\t\\t});\\n\\n\\t\\tmounted = true;\\n\\t\\treturn unsubscribe;\\n\\t});\\n<\/script>\\n\\n<svelte:component this={components[0]} {...(props_0 || {})}>\\n\\t{#if components[1]}\\n\\t\\t<svelte:component this={components[1]} {...(props_1 || {})}>\\n\\t\\t\\t{#if components[2]}\\n\\t\\t\\t\\t<svelte:component this={components[2]} {...(props_2 || {})}/>\\n\\t\\t\\t{/if}\\n\\t\\t</svelte:component>\\n\\t{/if}\\n</svelte:component>\\n\\n{#if mounted}\\n\\t<div id=\\"svelte-announcer\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\">\\n\\t\\t{#if navigated}\\n\\t\\t\\t{title}\\n\\t\\t{/if}\\n\\t</div>\\n{/if}\\n\\n<style>\\n\\t#svelte-announcer {\\n\\t\\tposition: absolute;\\n\\t\\tleft: 0;\\n\\t\\ttop: 0;\\n\\t\\tclip: rect(0 0 0 0);\\n\\t\\tclip-path: inset(50%);\\n\\t\\toverflow: hidden;\\n\\t\\twhite-space: nowrap;\\n\\t\\twidth: 1px;\\n\\t\\theight: 1px;\\n\\t}\\n</style>"],"names":[],"mappings":"AAsDC,iBAAiB,eAAC,CAAC,AAClB,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,CAAC,CACP,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CACnB,SAAS,CAAE,MAAM,GAAG,CAAC,CACrB,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,MAAM,CACnB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACZ,CAAC"}`
 };
@@ -2751,7 +2429,7 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_1(props_1);
   if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
     $$bindings.props_2(props_2);
-  $$result.css.add(css$5);
+  $$result.css.add(css$3);
   {
     stores.page.set(page2);
   }
@@ -2770,22 +2448,36 @@ function set_paths(paths) {
 }
 function set_prerendering(value) {
 }
-var handle = async ({ request, resolve: resolve2 }) => {
-  const cookies = import_cookie.default.parse(request.headers.cookie || "");
-  request.locals.userid = cookies.userid || v4();
-  if (request.query.has("_method")) {
-    request.method = request.query.get("_method").toUpperCase();
-  }
-  const response = await resolve2(request);
-  if (!cookies.userid) {
-    response.headers["set-cookie"] = `userid=${request.locals.userid}; Path=/; HttpOnly`;
-  }
-  return response;
+var getPosts = async () => {
+  let posts = await Promise.all(Object.entries({ "/src/routes/blog/a.md": () => Promise.resolve().then(function() {
+    return a;
+  }), "/src/routes/blog/b.md": () => Promise.resolve().then(function() {
+    return b;
+  }), "/src/routes/blog/learning-facilitation.md": () => Promise.resolve().then(function() {
+    return learningFacilitation;
+  }), "/src/routes/blog/political-economy.md": () => Promise.resolve().then(function() {
+    return politicalEconomy;
+  }), "/src/routes/blog/xianxiafensibao.md": () => Promise.resolve().then(function() {
+    return xianxiafensibao;
+  }) }).map(async ([path, page2]) => {
+    const { metadata: metadata2 } = await page2();
+    let pathComponents = path.split("/");
+    const filename = pathComponents.pop();
+    const slug = filename.split(".md", 1)[0];
+    return { ...metadata2, filename, slug };
+  }));
+  posts.sort((a2, b2) => Date.parse(b2.date) - Date.parse(a2.date));
+  return posts;
+};
+var getSession = async () => {
+  return {
+    posts: await getPosts()
+  };
 };
 var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  handle
+  getSession
 });
 var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n\n		' + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body + "</div>\n	</body>\n</html>\n";
 var options = null;
@@ -2796,9 +2488,9 @@ function init(settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-c9f5d98b.js",
+      file: "/./_app/start-38ea66b0.js",
       css: ["/./_app/assets/start-8077b9bf.css"],
-      js: ["/./_app/start-c9f5d98b.js", "/./_app/chunks/vendor-2f7c43bc.js"]
+      js: ["/./_app/start-38ea66b0.js", "/./_app/chunks/vendor-9ab9bf5a.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2823,10 +2515,9 @@ function init(settings) {
     trailing_slash: "never"
   };
 }
-var d = decodeURIComponent;
 var empty = () => ({});
 var manifest = {
-  assets: [{ "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "robots.txt", "size": 67, "type": "text/plain" }, { "file": "svelte-welcome.png", "size": 360807, "type": "image/png" }, { "file": "svelte-welcome.webp", "size": 115470, "type": "image/webp" }],
+  assets: [{ "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "images/attitude.png", "size": 56155, "type": "image/png" }, { "file": "images/avatar.jpeg", "size": 23509, "type": "image/jpeg" }, { "file": "images/lanke.webp", "size": 35906, "type": "image/webp" }, { "file": "images/talk.png", "size": 22563, "type": "image/png" }, { "file": "images/xianxia.jpg", "size": 2664675, "type": "image/jpeg" }, { "file": "pdfs/facilitation.pdf", "size": 1242249, "type": "application/pdf" }, { "file": "pdfs/lp.pdf", "size": 583446, "type": "application/pdf" }, { "file": "robots.txt", "size": 67, "type": "text/plain" }, { "file": "svelte-welcome.png", "size": 360807, "type": "image/png" }, { "file": "svelte-welcome.webp", "size": 115470, "type": "image/webp" }],
   layout: "src/routes/__layout.svelte",
   error: ".svelte-kit/build/components/error.svelte",
   routes: [
@@ -2845,27 +2536,53 @@ var manifest = {
       b: [".svelte-kit/build/components/error.svelte"]
     },
     {
-      type: "endpoint",
-      pattern: /^\/todos\.json$/,
-      params: empty,
-      load: () => Promise.resolve().then(function() {
-        return index_json;
-      })
-    },
-    {
       type: "page",
-      pattern: /^\/todos\/?$/,
+      pattern: /^\/talks\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/todos/index.svelte"],
+      a: ["src/routes/__layout.svelte", "src/routes/talks/index.svelte"],
       b: [".svelte-kit/build/components/error.svelte"]
     },
     {
-      type: "endpoint",
-      pattern: /^\/todos\/([^/]+?)\.json$/,
-      params: (m) => ({ uid: d(m[1]) }),
-      load: () => Promise.resolve().then(function() {
-        return _uid__json;
-      })
+      type: "page",
+      pattern: /^\/blog\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/index.svelte"],
+      b: [".svelte-kit/build/components/error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/learning-facilitation\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/learning-facilitation.md"],
+      b: [".svelte-kit/build/components/error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/political-economy\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/political-economy.md"],
+      b: [".svelte-kit/build/components/error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/xianxiafensibao\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/xianxiafensibao.md"],
+      b: [".svelte-kit/build/components/error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/a\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/a.md"],
+      b: [".svelte-kit/build/components/error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/b\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/b.md"],
+      b: [".svelte-kit/build/components/error.svelte"]
     }
   ]
 };
@@ -2881,16 +2598,34 @@ var module_lookup = {
     return error2;
   }),
   "src/routes/index.svelte": () => Promise.resolve().then(function() {
-    return index$1;
+    return index$2;
   }),
   "src/routes/about.svelte": () => Promise.resolve().then(function() {
     return about;
   }),
-  "src/routes/todos/index.svelte": () => Promise.resolve().then(function() {
+  "src/routes/talks/index.svelte": () => Promise.resolve().then(function() {
+    return index$1;
+  }),
+  "src/routes/blog/index.svelte": () => Promise.resolve().then(function() {
     return index;
+  }),
+  "src/routes/blog/learning-facilitation.md": () => Promise.resolve().then(function() {
+    return learningFacilitation;
+  }),
+  "src/routes/blog/political-economy.md": () => Promise.resolve().then(function() {
+    return politicalEconomy;
+  }),
+  "src/routes/blog/xianxiafensibao.md": () => Promise.resolve().then(function() {
+    return xianxiafensibao;
+  }),
+  "src/routes/blog/a.md": () => Promise.resolve().then(function() {
+    return a;
+  }),
+  "src/routes/blog/b.md": () => Promise.resolve().then(function() {
+    return b;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-f32079c3.js", "css": ["/./_app/assets/pages/__layout.svelte-7a3f6d2b.css"], "js": ["/./_app/pages/__layout.svelte-f32079c3.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-9614ef2b.js", "css": [], "js": ["/./_app/error.svelte-9614ef2b.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-02afcd2e.js", "css": ["/./_app/assets/pages/index.svelte-078f1a0b.css"], "js": ["/./_app/pages/index.svelte-02afcd2e.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/./_app/pages/about.svelte-9bf697b0.js", "css": [], "js": ["/./_app/pages/about.svelte-9bf697b0.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null }, "src/routes/todos/index.svelte": { "entry": "/./_app/pages/todos/index.svelte-d3b5a46f.js", "css": ["/./_app/assets/pages/todos/index.svelte-ef0435f2.css"], "js": ["/./_app/pages/todos/index.svelte-d3b5a46f.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-f2072127.js", "css": ["/./_app/assets/pages/__layout.svelte-6abd6472.css"], "js": ["/./_app/pages/__layout.svelte-f2072127.js", "/./_app/chunks/vendor-9ab9bf5a.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-d2c324d3.js", "css": [], "js": ["/./_app/error.svelte-d2c324d3.js", "/./_app/chunks/vendor-9ab9bf5a.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-fc061f33.js", "css": ["/./_app/assets/pages/index.svelte-c0afc0f3.css"], "js": ["/./_app/pages/index.svelte-fc061f33.js", "/./_app/chunks/vendor-9ab9bf5a.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/./_app/pages/about.svelte-d04ccfb6.js", "css": [], "js": ["/./_app/pages/about.svelte-d04ccfb6.js", "/./_app/chunks/vendor-9ab9bf5a.js"], "styles": null }, "src/routes/talks/index.svelte": { "entry": "/./_app/pages/talks/index.svelte-d7575949.js", "css": [], "js": ["/./_app/pages/talks/index.svelte-d7575949.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/index.svelte": { "entry": "/./_app/pages/blog/index.svelte-2c6330de.js", "css": [], "js": ["/./_app/pages/blog/index.svelte-2c6330de.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/learning-facilitation.md": { "entry": "/./_app/pages/blog/learning-facilitation.md-6d5e4530.js", "css": [], "js": ["/./_app/pages/blog/learning-facilitation.md-6d5e4530.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/postLayout-3001721c.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/political-economy.md": { "entry": "/./_app/pages/blog/political-economy.md-a76ff679.js", "css": [], "js": ["/./_app/pages/blog/political-economy.md-a76ff679.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/postLayout-3001721c.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/xianxiafensibao.md": { "entry": "/./_app/pages/blog/xianxiafensibao.md-1cdb6e0a.js", "css": [], "js": ["/./_app/pages/blog/xianxiafensibao.md-1cdb6e0a.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/postLayout-3001721c.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/a.md": { "entry": "/./_app/pages/blog/a.md-b8bc9777.js", "css": [], "js": ["/./_app/pages/blog/a.md-b8bc9777.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/postLayout-3001721c.js", "/./_app/chunks/date-024ef54f.js"], "styles": null }, "src/routes/blog/b.md": { "entry": "/./_app/pages/blog/b.md-405e5cb6.js", "css": [], "js": ["/./_app/pages/blog/b.md-405e5cb6.js", "/./_app/chunks/vendor-9ab9bf5a.js", "/./_app/chunks/postLayout-3001721c.js", "/./_app/chunks/date-024ef54f.js"], "styles": null } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -2904,64 +2639,151 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender: prerender2 });
 }
-var base = "https://api.svelte.dev";
-async function api(request, resource, data) {
-  if (!request.locals.userid) {
-    return { status: 401 };
-  }
-  const res = await fetch(`${base}/${resource}`, {
-    method: request.method,
-    headers: {
-      "content-type": "application/json"
-    },
-    body: data && JSON.stringify(data)
-  });
-  if (res.ok && request.method !== "GET" && request.headers.accept !== "application/json") {
-    return {
-      status: 303,
-      headers: {
-        location: "/todos"
-      }
-    };
-  }
-  return {
-    status: res.status,
-    body: await res.json()
-  };
-}
-var get = async (request) => {
-  const response = await api(request, `todos/${request.locals.userid}`);
-  if (response.status === 404) {
-    return { body: [] };
-  }
-  return response;
+var formatDate = (value) => {
+  const date = new Date(value);
+  return new Intl.DateTimeFormat("en-US", {
+    dateStyle: "medium"
+  }).format(date);
 };
-var post = async (request) => {
-  const response = await api(request, `todos/${request.locals.userid}`, {
-    text: request.body.get("text")
-  });
-  return response;
-};
-var index_json = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  get,
-  post
+var PostLayout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { title } = $$props;
+  let { date } = $$props;
+  let dateDisplay = formatDate(date);
+  if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+    $$bindings.title(title);
+  if ($$props.date === void 0 && $$bindings.date && date !== void 0)
+    $$bindings.date(date);
+  return `${$$result.head += `${$$result.title = `<title>${escape2(title)} - J\xF6kull S\xF3lberg</title>`, ""}`, ""}
+
+<div class="${"prose prose-sm sm:prose page max-w-none sm:max-w-none"}"><div class="${"py-8 sm:py-10 sm:text-center"}"><div class="${"font-bold text-4xl mb-4"}">${escape2(title)}</div>
+		<div class="${"text-sm"}">${escape2(dateDisplay)}</div></div>
+	
+	${slots.default ? slots.default({}) : ``}</div>`;
 });
-var patch = async (request) => {
-  return api(request, `todos/${request.locals.userid}/${request.params.uid}`, {
-    text: request.body.get("text"),
-    done: request.body.has("done") ? !!request.body.get("done") : void 0
-  });
+var metadata$4 = {
+  "title": "The First Post",
+  "date": "2021-06-20",
+  "tags": ["\u653F\u6CBB"]
 };
-var del = async (request) => {
-  return api(request, `todos/${request.locals.userid}/${request.params.uid}`);
-};
-var _uid__json = /* @__PURE__ */ Object.freeze({
+var A = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(PostLayout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$4), {}, {
+    default: () => `<p>This is the first post.</p>`
+  })}`;
+});
+var a = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  patch,
-  del
+  "default": A,
+  metadata: metadata$4
+});
+var metadata$3 = {
+  "title": "The Second Post",
+  "date": "2021-06-18"
+};
+var B = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(PostLayout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$3), {}, {
+    default: () => `<p>This is the second post.</p>`
+  })}`;
+});
+var b = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": B,
+  metadata: metadata$3
+});
+var metadata$2 = {
+  "title": "Notes for Learning Facilitation",
+  "date": "2021-04-26",
+  "tags": ["\u57F9\u8BAD", "\u6559\u5B66\u8F85\u5BFC"],
+  "category": "\u5DE5\u4F5C"
+};
+var Learning_facilitation = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(PostLayout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$2), {}, {
+    default: () => `<p>Here are some points I learn from class debate during ACTA training.  </p>
+<ul><li>Manage tension by balancing the needs of different learners (time vs. interaction)</li>
+<li>Be committed to the learning of the learners when having fun activities</li>
+<li>Demonstrate professional value by resolving ethical dilemma properly</li>
+<li>Manage group discussion and intervene when necessary</li>
+<li>Trainer is not a content provider but a facilitator who assists the learners to learn effectively</li>
+<li>Need to manage learners\u2019 motivation although adult learners are intrinsically motivated</li>
+<li>Get the learners ready to start</li>
+<li>Trainers\u2019 role is not to entertain but to engage the learners in learning</li>
+<li>When giving feedback, be honest but in a constructive and encouraging way</li>
+<li>Have a built-in retention component</li>
+<li>Donot feed too much, make sure that the learners are able to pick up</li>
+<li>Link activities to learning points</li></ul>
+<p>In short, we need to manage every components of a class carefully so that the learning outcomes will be achieved in the end.</p>`
+  })}`;
+});
+var learningFacilitation = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Learning_facilitation,
+  metadata: metadata$2
+});
+var metadata$1 = {
+  "title": "\u7B80\u660E\u653F\u6CBB\u7ECF\u6D4E\u5B66",
+  "date": "2021-03-29",
+  "tags": ["\u6BB5\u5B50", "\u653F\u6CBB"],
+  "category": "\u5B66\u4E60"
+};
+var Political_economy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(PostLayout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$1), {}, {
+    default: () => `<p>\u4EC0\u4E48\u662F\u7ECF\u6D4E\uFF1F\u7ECF\u6D4E\u5C31\u662F\u505A\u86CB\u7CD5\u3002</p>
+<p>\u4EC0\u4E48\u662F\u653F\u6CBB\uFF1F\u653F\u6CBB\u5C31\u662F\u5206\u86CB\u7CD5\u3002</p>
+<p>\u4EC0\u4E48\u662F\u5236\u5EA6\uFF1F\u5236\u5EA6\u5C31\u662F\u89C4\u5B9A\u8C01\u5148\u62FF\uFF0C\u8C01\u540E\u62FF\uFF1B\u8C01\u62FF\u5F97\u591A\uFF0C\u8C01\u62FF\u5F97\u5C11\uFF1B\u8C01\u62FF\u5F97\u597D\uFF0C\u8C01\u62FF\u5F97\u5DEE\u3002</p>
+<p>\u597D\u5236\u5EA6\uFF1A\u5206\u86CB\u7CD5\u7684\u4EBA\u6700\u540E\u62FF\u86CB\u7CD5\u3002</p>
+<p>\u574F\u5236\u5EA6\uFF1A\u5206\u86CB\u7CD5\u7684\u4EBA\u5148\u62FF\u86CB\u7CD5\u3002</p>
+<p>\u6700\u574F\u7684\u5236\u5EA6\uFF1A\u5206\u86CB\u7CD5\u7684\u4EBA\u5148\u62FF\u4E86\uFF0C\u591A\u62FF\u4E86\u591A\u5C11\u8FD8\u4E0D\u8BA9\u4EBA\u77E5\u9053\u3002</p>
+<p>\u800C\u5BA3\u4F20\uFF0C\u5C31\u662F\u8BA9\u505A\u86CB\u7CD5\u7684\u611F\u8C22\u5206\u86CB\u7CD5\u7684\u3002</p>`
+  })}`;
+});
+var politicalEconomy = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Political_economy,
+  metadata: metadata$1
+});
+var metadata = {
+  "title": "\u9C9C\u867E\u7C89\u4E1D\u7172",
+  "date": "2021-04-02",
+  "tags": ["\u6D77\u9C9C", "\u83DC\u8C31"],
+  "category": "\u751F\u6D3B"
+};
+var Xianxiafensibao = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(PostLayout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata), {}, {
+    default: () => `<p>\u4ECA\u5929\u662F Good Friday\u3002\u672C\u6765\u60F3\u53EB\u4E2A<a href="${"https://www.facebook.com/wahkungfu/"}" rel="${"nofollow"}">\u86D9\u529F\u592B</a>\u6253\u6253\u7259\u796D\uFF0C\u4E0D\u6599\u4EBA\u5BB6\u5E97\u5927\u6B3A\u5BA2\uFF0C\u516C\u5171\u5047\u671F\u4E0D\u9001\u9910\u3002\u4ECA\u5929\u5403\u4EC0\u4E48\u7684\u95EE\u9898\u4E00\u4E0B\u5B50\u5C31\u6446\u5230\u9762\u524D\u6765\u4E86\u3002</p>
+<p>\u9999\u8FA3\u87F9\uFF1F\u4E0D\u9001\u9910\uFF0C\u4E0D\u80FD\u8003\u8651\uFF0C\u8FD8\u8981\u8D76\u5DE5\u5462\u3002</p>
+<p>\u6E58\u83DC\u9986\uFF1F\u65B0\u83DC\u54C1\u5C11\uFF0C\u6709\u70B9\u5403\u817B\u4E86\u7684\u611F\u89C9\u3002</p>
+<p>\u897F\u5B89\u70E4\u7F8A\uFF1F\u662F\u7F8E\u5473\uFF0C\u53EF\u662F\u6015\u4E0A\u706B\u3002</p>
+<p>\u7B97\u4E86\uFF0C\u81EA\u5DF1\u52A8\u624B\uFF0C\u4E30\u8863\u8DB3\u98DF\u3002\u4E0D\u662F\u521A\u5B66\u4E86\u9C9C\u867E\u7C89\u4E1D\u7172\u7684\u505A\u6CD5\u5417\uFF1F\u5F04\uFF01</p>
+<img src="${"/images/xianxia.jpg"}" alt="${"xianxia"}" loading="${"lazy"}" width="${"400"}" class="${"block mx-auto w-full md:w-1/2 mb-4"}">
+<h4 id="${"\u98DF\u6750"}"><a href="${"#\u98DF\u6750"}">\u98DF\u6750</a></h4>
+<ul><li>\u9C9C\u867E10\u53EA</li>
+<li>\u7C89\u4E1D\u4E24\u628A</li>
+<li>\u8471\u3001\u59DC\u3001\u849C\u3001\u5C0F\u5C16\u6912</li>
+<li>\u6599\u9152\u3001\u751F\u62BD\u3001\u732A\u6CB9</li></ul>
+<h4 id="${"\u98DF\u6750\u5904\u7406"}"><a href="${"#\u98DF\u6750\u5904\u7406"}">\u98DF\u6750\u5904\u7406</a></h4>
+<ul><li>\u7C89\u4E1D\u7528\u51C9\u5F00\u6C34\u6D78\u6CE130\u5206\u949F</li>
+<li>\u9C9C\u867E\u7528\u76D0\u548C\u6599\u9152\u814C\u523615\u5206\u949F</li>
+<li>\u8471\u59DC\u849C\u6912\u5207\u672B\u5907\u7528</li></ul>
+<h4 id="${"\u5236\u4F5C"}"><a href="${"#\u5236\u4F5C"}">\u5236\u4F5C</a></h4>
+<ul><li>\u70ED\u9505\u51B7\u6CB9\u52A0\u5165\u8471\u767D\u3001\u59DC\u849C\u3001\u5C0F\u5C16\u6912\u7092\u9999</li>
+<li>\u653E\u5165\u9C9C\u867E\u714E\u81F3\u516B\u6210\u719F\u53D6\u51FA\u5907\u7528</li>
+<li>\u9505\u4E2D\u653E\u5165\u867E\u5934\uFF0C\u714E\u51FA\u867E\u818F\u540E\u52A0\u5165\u4E9B\u8BB8\u6E05\u6C34\u548C\u751F\u62BD</li>
+<li>\u867E\u5934\u6C64\u505A\u597D\u540E\uFF0C\u653E\u5165\u7C89\u4E1D\uFF0C\u52A0\u76D0\u8C03\u5473</li>
+<li>\u7C89\u4E1D\u716E\u81F3\u900F\u660E\u540E\u5012\u5165\u7802\u9505</li>
+<li>\u5C06\u714E\u597D\u7684\u5927\u867E\u5168\u90E8\u653E\u5165\u7802\u9505</li>
+<li>\u52A0\u5165\u4E00\u5C0F\u52FA\u732A\u6CB9\u4E2D\u706B\u71722\u5206\u949F</li>
+<li>\u5173\u706B\uFF0C\u653E\u5165\u9752\u8471\u71161\u5206\u949F</li></ul>
+<p>\u7AEF\u4E0A\u9910\u684C\uFF0C\u9999\u55B7\u55B7\uFF0C\u77AC\u95F4\u5C31\u55EF\uFF5E\uFF5E\uFF5E\u3002<span role="${"img"}" aria-label="${"Smile"}">\u{1F60D}</span></p>`
+  })}`;
+});
+var xianxiafensibao = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Xianxiafensibao,
+  metadata
 });
 var getStores = () => {
   const stores = getContext("__svelte__");
@@ -2988,38 +2810,41 @@ var page = {
   }
 };
 var logo = "/_app/assets/svelte-logo.87df40b8.svg";
-var css$4 = {
+var css$2 = {
   code: "header.svelte-1twf6mk.svelte-1twf6mk{display:flex;justify-content:space-between}.corner.svelte-1twf6mk.svelte-1twf6mk{width:3em;height:3em}.corner.svelte-1twf6mk a.svelte-1twf6mk{display:flex;align-items:center;justify-content:center;width:100%;height:100%}.corner.svelte-1twf6mk img.svelte-1twf6mk{width:2em;height:2em;object-fit:contain}nav.svelte-1twf6mk.svelte-1twf6mk{display:flex;justify-content:center;--background:rgba(255, 255, 255, 0.7)}svg.svelte-1twf6mk.svelte-1twf6mk{width:2em;height:3em;display:block}path.svelte-1twf6mk.svelte-1twf6mk{fill:var(--background)}ul.svelte-1twf6mk.svelte-1twf6mk{position:relative;padding:0;margin:0;height:3em;display:flex;justify-content:center;align-items:center;list-style:none;background:var(--background);background-size:contain}li.svelte-1twf6mk.svelte-1twf6mk{position:relative;height:100%}li.active.svelte-1twf6mk.svelte-1twf6mk::before{--size:6px;content:'';width:0;height:0;position:absolute;top:0;left:calc(50% - var(--size));border:var(--size) solid transparent;border-top:var(--size) solid var(--accent-color)}nav.svelte-1twf6mk a.svelte-1twf6mk{display:flex;height:100%;align-items:center;padding:0 1em;color:var(--heading-color);font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:10%;text-decoration:none;transition:color 0.2s linear}a.svelte-1twf6mk.svelte-1twf6mk:hover{color:var(--accent-color)}",
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { page } from '$app/stores';\\nimport logo from './svelte-logo.svg';\\n<\/script>\\n\\n<header>\\n\\t<div class=\\"corner\\">\\n\\t\\t<a href=\\"https://kit.svelte.dev\\">\\n\\t\\t\\t<img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t</a>\\n\\t</div>\\n\\n\\t<nav>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href=\\"/todos\\">Todos</a></li>\\n\\t\\t</ul>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t</nav>\\n\\n\\t<div class=\\"corner\\">\\n\\t\\t<!-- TODO put something else here? github link? -->\\n\\t</div>\\n</header>\\n\\n<style>\\n\\theader {\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: space-between;\\n\\t}\\n\\n\\t.corner {\\n\\t\\twidth: 3em;\\n\\t\\theight: 3em;\\n\\t}\\n\\n\\t.corner a {\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tjustify-content: center;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t}\\n\\n\\t.corner img {\\n\\t\\twidth: 2em;\\n\\t\\theight: 2em;\\n\\t\\tobject-fit: contain;\\n\\t}\\n\\n\\tnav {\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: center;\\n\\t\\t--background: rgba(255, 255, 255, 0.7);\\n\\t}\\n\\n\\tsvg {\\n\\t\\twidth: 2em;\\n\\t\\theight: 3em;\\n\\t\\tdisplay: block;\\n\\t}\\n\\n\\tpath {\\n\\t\\tfill: var(--background);\\n\\t}\\n\\n\\tul {\\n\\t\\tposition: relative;\\n\\t\\tpadding: 0;\\n\\t\\tmargin: 0;\\n\\t\\theight: 3em;\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: center;\\n\\t\\talign-items: center;\\n\\t\\tlist-style: none;\\n\\t\\tbackground: var(--background);\\n\\t\\tbackground-size: contain;\\n\\t}\\n\\n\\tli {\\n\\t\\tposition: relative;\\n\\t\\theight: 100%;\\n\\t}\\n\\n\\tli.active::before {\\n\\t\\t--size: 6px;\\n\\t\\tcontent: '';\\n\\t\\twidth: 0;\\n\\t\\theight: 0;\\n\\t\\tposition: absolute;\\n\\t\\ttop: 0;\\n\\t\\tleft: calc(50% - var(--size));\\n\\t\\tborder: var(--size) solid transparent;\\n\\t\\tborder-top: var(--size) solid var(--accent-color);\\n\\t}\\n\\n\\tnav a {\\n\\t\\tdisplay: flex;\\n\\t\\theight: 100%;\\n\\t\\talign-items: center;\\n\\t\\tpadding: 0 1em;\\n\\t\\tcolor: var(--heading-color);\\n\\t\\tfont-weight: 700;\\n\\t\\tfont-size: 0.8rem;\\n\\t\\ttext-transform: uppercase;\\n\\t\\tletter-spacing: 10%;\\n\\t\\ttext-decoration: none;\\n\\t\\ttransition: color 0.2s linear;\\n\\t}\\n\\n\\ta:hover {\\n\\t\\tcolor: var(--accent-color);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA+BC,MAAM,8BAAC,CAAC,AACP,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,AAC/B,CAAC,AAED,OAAO,8BAAC,CAAC,AACR,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACZ,CAAC,AAED,sBAAO,CAAC,CAAC,eAAC,CAAC,AACV,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACb,CAAC,AAED,sBAAO,CAAC,GAAG,eAAC,CAAC,AACZ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,UAAU,CAAE,OAAO,AACpB,CAAC,AAED,GAAG,8BAAC,CAAC,AACJ,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,YAAY,CAAE,wBAAwB,AACvC,CAAC,AAED,GAAG,8BAAC,CAAC,AACJ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,KAAK,AACf,CAAC,AAED,IAAI,8BAAC,CAAC,AACL,IAAI,CAAE,IAAI,YAAY,CAAC,AACxB,CAAC,AAED,EAAE,8BAAC,CAAC,AACH,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,IAAI,YAAY,CAAC,CAC7B,eAAe,CAAE,OAAO,AACzB,CAAC,AAED,EAAE,8BAAC,CAAC,AACH,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,AACb,CAAC,AAED,EAAE,qCAAO,QAAQ,AAAC,CAAC,AAClB,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,CAAC,CACR,MAAM,CAAE,CAAC,CACT,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,MAAM,CAAC,CAAC,CAC7B,MAAM,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,WAAW,CACrC,UAAU,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,IAAI,cAAc,CAAC,AAClD,CAAC,AAED,kBAAG,CAAC,CAAC,eAAC,CAAC,AACN,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,CAAC,CAAC,GAAG,CACd,KAAK,CAAE,IAAI,eAAe,CAAC,CAC3B,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,MAAM,CACjB,cAAc,CAAE,SAAS,CACzB,cAAc,CAAE,GAAG,CACnB,eAAe,CAAE,IAAI,CACrB,UAAU,CAAE,KAAK,CAAC,IAAI,CAAC,MAAM,AAC9B,CAAC,AAED,+BAAC,MAAM,AAAC,CAAC,AACR,KAAK,CAAE,IAAI,cAAc,CAAC,AAC3B,CAAC"}`
+  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { page } from '$app/stores';\\nimport logo from './svelte-logo.svg';\\n<\/script>\\n\\n<header>\\n\\t<div class=\\"corner\\">\\n\\t\\t<a href=\\"https://kit.svelte.dev\\">\\n\\t\\t\\t<img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t</a>\\n\\t</div>\\n\\n\\t<nav>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/blog'}><a sveltekit:prefetch href=\\"/blog\\">Blog</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/talks'}><a sveltekit:prefetch href=\\"/talks\\">Talks</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t</ul>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t</nav>\\n\\n\\t<div class=\\"corner\\">\\n\\t\\t<!-- TODO put something else here? github link? -->\\n\\t</div>\\n</header>\\n\\n<style>\\n\\theader {\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: space-between;\\n\\t}\\n\\n\\t.corner {\\n\\t\\twidth: 3em;\\n\\t\\theight: 3em;\\n\\t}\\n\\n\\t.corner a {\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tjustify-content: center;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t}\\n\\n\\t.corner img {\\n\\t\\twidth: 2em;\\n\\t\\theight: 2em;\\n\\t\\tobject-fit: contain;\\n\\t}\\n\\n\\tnav {\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: center;\\n\\t\\t--background: rgba(255, 255, 255, 0.7);\\n\\t}\\n\\n\\tsvg {\\n\\t\\twidth: 2em;\\n\\t\\theight: 3em;\\n\\t\\tdisplay: block;\\n\\t}\\n\\n\\tpath {\\n\\t\\tfill: var(--background);\\n\\t}\\n\\n\\tul {\\n\\t\\tposition: relative;\\n\\t\\tpadding: 0;\\n\\t\\tmargin: 0;\\n\\t\\theight: 3em;\\n\\t\\tdisplay: flex;\\n\\t\\tjustify-content: center;\\n\\t\\talign-items: center;\\n\\t\\tlist-style: none;\\n\\t\\tbackground: var(--background);\\n\\t\\tbackground-size: contain;\\n\\t}\\n\\n\\tli {\\n\\t\\tposition: relative;\\n\\t\\theight: 100%;\\n\\t}\\n\\n\\tli.active::before {\\n\\t\\t--size: 6px;\\n\\t\\tcontent: '';\\n\\t\\twidth: 0;\\n\\t\\theight: 0;\\n\\t\\tposition: absolute;\\n\\t\\ttop: 0;\\n\\t\\tleft: calc(50% - var(--size));\\n\\t\\tborder: var(--size) solid transparent;\\n\\t\\tborder-top: var(--size) solid var(--accent-color);\\n\\t}\\n\\n\\tnav a {\\n\\t\\tdisplay: flex;\\n\\t\\theight: 100%;\\n\\t\\talign-items: center;\\n\\t\\tpadding: 0 1em;\\n\\t\\tcolor: var(--heading-color);\\n\\t\\tfont-weight: 700;\\n\\t\\tfont-size: 0.8rem;\\n\\t\\ttext-transform: uppercase;\\n\\t\\tletter-spacing: 10%;\\n\\t\\ttext-decoration: none;\\n\\t\\ttransition: color 0.2s linear;\\n\\t}\\n\\n\\ta:hover {\\n\\t\\tcolor: var(--accent-color);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAgCC,MAAM,8BAAC,CAAC,AACP,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,AAC/B,CAAC,AAED,OAAO,8BAAC,CAAC,AACR,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACZ,CAAC,AAED,sBAAO,CAAC,CAAC,eAAC,CAAC,AACV,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACb,CAAC,AAED,sBAAO,CAAC,GAAG,eAAC,CAAC,AACZ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,UAAU,CAAE,OAAO,AACpB,CAAC,AAED,GAAG,8BAAC,CAAC,AACJ,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,YAAY,CAAE,wBAAwB,AACvC,CAAC,AAED,GAAG,8BAAC,CAAC,AACJ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,KAAK,AACf,CAAC,AAED,IAAI,8BAAC,CAAC,AACL,IAAI,CAAE,IAAI,YAAY,CAAC,AACxB,CAAC,AAED,EAAE,8BAAC,CAAC,AACH,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,IAAI,YAAY,CAAC,CAC7B,eAAe,CAAE,OAAO,AACzB,CAAC,AAED,EAAE,8BAAC,CAAC,AACH,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,AACb,CAAC,AAED,EAAE,qCAAO,QAAQ,AAAC,CAAC,AAClB,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,CAAC,CACR,MAAM,CAAE,CAAC,CACT,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,MAAM,CAAC,CAAC,CAC7B,MAAM,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,WAAW,CACrC,UAAU,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,IAAI,cAAc,CAAC,AAClD,CAAC,AAED,kBAAG,CAAC,CAAC,eAAC,CAAC,AACN,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,CAAC,CAAC,GAAG,CACd,KAAK,CAAE,IAAI,eAAe,CAAC,CAC3B,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,MAAM,CACjB,cAAc,CAAE,SAAS,CACzB,cAAc,CAAE,GAAG,CACnB,eAAe,CAAE,IAAI,CACrB,UAAU,CAAE,KAAK,CAAC,IAAI,CAAC,MAAM,AAC9B,CAAC,AAED,+BAAC,MAAM,AAAC,CAAC,AACR,KAAK,CAAE,IAAI,cAAc,CAAC,AAC3B,CAAC"}`
 };
 var Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$result.css.add(css$4);
+  $$result.css.add(css$2);
   $$unsubscribe_page();
   return `<header class="${"svelte-1twf6mk"}"><div class="${"corner svelte-1twf6mk"}"><a href="${"https://kit.svelte.dev"}" class="${"svelte-1twf6mk"}"><img${add_attribute("src", logo, 0)} alt="${"SvelteKit"}" class="${"svelte-1twf6mk"}"></a></div>
 
 	<nav class="${"svelte-1twf6mk"}"><svg viewBox="${"0 0 2 3"}" aria-hidden="${"true"}" class="${"svelte-1twf6mk"}"><path d="${"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z"}" class="${"svelte-1twf6mk"}"></path></svg>
 		<ul class="${"svelte-1twf6mk"}"><li class="${["svelte-1twf6mk", $page.path === "/" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-1twf6mk"}">Home</a></li>
-			<li class="${["svelte-1twf6mk", $page.path === "/about" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/about"}" class="${"svelte-1twf6mk"}">About</a></li>
-			<li class="${["svelte-1twf6mk", $page.path === "/todos" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/todos"}" class="${"svelte-1twf6mk"}">Todos</a></li></ul>
+			<li class="${["svelte-1twf6mk", $page.path === "/blog" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/blog"}" class="${"svelte-1twf6mk"}">Blog</a></li>
+			<li class="${["svelte-1twf6mk", $page.path === "/talks" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/talks"}" class="${"svelte-1twf6mk"}">Talks</a></li>
+			<li class="${["svelte-1twf6mk", $page.path === "/about" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/about"}" class="${"svelte-1twf6mk"}">About</a></li></ul>
 		<svg viewBox="${"0 0 2 3"}" aria-hidden="${"true"}" class="${"svelte-1twf6mk"}"><path d="${"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z"}" class="${"svelte-1twf6mk"}"></path></svg></nav>
 
 	<div class="${"corner svelte-1twf6mk"}"></div>
 </header>`;
 });
-var css$3 = {
-  code: "main.svelte-1izrdc8.svelte-1izrdc8{flex:1;display:flex;flex-direction:column;padding:1rem;width:100%;max-width:1024px;margin:0 auto;box-sizing:border-box}footer.svelte-1izrdc8.svelte-1izrdc8{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px}footer.svelte-1izrdc8 a.svelte-1izrdc8{font-weight:bold}@media(min-width: 480px){footer.svelte-1izrdc8.svelte-1izrdc8{padding:40px 0}}",
-  map: `{"version":3,"file":"__layout.svelte","sources":["__layout.svelte"],"sourcesContent":["<script lang=\\"ts\\">import Header from '$lib/Header/index.svelte';\\nimport '../tailwind.css';\\nimport '../app.css';\\n<\/script>\\n\\n<Header />\\n\\n<main>\\n\\t<slot />\\n</main>\\n\\n<footer>\\n\\t<p>visit <a href=\\"https://kit.svelte.dev\\">kit.svelte.dev</a> to learn SvelteKit</p>\\n</footer>\\n\\n<style>\\n\\tmain {\\n\\t\\tflex: 1;\\n\\t\\tdisplay: flex;\\n\\t\\tflex-direction: column;\\n\\t\\tpadding: 1rem;\\n\\t\\twidth: 100%;\\n\\t\\tmax-width: 1024px;\\n\\t\\tmargin: 0 auto;\\n\\t\\tbox-sizing: border-box;\\n\\t}\\n\\n\\tfooter {\\n\\t\\tdisplay: flex;\\n\\t\\tflex-direction: column;\\n\\t\\tjustify-content: center;\\n\\t\\talign-items: center;\\n\\t\\tpadding: 40px;\\n\\t}\\n\\n\\tfooter a {\\n\\t\\tfont-weight: bold;\\n\\t}\\n\\n\\t@media (min-width: 480px) {\\n\\t\\tfooter {\\n\\t\\t\\tpadding: 40px 0;\\n\\t\\t}\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAgBC,IAAI,8BAAC,CAAC,AACL,IAAI,CAAE,CAAC,CACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,CAAC,CAAC,IAAI,CACd,UAAU,CAAE,UAAU,AACvB,CAAC,AAED,MAAM,8BAAC,CAAC,AACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,IAAI,AACd,CAAC,AAED,qBAAM,CAAC,CAAC,eAAC,CAAC,AACT,WAAW,CAAE,IAAI,AAClB,CAAC,AAED,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AAC1B,MAAM,8BAAC,CAAC,AACP,OAAO,CAAE,IAAI,CAAC,CAAC,AAChB,CAAC,AACF,CAAC"}`
+var Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<footer class="${"flex justify-center items-center"}"><p>Copyright \xA9 Caesar </p></footer>`;
+});
+var css$1 = {
+  code: "main.svelte-18b9ok{flex:1;display:flex;flex-direction:column;padding:1rem;width:100%;max-width:1024px;margin:0 auto;box-sizing:border-box}",
+  map: `{"version":3,"file":"__layout.svelte","sources":["__layout.svelte"],"sourcesContent":["<script lang=\\"ts\\">import Header from '$lib/Header/index.svelte';\\nimport Footer from '$lib/Footer/index.svelte';\\nimport '../tailwind.css';\\nimport '../app.css';\\n<\/script>\\n\\n<Header />\\n\\n<main>\\n\\t<slot />\\n</main>\\n\\n<Footer />\\n\\n<style>\\n\\tmain {\\n\\t\\tflex: 1;\\n\\t\\tdisplay: flex;\\n\\t\\tflex-direction: column;\\n\\t\\tpadding: 1rem;\\n\\t\\twidth: 100%;\\n\\t\\tmax-width: 1024px;\\n\\t\\tmargin: 0 auto;\\n\\t\\tbox-sizing: border-box;\\n\\t}\\n\\n\\t\\n</style>\\n"],"names":[],"mappings":"AAeC,IAAI,cAAC,CAAC,AACL,IAAI,CAAE,CAAC,CACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,CAAC,CAAC,IAAI,CACd,UAAU,CAAE,UAAU,AACvB,CAAC"}`
 };
 var _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$3);
+  $$result.css.add(css$1);
   return `${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
 
-<main class="${"svelte-1izrdc8"}">${slots.default ? slots.default({}) : ``}</main>
+<main class="${"svelte-18b9ok"}">${slots.default ? slots.default({}) : ``}</main>
 
-<footer class="${"svelte-1izrdc8"}"><p>visit <a href="${"https://kit.svelte.dev"}" class="${"svelte-1izrdc8"}">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>`;
+${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 var __layout = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -3029,7 +2854,7 @@ var __layout = /* @__PURE__ */ Object.freeze({
 function load$1({ error: error22, status }) {
   return { props: { error: error22, status } };
 }
-var Error$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+var Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { status } = $$props;
   let { error: error22 } = $$props;
   if ($$props.status === void 0 && $$bindings.status && status !== void 0)
@@ -3046,87 +2871,52 @@ ${error22.stack ? `<pre>${escape2(error22.stack)}</pre>` : ``}`;
 var error2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Error$1,
+  "default": Error2,
   load: load$1
 });
-var css$2 = {
-  code: ".counter.svelte-ltn89m.svelte-ltn89m{display:flex;border-top:1px solid rgba(0, 0, 0, 0.1);border-bottom:1px solid rgba(0, 0, 0, 0.1);margin:1rem 0}.counter.svelte-ltn89m button.svelte-ltn89m{width:2em;padding:0;display:flex;align-items:center;justify-content:center;border:0;background-color:transparent;color:var(--text-color);font-size:2rem}.counter.svelte-ltn89m button.svelte-ltn89m:hover{background-color:var(--secondary-color)}svg.svelte-ltn89m.svelte-ltn89m{width:25%;height:25%}path.svelte-ltn89m.svelte-ltn89m{vector-effect:non-scaling-stroke;stroke-width:2px;stroke:var(--text-color)}.counter-viewport.svelte-ltn89m.svelte-ltn89m{width:8em;height:4em;overflow:hidden;text-align:center;position:relative}.counter-viewport.svelte-ltn89m strong.svelte-ltn89m{position:absolute;display:block;width:100%;height:100%;font-weight:400;color:var(--accent-color);font-size:4rem;display:flex;align-items:center;justify-content:center}.counter-digits.svelte-ltn89m.svelte-ltn89m{position:absolute;width:100%;height:100%}",
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { spring } from 'svelte/motion';\\nlet count = 0;\\nconst displayed_count = spring();\\n$: displayed_count.set(count);\\n$: offset = modulo($displayed_count, 1);\\nfunction modulo(n, m) {\\n    // handle negative numbers\\n    return ((n % m) + m) % m;\\n}\\n<\/script>\\n\\n<div class=\\"counter\\">\\n\\t<button on:click={() => (count -= 1)} aria-label=\\"Decrease the counter by one\\">\\n\\t\\t<svg aria-hidden=\\"true\\" viewBox=\\"0 0 1 1\\">\\n\\t\\t\\t<path d=\\"M0,0.5 L1,0.5\\" />\\n\\t\\t</svg>\\n\\t</button>\\n\\n\\t<div class=\\"counter-viewport\\">\\n\\t\\t<div class=\\"counter-digits\\" style=\\"transform: translate(0, {100 * offset}%)\\">\\n\\t\\t\\t<strong style=\\"top: -100%\\" aria-hidden=\\"true\\">{Math.floor($displayed_count + 1)}</strong>\\n\\t\\t\\t<strong>{Math.floor($displayed_count)}</strong>\\n\\t\\t</div>\\n\\t</div>\\n\\n\\t<button on:click={() => (count += 1)} aria-label=\\"Increase the counter by one\\">\\n\\t\\t<svg aria-hidden=\\"true\\" viewBox=\\"0 0 1 1\\">\\n\\t\\t\\t<path d=\\"M0,0.5 L1,0.5 M0.5,0 L0.5,1\\" />\\n\\t\\t</svg>\\n\\t</button>\\n</div>\\n\\n<style>\\n\\t.counter {\\n\\t\\tdisplay: flex;\\n\\t\\tborder-top: 1px solid rgba(0, 0, 0, 0.1);\\n\\t\\tborder-bottom: 1px solid rgba(0, 0, 0, 0.1);\\n\\t\\tmargin: 1rem 0;\\n\\t}\\n\\n\\t.counter button {\\n\\t\\twidth: 2em;\\n\\t\\tpadding: 0;\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tjustify-content: center;\\n\\t\\tborder: 0;\\n\\t\\tbackground-color: transparent;\\n\\t\\tcolor: var(--text-color);\\n\\t\\tfont-size: 2rem;\\n\\t}\\n\\n\\t.counter button:hover {\\n\\t\\tbackground-color: var(--secondary-color);\\n\\t}\\n\\n\\tsvg {\\n\\t\\twidth: 25%;\\n\\t\\theight: 25%;\\n\\t}\\n\\n\\tpath {\\n\\t\\tvector-effect: non-scaling-stroke;\\n\\t\\tstroke-width: 2px;\\n\\t\\tstroke: var(--text-color);\\n\\t}\\n\\n\\t.counter-viewport {\\n\\t\\twidth: 8em;\\n\\t\\theight: 4em;\\n\\t\\toverflow: hidden;\\n\\t\\ttext-align: center;\\n\\t\\tposition: relative;\\n\\t}\\n\\n\\t.counter-viewport strong {\\n\\t\\tposition: absolute;\\n\\t\\tdisplay: block;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t\\tfont-weight: 400;\\n\\t\\tcolor: var(--accent-color);\\n\\t\\tfont-size: 4rem;\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tjustify-content: center;\\n\\t}\\n\\n\\t.counter-digits {\\n\\t\\tposition: absolute;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAiCC,QAAQ,4BAAC,CAAC,AACT,OAAO,CAAE,IAAI,CACb,UAAU,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CACxC,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAC3C,MAAM,CAAE,IAAI,CAAC,CAAC,AACf,CAAC,AAED,sBAAQ,CAAC,MAAM,cAAC,CAAC,AAChB,KAAK,CAAE,GAAG,CACV,OAAO,CAAE,CAAC,CACV,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,MAAM,CAAE,CAAC,CACT,gBAAgB,CAAE,WAAW,CAC7B,KAAK,CAAE,IAAI,YAAY,CAAC,CACxB,SAAS,CAAE,IAAI,AAChB,CAAC,AAED,sBAAQ,CAAC,oBAAM,MAAM,AAAC,CAAC,AACtB,gBAAgB,CAAE,IAAI,iBAAiB,CAAC,AACzC,CAAC,AAED,GAAG,4BAAC,CAAC,AACJ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACZ,CAAC,AAED,IAAI,4BAAC,CAAC,AACL,aAAa,CAAE,kBAAkB,CACjC,YAAY,CAAE,GAAG,CACjB,MAAM,CAAE,IAAI,YAAY,CAAC,AAC1B,CAAC,AAED,iBAAiB,4BAAC,CAAC,AAClB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,QAAQ,CAAE,MAAM,CAChB,UAAU,CAAE,MAAM,CAClB,QAAQ,CAAE,QAAQ,AACnB,CAAC,AAED,+BAAiB,CAAC,MAAM,cAAC,CAAC,AACzB,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,IAAI,cAAc,CAAC,CAC1B,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,AACxB,CAAC,AAED,eAAe,4BAAC,CAAC,AAChB,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACb,CAAC"}`
-};
-function modulo(n, m) {
-  return (n % m + m) % m;
-}
-var Counter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let offset;
-  let $displayed_count, $$unsubscribe_displayed_count;
-  let count = 0;
-  const displayed_count = spring();
-  $$unsubscribe_displayed_count = subscribe(displayed_count, (value) => $displayed_count = value);
-  $$result.css.add(css$2);
-  {
-    displayed_count.set(count);
-  }
-  offset = modulo($displayed_count, 1);
-  $$unsubscribe_displayed_count();
-  return `<div class="${"counter svelte-ltn89m"}"><button aria-label="${"Decrease the counter by one"}" class="${"svelte-ltn89m"}"><svg aria-hidden="${"true"}" viewBox="${"0 0 1 1"}" class="${"svelte-ltn89m"}"><path d="${"M0,0.5 L1,0.5"}" class="${"svelte-ltn89m"}"></path></svg></button>
-
-	<div class="${"counter-viewport svelte-ltn89m"}"><div class="${"counter-digits svelte-ltn89m"}" style="${"transform: translate(0, " + escape2(100 * offset) + "%)"}"><strong style="${"top: -100%"}" aria-hidden="${"true"}" class="${"svelte-ltn89m"}">${escape2(Math.floor($displayed_count + 1))}</strong>
-			<strong class="${"svelte-ltn89m"}">${escape2(Math.floor($displayed_count))}</strong></div></div>
-
-	<button aria-label="${"Increase the counter by one"}" class="${"svelte-ltn89m"}"><svg aria-hidden="${"true"}" viewBox="${"0 0 1 1"}" class="${"svelte-ltn89m"}"><path d="${"M0,0.5 L1,0.5 M0.5,0 L0.5,1"}" class="${"svelte-ltn89m"}"></path></svg></button>
-</div>`;
-});
-var css$1 = {
+var css = {
   code: "section.svelte-mjk9ig.svelte-mjk9ig{display:flex;flex-direction:column;justify-content:center;align-items:center;flex:1}h1.svelte-mjk9ig.svelte-mjk9ig{width:100%}.welcome.svelte-mjk9ig.svelte-mjk9ig{position:relative;width:100%;height:0;padding:0 0 calc(100% * 495 / 2048) 0}.welcome.svelte-mjk9ig img.svelte-mjk9ig{position:absolute;width:100%;height:100%;top:0;display:block}",
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script context=\\"module\\" lang=\\"ts\\">export const prerender = true;\\n<\/script>\\n\\n<script lang=\\"ts\\">import Counter from '$lib/Counter/index.svelte';\\n<\/script>\\n\\n<svelte:head>\\n\\t<title>Home</title>\\n</svelte:head>\\n\\n<section>\\n\\t<h1>\\n\\t\\t<div class=\\"welcome\\">\\n\\t\\t\\t<picture>\\n\\t\\t\\t\\t<source srcset=\\"svelte-welcome.webp\\" type=\\"image/webp\\" />\\n\\t\\t\\t\\t<img src=\\"svelte-welcome.png\\" alt=\\"Welcome\\" />\\n\\t\\t\\t</picture>\\n\\t\\t</div>\\n\\n\\t\\tto your new<br />SvelteKit app\\n\\t</h1>\\n\\n\\t<h2>\\n\\t\\ttry editing <strong>src/routes/index.svelte</strong>\\n\\t</h2>\\n\\n\\t<Counter />\\n</section>\\n\\n<style>\\n\\tsection {\\n\\t\\tdisplay: flex;\\n\\t\\tflex-direction: column;\\n\\t\\tjustify-content: center;\\n\\t\\talign-items: center;\\n\\t\\tflex: 1;\\n\\t}\\n\\n\\th1 {\\n\\t\\twidth: 100%;\\n\\t}\\n\\n\\t.welcome {\\n\\t\\tposition: relative;\\n\\t\\twidth: 100%;\\n\\t\\theight: 0;\\n\\t\\tpadding: 0 0 calc(100% * 495 / 2048) 0;\\n\\t}\\n\\n\\t.welcome img {\\n\\t\\tposition: absolute;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t\\ttop: 0;\\n\\t\\tdisplay: block;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA8BC,OAAO,4BAAC,CAAC,AACR,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,IAAI,CAAE,CAAC,AACR,CAAC,AAED,EAAE,4BAAC,CAAC,AACH,KAAK,CAAE,IAAI,AACZ,CAAC,AAED,QAAQ,4BAAC,CAAC,AACT,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CAAC,CAAC,CAAC,KAAK,IAAI,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,AACvC,CAAC,AAED,sBAAQ,CAAC,GAAG,cAAC,CAAC,AACb,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,GAAG,CAAE,CAAC,CACN,OAAO,CAAE,KAAK,AACf,CAAC"}`
+  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script context=\\"module\\" lang=\\"ts\\">export const prerender = true;\\n<\/script>\\n\\n<script lang=\\"ts\\"><\/script>\\n\\n<svelte:head>\\n\\t<title>Home</title>\\n</svelte:head>\\n\\n<section>\\n\\t<h1>\\n\\t\\t<div class=\\"welcome\\">\\n\\t\\t\\t<picture>\\n\\t\\t\\t\\t<source srcset=\\"svelte-welcome.webp\\" type=\\"image/webp\\" />\\n\\t\\t\\t\\t<img src=\\"svelte-welcome.png\\" alt=\\"Welcome\\" />\\n\\t\\t\\t</picture>\\n\\t\\t</div>\\n\\n\\t\\t<div>to</div>\\n\\t\\t<div>Caesar's Personal Website</div>\\n\\t</h1>\\n\\n</section>\\n\\n<style>\\n\\tsection {\\n\\t\\tdisplay: flex;\\n\\t\\tflex-direction: column;\\n\\t\\tjustify-content: center;\\n\\t\\talign-items: center;\\n\\t\\tflex: 1;\\n\\t}\\n\\n\\th1 {\\n\\t\\twidth: 100%;\\n\\t}\\n\\n\\t.welcome {\\n\\t\\tposition: relative;\\n\\t\\twidth: 100%;\\n\\t\\theight: 0;\\n\\t\\tpadding: 0 0 calc(100% * 495 / 2048) 0;\\n\\t}\\n\\n\\t.welcome img {\\n\\t\\tposition: absolute;\\n\\t\\twidth: 100%;\\n\\t\\theight: 100%;\\n\\t\\ttop: 0;\\n\\t\\tdisplay: block;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAyBC,OAAO,4BAAC,CAAC,AACR,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,IAAI,CAAE,CAAC,AACR,CAAC,AAED,EAAE,4BAAC,CAAC,AACH,KAAK,CAAE,IAAI,AACZ,CAAC,AAED,QAAQ,4BAAC,CAAC,AACT,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CAAC,CAAC,CAAC,KAAK,IAAI,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,AACvC,CAAC,AAED,sBAAQ,CAAC,GAAG,cAAC,CAAC,AACb,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,GAAG,CAAE,CAAC,CACN,OAAO,CAAE,KAAK,AACf,CAAC"}`
 };
-var prerender$1 = true;
+var prerender$2 = true;
 var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$1);
+  $$result.css.add(css);
   return `${$$result.head += `${$$result.title = `<title>Home</title>`, ""}`, ""}
 
 <section class="${"svelte-mjk9ig"}"><h1 class="${"svelte-mjk9ig"}"><div class="${"welcome svelte-mjk9ig"}"><picture><source srcset="${"svelte-welcome.webp"}" type="${"image/webp"}">
 				<img src="${"svelte-welcome.png"}" alt="${"Welcome"}" class="${"svelte-mjk9ig"}"></picture></div>
 
-		to your new<br>SvelteKit app
-	</h1>
+		<div>to</div>
+		<div>Caesar&#39;s Personal Website</div></h1>
 
-	<h2>try editing <strong>src/routes/index.svelte</strong></h2>
-
-	${validate_component(Counter, "Counter").$$render($$result, {}, {}, {})}
 </section>`;
 });
-var index$1 = /* @__PURE__ */ Object.freeze({
+var index$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Routes,
-  prerender: prerender$1
+  prerender: prerender$2
 });
 var browser = false;
 var dev = false;
 var hydrate = dev;
 var router = browser;
-var prerender = true;
+var prerender$1 = true;
 var About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `${$$result.title = `<title>About</title>`, ""}`, ""}
 
-<div class="${"w-full"}"><h1 class="${"text-red-900"}">About this app</h1>
+<h1>About</h1>
+<hr>
 
-	<p>This is a <a href="${"https://kit.svelte.dev"}">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+<p><strong>\u55E8\uFF0C\u4F60\u597D\uFF01\u6B22\u8FCE\u6765\u5230\u6211\u7684\u5C0F\u7AD9\u3002 </strong></p>
+    <p>\u6211\uFF0C\u7F51\u540D\u732A\u521A\u70C8\uFF0C\u5916\u53F7\u4E00\u706F\uFF0C\u662F\u4E00\u540D\u5B66\u4E60\u8BBE\u8BA1\u5E08\uFF0C\u73B0\u670D\u52A1\u4E8E\u4E00\u5BB6\u793E\u533A\u57F9\u8BAD\u4E2D\u5FC3\u3002</p>
+    <p>\u751F\u6D3B\u4E2D\uFF0C\u6211\u662F\u4E00\u4E2A\u4E50\u5929\u6D3E\u3002\u6211\u76F8\u4FE1\u529E\u6CD5\u603B\u6BD4\u95EE\u9898\u591A\uFF0C\u76F8\u4FE1\u6CA1\u6709\u4EC0\u4E48\u8FC7\u4E0D\u53BB\u7684\u574E\u513F\uFF0C\u76F8\u4FE1\u4E8B\u60C5\u603B\u4F1A\u5411\u597D\u7684\u65B9\u5411\u8F6C\u5316\u3002\u9047\u5230\u95EE\u9898\u7684\u65F6\u5019\uFF0C\u522B\u4EBA\u6025\u5F97\u8DF3\u811A\uFF0C\u6211\u5374\u80FD\u6DE1\u5B9A\u81EA\u82E5\uFF0C\u8868\u73B0\u5F97\u8DDF\u6CA1\u4E8B\u513F\u4E00\u6837\u3002\u56E0\u4E3A\u8FD9\u6837\u7684\u6027\u683C\uFF0C\u5E38\u5E38\u88AB\u67D0\u4E2A\u4EBA\u9A82\u201C\u6CA1\u5FC3\u6CA1\u80BA\u201D\u3002\u4E0B\u9762\u8FD9\u5F20\u56FE\u753B\u51FA\u4E86\u6211\u8FD9\u79CD\u6027\u683C\u80CC\u540E\u7684\u903B\u8F91\u3002</p>
+    <img src="${"/images/attitude.png"}" alt="${"attitude"}" loading="${"lazy"}" class="${"w-1/4 md:w-1/2 block ml-auto mr-auto my-8"}">
+     <p>\u6211\u5BF9\u672A\u77E5\u5145\u6EE1\u597D\u5947\uFF0C\u56E0\u800C\u7279\u522B\u559C\u6B22\u8BFB\u4E66\u5B66\u4E60\u3002\u4E66\u5E97\u662F\u5E38\u53BB\u7684\u5730\u65B9\u3002\u521A\u5DE5\u4F5C\u90A3\u4F1A\u513F\uFF0C\u6536\u5165\u5FAE\u8584\uFF0C\u751F\u6D3B\u6349\u895F\u89C1\u8098\uFF0C\u4F46\u6BCF\u6708\u4ECD\u4F1A\u62FF\u51FA\u5DE5\u8D44\u7684\u4E03\u5206\u4E4B\u4E00\u6765\u8D2D\u4E70\u4E66\u7C4D\u3002\u5230\u6211\u8F9E\u804C\u7684\u65F6\u5019\uFF0C\u5BB6\u91CC\u7684\u4E66\u623F\u90FD\u5FEB\u53D8\u6210\u8FF7\u4F60\u56FE\u4E66\u9986\u4E86\u3002\u6211\u9605\u8BFB\u7684\u8303\u56F4\u57FA\u672C\u5C40\u9650\u4E8E\u54F2\u5B66\u3001\u793E\u4F1A\u79D1\u5B66\u548C\u79D1\u666E\u3002\u300A\u7EA2\u697C\u68A6\u300B\u8BFB\u51E0\u884C\u5C31\u60F3\u7761\u89C9\uFF0C\u300A\u81EA\u6740\u8BBA\u300B\u5374\u53EF\u4EE5\u8BFB\u901A\u5BB5\u800C\u4E0D\u77E5\u75B2\u5026\u3002\u5F97\u76CA\u4E8E\u9605\u8BFB\uFF0C\u6211\u80FD\u6E05\u695A\u5730\u7406\u89E3\u62BD\u8C61\u7684\u54F2\u5B66\u6982\u5FF5\uFF0C\u4E5F\u80FD\u5904\u7406\u68D8\u624B\u7684\u7EC4\u7EC7\u7BA1\u7406\u95EE\u9898\uFF0C\u8FD8\u80FD\u6B23\u8D4F\u8BD7\u8BCD\u6B4C\u8D4B\u4E2D\u8574\u6DB5\u7684\u610F\u5883\u3002\u6211\u662F\u8BFB\u8005\uFF0C\u4E5F\u662F\u4F5C\u8005\uFF0C\u53D1\u8868\u8FC7\u82E5\u5E72\u7AE0\u8282\u3001\u8BD1\u4F5C\uFF0C\u548C\u8BBA\u6587\u3002\u6211\u7684\u4F5C\u54C1\u770B\u7684\u4EBA\u4E0D\u591A\uFF0C\u4F46\u8FD8\u7B97\u6709\u89C1\u89E3\uFF0C\u4E0D\u4F1A\u8BA9\u8BFB\u8005\u611F\u89C9\u662F\u5728\u6D6A\u8D39\u65F6\u95F4\u3002</p>
 
-	
-	<pre>npm init svelte@next</pre>
+    <p>\u6211\u5174\u8DA3\u5E7F\u6CDB\uFF0C\u559C\u6B22\u8FDC\u8DB3\uFF0C\u559C\u6B22\u9A91\u811A\u8E0F\u8F66\uFF0C\u559C\u6B22\u542C\u53E4\u5178\u97F3\u4E50\uFF0C\u559C\u6B22\u54C1\u8336\uFF0C\u559C\u6B22\u505A\u7F8E\u98DF......\u3002\u6211\u6700\u5927\u7684\u55DC\u597D\u662F\u4E0B\u56F4\u68CB\u3002\u4ECE\u5927\u5B66\u4E00\u5E74\u7EA7\u5F00\u59CB\u4E00\u76F4\u4E0B\u5230\u73B0\u5728\u3002\u56F4\u68CB\u8BA9\u6211\u660E\u767D\u4E86\u4E0D\u5C11\u9053\u7406\u3002\u8B6C\u5982\uFF0C\u820D\u5F03\u662F\u56F4\u68CB\u53D6\u80DC\u7684\u79D8\u8BC0\uFF1B\u820D\u5F97\u662F\u4EBA\u751F\u6210\u529F\u7684\u667A\u6167\u3002\u6709\u820D\u624D\u6709\u5F97\uFF0C\u4F1A\u820D\u624D\u4F1A\u5F97\u3002\u820D\u5F97\u4E4B\u9053\uFF0C\u4E7E\u5764\u5965\u5999\u3002</p>
 
-	<p>The page you&#39;re looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don&#39;t need to load any JavaScript. Try viewing the page&#39;s source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>The <a href="${"/todos"}">TODOs</a> page illustrates SvelteKit&#39;s data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p></div>`;
+    <p>\u6700\u8FD1, \u6211\u5BF9\u7F51\u7AD9\u5F00\u53D1\u4EA7\u751F\u4E86\u6D53\u539A\u7684\u5174\u8DA3\uFF0C\u4E8E\u662F\u5C31\u5F00\u59CB\u4E86 HTML\u3001CSS \u548C Javascript \u7684\u5B66\u4E60\u4E4B\u65C5\u3002\u4F60\u73B0\u5728\u6B63\u5728\u6D4F\u89C8\u7684\u8FD9\u4E2A\u7F51\u7AD9\u5C31\u662F\u8FD9\u6B21\u5B66\u4E60\u7684\u4E00\u4E2A\u521D\u6B65\u6210\u679C\uFF0C\u5B83\u662F\u57FA\u4E8E <a href="${"https://kit.svelte.dev/"}" target="${"_blank"}" rel="${"noreferrer"}">Sveltekit</a> \u548C <a href="${"https://tailwindcss.com"}" target="${"_blank"}" rel="${"noreferrer"}">Tailwindcss</a> \u6280\u672F\u6784\u5EFA\u7684\u3002\u600E\u4E48\u6837\uFF1F\u770B\u4E0A\u53BB\u8FD8\u4E0D\u9519\u5427\uFF1F<span role="${"img"}" aria-label="${"Smile"}">\u{1F60A}</span></p>`;
 });
 var about = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -3134,100 +2924,61 @@ var about = /* @__PURE__ */ Object.freeze({
   "default": About,
   hydrate,
   router,
-  prerender
+  prerender: prerender$1
 });
-var css = {
-  code: `.todos.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{width:100%;max-width:var(--column-width);margin:var(--column-margin-top) auto 0 auto;line-height:1}.new.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{margin:0 0 0.5rem 0}input.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{border:1px solid transparent}input.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd:focus-visible{box-shadow:inset 1px 1px 6px rgba(0, 0, 0, 0.1);border:1px solid #ff3e00 !important;outline:none}.new.svelte-dmxqmd input.svelte-dmxqmd.svelte-dmxqmd{font-size:28px;width:100%;padding:0.5em 1em 0.3em 1em;box-sizing:border-box;background:rgba(255, 255, 255, 0.05);border-radius:8px;text-align:center}.todo.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{display:grid;grid-template-columns:2rem 1fr 2rem;grid-gap:0.5rem;align-items:center;margin:0 0 0.5rem 0;padding:0.5rem;background-color:white;border-radius:8px;filter:drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));transform:translate(-1px, -1px);transition:filter 0.2s, transform 0.2s}.done.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{transform:none;opacity:0.4;filter:drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1))}form.text.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{position:relative;display:flex;align-items:center;flex:1}.todo.svelte-dmxqmd input.svelte-dmxqmd.svelte-dmxqmd{flex:1;padding:0.5em 2em 0.5em 0.8em;border-radius:3px}.todo.svelte-dmxqmd button.svelte-dmxqmd.svelte-dmxqmd{width:2em;height:2em;border:none;background-color:transparent;background-position:50% 50%;background-repeat:no-repeat}button.toggle.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{border:1px solid rgba(0, 0, 0, 0.2);border-radius:50%;box-sizing:border-box;background-size:1em auto}.done.svelte-dmxqmd .toggle.svelte-dmxqmd.svelte-dmxqmd{background-image:url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 1.5L7.4375 14.5L1.5 8.5909' stroke='%23676778' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}.delete.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 5V22H19.5V5H4.5Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M10 10V16.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 10V16.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 5H22' stroke='%23676778' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 5L9.6445 2H14.3885L16 5H8Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E%0A");opacity:0.2}.delete.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd:hover,.delete.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd:focus{transition:opacity 0.2s;opacity:1}.save.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd{position:absolute;right:0;opacity:0;background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 2H3.5C2.67158 2 2 2.67157 2 3.5V20.5C2 21.3284 2.67158 22 3.5 22H20.5C21.3284 22 22 21.3284 22 20.5V3.5C22 2.67157 21.3284 2 20.5 2Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M17 2V11H7.5V2H17Z' fill='white' stroke='white' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M13.5 5.5V7.5' stroke='%23676778' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M5.99844 2H18.4992' stroke='%23676778' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A")}.todo.svelte-dmxqmd input.svelte-dmxqmd:focus+.save.svelte-dmxqmd,.save.svelte-dmxqmd.svelte-dmxqmd.svelte-dmxqmd:focus{transition:opacity 0.2s;opacity:1}`,
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script context=\\"module\\" lang=\\"ts\\">var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\\n    return new (P || (P = Promise))(function (resolve, reject) {\\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\\n        function rejected(value) { try { step(generator[\\"throw\\"](value)); } catch (e) { reject(e); } }\\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\\n    });\\n};\\nimport { enhance } from '$lib/form';\\n;\\n// see https://kit.svelte.dev/docs#loading\\nexport const load = ({ fetch }) => __awaiter(void 0, void 0, void 0, function* () {\\n    const res = yield fetch('/todos.json');\\n    if (res.ok) {\\n        const todos = yield res.json();\\n        return {\\n            props: { todos }\\n        };\\n    }\\n    const { message } = yield res.json();\\n    return {\\n        error: new Error(message)\\n    };\\n});\\n<\/script>\\n\\n<script lang=\\"ts\\">var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\\n    return new (P || (P = Promise))(function (resolve, reject) {\\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\\n        function rejected(value) { try { step(generator[\\"throw\\"](value)); } catch (e) { reject(e); } }\\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\\n    });\\n};\\nimport { scale } from 'svelte/transition';\\nimport { flip } from 'svelte/animate';\\nexport let todos;\\nfunction patch(res) {\\n    return __awaiter(this, void 0, void 0, function* () {\\n        const todo = yield res.json();\\n        todos = todos.map((t) => {\\n            if (t.uid === todo.uid)\\n                return todo;\\n            return t;\\n        });\\n    });\\n}\\n<\/script>\\n\\n<svelte:head>\\n\\t<title>Todos</title>\\n</svelte:head>\\n\\n<div class=\\"todos\\">\\n\\t<h1>Todos</h1>\\n\\n\\t<form\\n\\t\\tclass=\\"new\\"\\n\\t\\taction=\\"/todos.json\\"\\n\\t\\tmethod=\\"post\\"\\n\\t\\tuse:enhance={{\\n\\t\\t\\tresult: async (res, form) => {\\n\\t\\t\\t\\tconst created = await res.json();\\n\\t\\t\\t\\ttodos = [...todos, created];\\n\\n\\t\\t\\t\\tform.reset();\\n\\t\\t\\t}\\n\\t\\t}}\\n\\t>\\n\\t\\t<input name=\\"text\\" aria-label=\\"Add todo\\" placeholder=\\"+ tap to add a todo\\" />\\n\\t</form>\\n\\n\\t{#each todos as todo (todo.uid)}\\n\\t\\t<div\\n\\t\\t\\tclass=\\"todo\\"\\n\\t\\t\\tclass:done={todo.done}\\n\\t\\t\\ttransition:scale|local={{ start: 0.7 }}\\n\\t\\t\\tanimate:flip={{ duration: 200 }}\\n\\t\\t>\\n\\t\\t\\t<form\\n\\t\\t\\t\\taction=\\"/todos/{todo.uid}.json?_method=patch\\"\\n\\t\\t\\t\\tmethod=\\"post\\"\\n\\t\\t\\t\\tuse:enhance={{\\n\\t\\t\\t\\t\\tpending: (data) => {\\n\\t\\t\\t\\t\\t\\ttodo.done = !!data.get('done');\\n\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\tresult: patch\\n\\t\\t\\t\\t}}\\n\\t\\t\\t>\\n\\t\\t\\t\\t<input type=\\"hidden\\" name=\\"done\\" value={todo.done ? '' : 'true'} />\\n\\t\\t\\t\\t<button class=\\"toggle\\" aria-label=\\"Mark todo as {todo.done ? 'not done' : 'done'}\\" />\\n\\t\\t\\t</form>\\n\\n\\t\\t\\t<form\\n\\t\\t\\t\\tclass=\\"text\\"\\n\\t\\t\\t\\taction=\\"/todos/{todo.uid}.json?_method=patch\\"\\n\\t\\t\\t\\tmethod=\\"post\\"\\n\\t\\t\\t\\tuse:enhance={{\\n\\t\\t\\t\\t\\tresult: patch\\n\\t\\t\\t\\t}}\\n\\t\\t\\t>\\n\\t\\t\\t\\t<input aria-label=\\"Edit todo\\" type=\\"text\\" name=\\"text\\" value={todo.text} />\\n\\t\\t\\t\\t<button class=\\"save\\" aria-label=\\"Save todo\\" />\\n\\t\\t\\t</form>\\n\\n\\t\\t\\t<form\\n\\t\\t\\t\\taction=\\"/todos/{todo.uid}.json?_method=delete\\"\\n\\t\\t\\t\\tmethod=\\"post\\"\\n\\t\\t\\t\\tuse:enhance={{\\n\\t\\t\\t\\t\\tresult: () => {\\n\\t\\t\\t\\t\\t\\ttodos = todos.filter((t) => t.uid !== todo.uid);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}}\\n\\t\\t\\t>\\n\\t\\t\\t\\t<button class=\\"delete\\" aria-label=\\"Delete todo\\" />\\n\\t\\t\\t</form>\\n\\t\\t</div>\\n\\t{/each}\\n</div>\\n\\n<style>\\n\\t.todos {\\n\\t\\twidth: 100%;\\n\\t\\tmax-width: var(--column-width);\\n\\t\\tmargin: var(--column-margin-top) auto 0 auto;\\n\\t\\tline-height: 1;\\n\\t}\\n\\n\\t.new {\\n\\t\\tmargin: 0 0 0.5rem 0;\\n\\t}\\n\\n\\tinput {\\n\\t\\tborder: 1px solid transparent;\\n\\t}\\n\\n\\tinput:focus-visible {\\n\\t\\tbox-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);\\n\\t\\tborder: 1px solid #ff3e00 !important;\\n\\t\\toutline: none;\\n\\t}\\n\\n\\t.new input {\\n\\t\\tfont-size: 28px;\\n\\t\\twidth: 100%;\\n\\t\\tpadding: 0.5em 1em 0.3em 1em;\\n\\t\\tbox-sizing: border-box;\\n\\t\\tbackground: rgba(255, 255, 255, 0.05);\\n\\t\\tborder-radius: 8px;\\n\\t\\ttext-align: center;\\n\\t}\\n\\n\\t.todo {\\n\\t\\tdisplay: grid;\\n\\t\\tgrid-template-columns: 2rem 1fr 2rem;\\n\\t\\tgrid-gap: 0.5rem;\\n\\t\\talign-items: center;\\n\\t\\tmargin: 0 0 0.5rem 0;\\n\\t\\tpadding: 0.5rem;\\n\\t\\tbackground-color: white;\\n\\t\\tborder-radius: 8px;\\n\\t\\tfilter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));\\n\\t\\ttransform: translate(-1px, -1px);\\n\\t\\ttransition: filter 0.2s, transform 0.2s;\\n\\t}\\n\\n\\t.done {\\n\\t\\ttransform: none;\\n\\t\\topacity: 0.4;\\n\\t\\tfilter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1));\\n\\t}\\n\\n\\tform.text {\\n\\t\\tposition: relative;\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tflex: 1;\\n\\t}\\n\\n\\t.todo input {\\n\\t\\tflex: 1;\\n\\t\\tpadding: 0.5em 2em 0.5em 0.8em;\\n\\t\\tborder-radius: 3px;\\n\\t}\\n\\n\\t.todo button {\\n\\t\\twidth: 2em;\\n\\t\\theight: 2em;\\n\\t\\tborder: none;\\n\\t\\tbackground-color: transparent;\\n\\t\\tbackground-position: 50% 50%;\\n\\t\\tbackground-repeat: no-repeat;\\n\\t}\\n\\n\\tbutton.toggle {\\n\\t\\tborder: 1px solid rgba(0, 0, 0, 0.2);\\n\\t\\tborder-radius: 50%;\\n\\t\\tbox-sizing: border-box;\\n\\t\\tbackground-size: 1em auto;\\n\\t}\\n\\n\\t.done .toggle {\\n\\t\\tbackground-image: url(\\"data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 1.5L7.4375 14.5L1.5 8.5909' stroke='%23676778' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\\");\\n\\t}\\n\\n\\t.delete {\\n\\t\\tbackground-image: url(\\"data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 5V22H19.5V5H4.5Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M10 10V16.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 10V16.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 5H22' stroke='%23676778' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 5L9.6445 2H14.3885L16 5H8Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E%0A\\");\\n\\t\\topacity: 0.2;\\n\\t}\\n\\n\\t.delete:hover,\\n\\t.delete:focus {\\n\\t\\ttransition: opacity 0.2s;\\n\\t\\topacity: 1;\\n\\t}\\n\\n\\t.save {\\n\\t\\tposition: absolute;\\n\\t\\tright: 0;\\n\\t\\topacity: 0;\\n\\t\\tbackground-image: url(\\"data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 2H3.5C2.67158 2 2 2.67157 2 3.5V20.5C2 21.3284 2.67158 22 3.5 22H20.5C21.3284 22 22 21.3284 22 20.5V3.5C22 2.67157 21.3284 2 20.5 2Z' fill='%23676778' stroke='%23676778' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M17 2V11H7.5V2H17Z' fill='white' stroke='white' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M13.5 5.5V7.5' stroke='%23676778' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M5.99844 2H18.4992' stroke='%23676778' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A\\");\\n\\t}\\n\\n\\t.todo input:focus + .save,\\n\\t.save:focus {\\n\\t\\ttransition: opacity 0.2s;\\n\\t\\topacity: 1;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA2HC,MAAM,0CAAC,CAAC,AACP,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,IAAI,cAAc,CAAC,CAC9B,MAAM,CAAE,IAAI,mBAAmB,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,IAAI,CAC5C,WAAW,CAAE,CAAC,AACf,CAAC,AAED,IAAI,0CAAC,CAAC,AACL,MAAM,CAAE,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,AACrB,CAAC,AAED,KAAK,0CAAC,CAAC,AACN,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,WAAW,AAC9B,CAAC,AAED,+CAAK,cAAc,AAAC,CAAC,AACpB,UAAU,CAAE,KAAK,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAChD,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,OAAO,CAAC,UAAU,CACpC,OAAO,CAAE,IAAI,AACd,CAAC,AAED,kBAAI,CAAC,KAAK,4BAAC,CAAC,AACX,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,KAAK,CAAC,GAAG,CAAC,KAAK,CAAC,GAAG,CAC5B,UAAU,CAAE,UAAU,CACtB,UAAU,CAAE,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,CACrC,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,MAAM,AACnB,CAAC,AAED,KAAK,0CAAC,CAAC,AACN,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,IAAI,CAAC,GAAG,CAAC,IAAI,CACpC,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,MAAM,CACnB,MAAM,CAAE,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CACpB,OAAO,CAAE,MAAM,CACf,gBAAgB,CAAE,KAAK,CACvB,aAAa,CAAE,GAAG,CAClB,MAAM,CAAE,YAAY,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CACnD,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,IAAI,CAAC,CAChC,UAAU,CAAE,MAAM,CAAC,IAAI,CAAC,CAAC,SAAS,CAAC,IAAI,AACxC,CAAC,AAED,KAAK,0CAAC,CAAC,AACN,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,GAAG,CACZ,MAAM,CAAE,YAAY,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,AACpD,CAAC,AAED,IAAI,KAAK,0CAAC,CAAC,AACV,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,IAAI,CAAE,CAAC,AACR,CAAC,AAED,mBAAK,CAAC,KAAK,4BAAC,CAAC,AACZ,IAAI,CAAE,CAAC,CACP,OAAO,CAAE,KAAK,CAAC,GAAG,CAAC,KAAK,CAAC,KAAK,CAC9B,aAAa,CAAE,GAAG,AACnB,CAAC,AAED,mBAAK,CAAC,MAAM,4BAAC,CAAC,AACb,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,WAAW,CAC7B,mBAAmB,CAAE,GAAG,CAAC,GAAG,CAC5B,iBAAiB,CAAE,SAAS,AAC7B,CAAC,AAED,MAAM,OAAO,0CAAC,CAAC,AACd,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CACpC,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,UAAU,CACtB,eAAe,CAAE,GAAG,CAAC,IAAI,AAC1B,CAAC,AAED,mBAAK,CAAC,OAAO,4BAAC,CAAC,AACd,gBAAgB,CAAE,IAAI,uQAAuQ,CAAC,AAC/R,CAAC,AAED,OAAO,0CAAC,CAAC,AACR,gBAAgB,CAAE,IAAI,yrBAAyrB,CAAC,CAChtB,OAAO,CAAE,GAAG,AACb,CAAC,AAED,iDAAO,MAAM,CACb,iDAAO,MAAM,AAAC,CAAC,AACd,UAAU,CAAE,OAAO,CAAC,IAAI,CACxB,OAAO,CAAE,CAAC,AACX,CAAC,AAED,KAAK,0CAAC,CAAC,AACN,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,CAAC,CACR,OAAO,CAAE,CAAC,CACV,gBAAgB,CAAE,IAAI,gpBAAgpB,CAAC,AACxqB,CAAC,AAED,mBAAK,CAAC,mBAAK,MAAM,CAAG,mBAAK,CACzB,+CAAK,MAAM,AAAC,CAAC,AACZ,UAAU,CAAE,OAAO,CAAC,IAAI,CACxB,OAAO,CAAE,CAAC,AACX,CAAC"}`
-};
-var __awaiter = function(thisArg, _arguments, P, generator) {
-  function adopt(value) {
-    return value instanceof P ? value : new P(function(resolve2) {
-      resolve2(value);
-    });
+var talks = [
+  {
+    "title": "My First Talk",
+    "date": "2018-08-01",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
+    "slide": "/pdfs/lp.pdf",
+    "image": "/images/talk.png"
+  },
+  {
+    "title": "My Second Talk",
+    "date": "2018-09-10",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
+    "slide": "/pdfs/facilitation.pdf",
+    "image": "/images/talk.png"
   }
-  return new (P || (P = Promise))(function(resolve2, reject) {
-    function fulfilled(value) {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    }
-    function rejected(value) {
-      try {
-        step(generator["throw"](value));
-      } catch (e) {
-        reject(e);
-      }
-    }
-    function step(result) {
-      result.done ? resolve2(result.value) : adopt(result.value).then(fulfilled, rejected);
-    }
-    step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-};
-var load = ({ fetch: fetch22 }) => __awaiter(void 0, void 0, void 0, function* () {
-  const res = yield fetch22("/todos.json");
-  if (res.ok) {
-    const todos = yield res.json();
-    return { props: { todos } };
-  }
-  const { message } = yield res.json();
-  return { error: new Error(message) };
+];
+var Talks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<h1>Talks</h1>
+        <hr>
+    
+        ${each(talks, (talk) => `${formatDate(talk.date) ? `<div class="${"md:px-10 md:flex md:space-x-4 md:space-y-4 md:justify-center md: items-center"}"><img${add_attribute("src", talk.image, 0)} alt="${"talk1"}" loading="${"lazy"}" class="${"w-1/4 md:w-1/4 block ml-auto mr-auto mb-4"}">
+            <div><h4>${escape2(talk.title)}</h4>
+            <p>${escape2(talk.description)}</p>
+            <a${add_attribute("href", talk.slide, 0)} target="${"_blank"}" class="${"flex items-center w-max px-2 "}">\u4E0B\u8F7D PDF</a></div>
+        </div>` : ``}`)}`;
 });
-var Todos = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  (function(thisArg, _arguments, P, generator) {
-    function adopt(value) {
-      return value instanceof P ? value : new P(function(resolve2) {
-        resolve2(value);
-      });
-    }
-    return new (P || (P = Promise))(function(resolve2, reject) {
-      function fulfilled(value) {
-        try {
-          step(generator.next(value));
-        } catch (e) {
-          reject(e);
-        }
-      }
-      function rejected(value) {
-        try {
-          step(generator["throw"](value));
-        } catch (e) {
-          reject(e);
-        }
-      }
-      function step(result) {
-        result.done ? resolve2(result.value) : adopt(result.value).then(fulfilled, rejected);
-      }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-  });
-  let { todos } = $$props;
-  if ($$props.todos === void 0 && $$bindings.todos && todos !== void 0)
-    $$bindings.todos(todos);
-  $$result.css.add(css);
-  return `${$$result.head += `${$$result.title = `<title>Todos</title>`, ""}`, ""}
+var index$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Talks
+});
+var prerender = true;
+async function load({ session }) {
+  const posts = session.posts;
+  return { props: { posts } };
+}
+var Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { posts } = $$props;
+  if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
+    $$bindings.posts(posts);
+  return `${$$result.head += `${$$result.title = `<title>Blog</title>`, ""}`, ""}
 
-<div class="${"todos svelte-dmxqmd"}"><h1>Todos</h1>
-
-	<form class="${"new svelte-dmxqmd"}" action="${"/todos.json"}" method="${"post"}"><input name="${"text"}" aria-label="${"Add todo"}" placeholder="${"+ tap to add a todo"}" class="${"svelte-dmxqmd"}"></form>
-
-	${each(todos, (todo) => `<div class="${["todo svelte-dmxqmd", todo.done ? "done" : ""].join(" ").trim()}"><form action="${"/todos/" + escape2(todo.uid) + ".json?_method=patch"}" method="${"post"}"><input type="${"hidden"}" name="${"done"}"${add_attribute("value", todo.done ? "" : "true", 0)} class="${"svelte-dmxqmd"}">
-				<button class="${"toggle svelte-dmxqmd"}" aria-label="${"Mark todo as " + escape2(todo.done ? "not done" : "done")}"></button></form>
-
-			<form class="${"text svelte-dmxqmd"}" action="${"/todos/" + escape2(todo.uid) + ".json?_method=patch"}" method="${"post"}"><input aria-label="${"Edit todo"}" type="${"text"}" name="${"text"}"${add_attribute("value", todo.text, 0)} class="${"svelte-dmxqmd"}">
-				<button class="${"save svelte-dmxqmd"}" aria-label="${"Save todo"}"></button></form>
-
-			<form action="${"/todos/" + escape2(todo.uid) + ".json?_method=delete"}" method="${"post"}"><button class="${"delete svelte-dmxqmd"}" aria-label="${"Delete todo"}"></button></form>
-		</div>`)}
-</div>`;
+<div><h1>Posts</h1>
+	<hr>
+	${each(posts, (post) => `<div>${escape2(formatDate(post.date))}</div>
+		<a${add_attribute("href", `./blog/${post.slug}`, 0)} class="${"block mb-4 pb-4 last:border-none last:mb-0"}">${escape2(post.title)}
+		</a>`)}</div>`;
 });
 var index = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Todos,
+  "default": Blog,
+  prerender,
   load
 });
 
@@ -3260,23 +3011,3 @@ async function handler(event) {
 0 && (module.exports = {
   handler
 });
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
