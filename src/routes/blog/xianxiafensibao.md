@@ -15,7 +15,7 @@ category: '生活'
 
 算了，自己动手，丰衣足食。不是刚学了鲜虾粉丝煲的做法吗？弄！
 
-<img src="/images/xianxia.jpg"  alt="xianxia" loading="lazy" width="400" class="block mx-auto w-full md:w-1/2 mb-4" />
+<img src="/images/xianxia.jpg"  alt="xianxia" loading="lazy" width="400" class="block mx-auto w-full md:w-1/2 my-4" />
 
 
 #### 食材

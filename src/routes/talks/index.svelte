@@ -9,7 +9,7 @@
         {#each talks as talk}
         {#if formatDate(talk.date)}
         <div class="md:px-10 md:flex md:space-x-4 md:space-y-4 md:justify-center md: items-center">
-            <img src={talk.image} alt="talk1" loading="lazy" class="w-1/4 md:w-1/4 block ml-auto mr-auto mb-4" />
+            <img src={talk.image} alt="talk1" loading="lazy" class="w-full md:w-1/4 block ml-auto mr-auto mb-4" />
             <div>
             <h4>{talk.title}</h4>
             <p>{talk.description}</p>
