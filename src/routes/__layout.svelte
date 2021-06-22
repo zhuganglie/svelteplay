@@ -1,29 +1,14 @@
 <script lang="ts">
 	import Header from '$lib/Header/index.svelte';
 	import Footer from '$lib/Footer/index.svelte';
-	import '../tailwind.css';
 	import '../app.css';
 </script>
 
 <Header />
 
-<main>
+<main class="flex-col flex-1 p-2 md:p-8 w-full max-w-screen-lg h-screen  m-auto box-border overflow-y-auto">
 	<slot />
 </main>
 
 <Footer />
 
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	
-</style>

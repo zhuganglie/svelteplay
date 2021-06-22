@@ -2,6 +2,6 @@
 	import { page } from '$app/stores';
 </script>
 
-<footer class="flex justify-center items-center">
-    <p>Copyright &copy; Caesar </p> 
+<footer class=" sticky z-1 w-full py-2 h-10 bottom-0 text-sm text-center bg-yellow-50 shadow-inner">
+    <p>Copyright &copy; {new Date().getFullYear()} Caesar </p> 
 </footer>

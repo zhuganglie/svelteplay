@@ -19,13 +19,14 @@
 	<h1>Posts</h1>
 	<hr />
 	{#each posts as post}
-	<div>{formatDate(post.date)}</div>
+	<div class="flex justify-between items-center">
 		<a
 			href={`./blog/${post.slug}`}
-			class="block mb-4 pb-4 last:border-none last:mb-0"
+			class="block mb-4 pb-4 last:border-none last:mb-0 font-bold"
 		>
 			{post.title}
 		</a>
-		
+		<p>{formatDate(post.date)}</p>
+	</div>
 	{/each}
 </div>

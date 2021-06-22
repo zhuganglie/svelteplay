@@ -1,108 +1,188 @@
-@import '@fontsource/fira-mono';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-}
-
-body {
-	min-height: 100vh;
-	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
-}
-
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
-}
-
-#svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-h1,
-h2,
-p {
-	font-weight: 400;
-	color: var(--heading-color);
-}
-
-p {
-	line-height: 1.5;
-}
-
-a {
-	color: var(--accent-color);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h1 {
-	font-size: 2rem;
-	margin-bottom: 0 0 1em 0;
-	text-align: center;
-}
-
-h2 {
-	font-size: 1rem;
-}
-
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
-}
-
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-}
+@layer base {
+    html,
+    body {
+     @apply p-0 m-0 h-screen font-sans bg-yellow-50 text-black overflow-hidden;
+    }
+    *,
+    *:before,
+    *:after {
+     @apply box-border border-0 outline-none;
+    }
+    a {
+    @apply bg-transparent text-red-900 inline-block text-center px-1;
+    }
+    a:hover,
+    a:focus,
+    a:active{
+    @apply outline-none text-red-600;
+    }
+    article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        @apply block;
+      }
+      audio,
+      canvas,
+      progress,
+      video {
+          @apply inline-block;
+      }
+      progress {
+          @apply align-baseline;
+      }
+      b,
+      strong {
+          @apply font-extrabold;
+      }
+      dfn {
+          @apply italic;
+      }
+      small {
+          @apply text-sm;
+      }
+      mark {
+          @apply bg-yellow-100 text-gray-900;
+      }
+      sub,
+      sup {
+          @apply text-xs leading-none relative align-baseline;
+      }
+      sub {
+          @apply -bottom-1;
+      }
+      sup {
+          @apply -top-2;
+      }
+      img {
+          @apply max-w-md mb-5 m-0 p-0;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+          @apply font-mono text-base;
+      }
+      figure {
+          @apply mb-5 p-0 mt-0 mx-0;
+      }
+      hr {
+          @apply box-content mb-4 h-px;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+          @apply m-0;
+      }
+      optgroup {
+          @apply font-bold;
+      }
+      button,
+      input {
+          @apply overflow-visible border-0 p-2;
+      }
+      button,
+      select {
+          @apply transform-none outline-none;
+      }
+      fieldset {
+          @apply border border-gray-50 border-solid mb-5 pt-1.5 px-2.5 pb-3;
+      }
+      legend {
+          @apply max-w-full p-0 table whitespace-normal;
+      }
+      textarea {
+          @apply overflow-auto;
+      }
+      h1 {
+        @apply mx-0 mt-0 mb-6 p-0 font-sans font-bold text-4xl subpixel-antialiased;
+      }
+      h2 {
+          @apply mb-5 font-bold font-sans text-3xl subpixel-antialiased mx-0 mt-0 p-0;
+      }
+      h3 {
+          @apply mb-5 font-sans font-bold text-2xl subpixel-antialiased mx-0 p-0 mt-0;
+      }
+      h4 {
+          @apply mb-5 font-sans font-bold text-xl subpixel-antialiased mx-0 mt-0 p-0;
+      }
+      h5 {
+          @apply mb-5 font-sans font-bold text-lg subpixel-antialiased mx-0 mt-0 p-0;
+      }
+      h6 {
+          @apply mb-5 font-sans font-bold text-base subpixel-antialiased mx-0 mt-0 p-0;
+      }
+      hgroup {
+          @apply mb-5 mx-0 mt-0 p-0;
+      }
+      ul,
+      ol {
+          @apply ml-5 mb-5 list-disc list-outside;
+      }
+      dl,
+      dd {
+          @apply mb-5;
+      }
+      p {
+          @apply mb-5;
+      }
+      pre {
+          @apply mb-5 text-sm leading-6 rounded p-5;
+      }
+      table {
+          @apply mb-5 w-full text-base;
+      }
+      blockquote {
+          @apply ml-5 mr-5 mb-5;
+      }
+      form,
+      iframe,
+      address {
+          @apply mb-5;
+      }
+      b,
+      strong,
+      dt,
+      th {
+          @apply font-bold;
+      }
+      li {
+          @apply mb-2　ml-5;
+      }
+      li > ol {
+          @apply ml-5 mb-2 mt-2;
+      }
+      li > ul {
+          @apply ml-5 mb-2 mt-2;
+      }
+      li > p {
+          @apply mb-2;
+      }
+      details {
+          @apply mb-3;
+      }
+     details > summary {
+         @apply cursor-pointer text-red-900 bg-yellow-100 w-max px-2 py-1;
+     }
+    
+    
+    }
+    
+    
+    
+    
+   
