@@ -7,7 +7,7 @@
 <section class="flex-col h-screen">
 <Header />
 
-<main class="flex-col p-2 md:p-8 w-full h-full max-w-screen-lg  mb-auto box-border flex-1 overflow-y-auto">
+<main class="flex-col justify-center items-center p-2 md:p-8 h-full w-full max-w-screen-lg  mb-auto  mx-auto box-border flex-1 overflow-y-auto no-scrollbar">
 	<slot />
 </main>
 
@@ -15,3 +15,15 @@
 </section>
 
 
+<style>
+	/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>

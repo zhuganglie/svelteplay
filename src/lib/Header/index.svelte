@@ -7,13 +7,14 @@
     open = !open;}
 </script>
 
-<header class="sticky w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-8 top-0">
-	<div class="flex flex-wrap items-center justify-between p-3 md:px-8 m-auto by-yellow-50">
-
-        
+<header class="sticky m-auto h-20 flex flex-wrap items-center w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-12 top-0">
+    <div>
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-0" />
-    <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
+    </div>
 
+	<div>
+    <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
+    </div>
       <ClickOutside on:clickoutside="{() => (open = false)}">
       <button class="text-red-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none" class:open on:click={toggleHeader}>
         <svg width=32 height=24>
@@ -36,7 +37,6 @@
 
 <style>
 	
-
 	.active {
 		font-weight: 700;
 	}
