@@ -10,10 +10,9 @@
 <header class="w-full bg-yellow-50 shadow-lg px-4 md:px-8 ">
 	<div class="flex flex-wrap items-center justify-between p-3 md:px-8 m-auto by-yellow-50">
 
-        <div class="flex items-center justify-center space-x-1">
+        
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-0" />
     <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
-    </div>
 
       <ClickOutside on:clickoutside="{() => (open = false)}">
       <button class="text-red-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none" class:open on:click={toggleHeader}>
