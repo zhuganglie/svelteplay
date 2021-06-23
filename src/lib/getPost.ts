@@ -8,8 +8,9 @@ export default async () => {
 			return { ...metadata, filename, slug };
 		})
 	);
-	
+
 	posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 	return posts;
 	
 };
+

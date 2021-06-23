@@ -7,8 +7,9 @@
     open = !open;}
 </script>
 
-<header class="sticky m-auto h-20 flex justify-between items-center w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
-    <div class="flex flex-wrap items-center space-x-2">
+<header class="sticky h-20 w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
+    <div class="flex m-auto flex-wrap items-center justify-between p-3 mx-auto bg-yellow-50">
+		<div class="flex items-center justify-center space-x-2">
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-0" />
     <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
     </div>
@@ -30,6 +31,7 @@
 			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class="block mt-4 mr-4 md:inline-block md:mt-0">About</a></li>
 		</ul>	
 	</nav>
+</div>
 </header>
 
 <style>
