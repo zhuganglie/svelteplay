@@ -6,7 +6,7 @@
 
 <Header />
 
-<main class="flex-col flex-1 p-2 md:p-8 w-full max-w-screen-lg h-screen  m-auto box-border overflow-y-auto">
+<main class="flex-col flex-1 p-2 md:p-8 w-full max-w-screen-lg  m-auto box-border overflow-y-auto">
 	<slot />
 </main>
 
