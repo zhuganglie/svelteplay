@@ -7,7 +7,7 @@
     open = !open;}
 </script>
 
-<header class="w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-8 ">
+<header class="sticky w-full h-18 bg-yellow-50 shadow-lg px-4 md:px-8 top-0">
 	<div class="flex flex-wrap items-center justify-between p-3 md:px-8 m-auto by-yellow-50">
 
         
