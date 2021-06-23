@@ -4,10 +4,10 @@
 	import '../app.css';
 </script>
 
-<section class="flex-col justify-between items-center h-screen">
+<section class="flex-col h-screen">
 <Header />
 
-<main class="p-2 md:p-8 w-full max-w-screen-lg  mb-auto box-border h-auto overflow-y-auto">
+<main class="p-2 md:p-8 w-full max-w-screen-lg  mb-auto box-border flex-1 overflow-y-auto">
 	<slot />
 </main>
 
