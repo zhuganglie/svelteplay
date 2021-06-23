@@ -7,7 +7,7 @@
 <div class="flex flex-col min-h-screen">
 <Header />
 
-<main class=" p-2 md:p-8 w-full max-w-screen-lg mx-auto box-border flex-1">
+<main class="p-2.5 md:p-8 w-full max-w-screen-lg mx-auto box-border flex-1">
 	<slot />
 </main>
 

@@ -5,6 +5,7 @@ export default async () => {
 			let pathComponents = path.split('/');
 			const filename = pathComponents.pop();
 			const slug = filename.split('.md', 1)[0];
+		
 			return { ...metadata, filename, slug };
 		})
 	);

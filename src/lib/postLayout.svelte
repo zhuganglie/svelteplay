@@ -1,5 +1,6 @@
 <script>
 	import {formatDate} from './date';
+    //import Tags from './Tags/index.svelte';
 	export let title;
 	export let date;
 
