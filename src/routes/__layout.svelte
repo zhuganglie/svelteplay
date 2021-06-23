@@ -4,14 +4,14 @@
 	import '../app.css';
 </script>
 
-<section class="flex-col h-screen w-screen">
+<div class="flex flex-col min-h-screen">
 <Header />
 
-<main class="flex-col justify-center items-center p-2 md:p-8 h-auto max-w-screen-lg mb-auto  mx-auto box-border flex-1">
+<main class=" p-2 md:p-8 w-full max-w-screen-lg mx-auto box-border flex-1">
 	<slot />
 </main>
 
 <Footer />
-</section>
+</div>
 
 
