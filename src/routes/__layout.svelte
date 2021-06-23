@@ -6,7 +6,7 @@
 
 <Header />
 
-<main class="p-2 md:p-8 w-full max-w-screen-lg  mx-auto box-border overflow-y-auto">
+<main class="p-2 md:p-8 w-full max-w-screen-lg  mx-auto box-border h-auto overflow-y-auto">
 	<slot />
 </main>
 
