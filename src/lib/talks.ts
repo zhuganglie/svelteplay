@@ -8,7 +8,7 @@ export const talks = [
       "image": "/images/talk.png"
     },
     {
-      "title": "My Second Talk",
+      "title": "Positive Way of Thinking",
       "date": "2018-09-10",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
