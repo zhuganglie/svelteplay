@@ -19,4 +19,6 @@
 	</div>
 	
 	<slot />
+	<hr />
+	<a href="/blog/" class="bg-yellow-100 rounded-full px-2">&larr; Back to List</a>
 </div>
