@@ -1,10 +1,10 @@
 export const talks = [
     {
-      "title": "My First Talk",
-      "date": "2018-08-01",
+      "title": "How to Prioritize Tasks",
+      "date": "2021-06-20",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-      "slide": "/pdfs/lp.pdf",
+      "slide": "/pdfs/prioritize.pdf",
       "image": "/images/talk.png"
     },
     {
