@@ -9,9 +9,9 @@
 
 <header class="sticky w-full bg-yellow-50 shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
     <div class="container flex flex-wrap items-center justify-between p-3 mx-auto bg-yellow-50">
-        <div class="flex items-center justify-center space-x-2">
+        <div class="flex items-end justify-center space-x-2">
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-0" />
-    <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
+    <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">YZC</a>
     </div>
       <ClickOutside on:clickoutside="{() => (open = false)}">
       <button class="text-red-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none" class:open on:click={toggleHeader}>
@@ -23,12 +23,12 @@
       </button>
     </ClickOutside>
 
-	<nav class="w-full ml-auto text-lg font-medium md:flex md:w-auto" class:hidden="{!open}">
+	<nav class="w-full ml-auto my-0 text-lg font-medium md:flex md:w-auto" class:hidden="{!open}">
 		<ul class="list-none m-0 md:flex">
-			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block md:mt-0">Home</a></li>
-			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class="block mt-4 mr-4 md:inline-block md:mt-0">Blog</a></li>
-			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class="block mt-4 mr-4 md:inline-block md:mt-0">Talks</a></li>
-			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class="block mt-4 mr-4 md:inline-block md:mt-0">About</a></li>
+			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block md:m-0">Home</a></li>
+			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mt-4 mr-4 md:inline-block md:m-0">Blog</a></li>
+			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block mt-4 mr-4 md:inline-block md:m-0">Talks</a></li>
+			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class=" mt-4 mr-4 md:inline-block md:m-0">About</a></li>
 		</ul>	
 	</nav>
 </div>
@@ -37,8 +37,11 @@
 <style>
 	
 	.active {
+		text-decoration: underline;
 		font-weight: 700;
+		text-decoration-thickness: 3px;
 	}
+	
 	svg {
 		min-height: 24px;
 		transition: transform 0.2s ease-in-out;

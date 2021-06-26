@@ -13,7 +13,7 @@
             <div class="w-full md:w-3/4">
             <h4>{talk.title}</h4>
             <p>{talk.description}</p>
-            <a href={talk.slide} target="_blank" class="flex items-center w-max px-2 ">下载 PDF</a>
+            <a href={talk.slide} target="_blank" class="rounded-full w-max px-2.5 py-1 bg-yellow-100 text-red-900 text-sm">Download PDF</a>
             </div>
         </div>
         {/if}
