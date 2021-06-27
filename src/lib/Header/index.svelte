@@ -28,7 +28,7 @@
 			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block">Home</a></li>
 			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mt-4 mr-4 md:inline-block">Blog</a></li>
 			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block mt-4 mr-4 md:inline-block">Talks</a></li>
-			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class=" mt-4 mr-4 md:inline-block">About</a></li>
+			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class="block mt-4 mr-4 md:inline-block">About</a></li>
 		</ul>	
 	</nav>
 </div>
