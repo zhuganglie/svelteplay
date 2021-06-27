@@ -23,12 +23,12 @@
       </button>
     </ClickOutside>
 
-	<nav class="w-full ml-auto my-0 text-lg font-medium md:flex md:w-auto" class:hidden="{!open}">
-		<ul class="list-none m-0 md:flex">
-			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block md:m-0">Home</a></li>
-			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mt-4 mr-4 md:inline-block md:m-0">Blog</a></li>
-			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block mt-4 mr-4 md:inline-block md:m-0">Talks</a></li>
-			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class=" mt-4 mr-4 md:inline-block md:m-0">About</a></li>
+	<nav class="w-full ml-auto mt-6 text-lg font-medium md:flex md:w-auto" class:hidden="{!open}">
+		<ul class="list-none m-0 md:flex md:items-end md:justify-center">
+			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block">Home</a></li>
+			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mt-4 mr-4 md:inline-block">Blog</a></li>
+			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block mt-4 mr-4 md:inline-block">Talks</a></li>
+			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class=" mt-4 mr-4 md:inline-block">About</a></li>
 		</ul>	
 	</nav>
 </div>
