@@ -8,7 +8,7 @@
 </script>
 
 <header class="sticky w-full bg-yellow-50 shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
-    <div class="container flex flex-wrap items-center justify-between p-3 mx-auto bg-yellow-50">
+    <div class="container flex flex-wrap items-center justify-between px-3 mx-auto bg-yellow-50">
         <div class="flex items-end justify-center space-x-2">
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-0" />
     <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">YZC</a>
