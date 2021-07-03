@@ -1,13 +1,13 @@
 <script context="module">
-	import { browser, dev } from '$app/env';
+	//import { browser, dev } from '$app/env';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
-	export const hydrate = dev;
+	//export const hydrate = dev;
 
 	// ...but if the client-side router is already loaded
 	// (i.e. we came here from elsewhere in the app), use it
-	export const router = browser;
+	//export const router = browser;
 
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
@@ -31,3 +31,5 @@
 
     <p>最近, 我对网站开发产生了浓厚的兴趣，于是就开始了 HTML、CSS 和 Javascript 的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
+
+	
