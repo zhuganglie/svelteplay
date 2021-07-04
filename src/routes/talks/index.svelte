@@ -3,7 +3,7 @@
     import {talks} from "../../lib/talks";
     </script>
     
-        <h1>Talks</h1>
+        <h1>演 讲</h1>
         <hr />
     
         {#each talks as talk}

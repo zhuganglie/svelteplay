@@ -1,8 +1,8 @@
 ---
 title: 'Notes for Learning Facilitation'
 date: '2021-04-26'
-tags: ['培训', '教学辅导']
-category: '工作'
+tags: ['training', 'facilitation']
+category: 'work'
 ---
 
 

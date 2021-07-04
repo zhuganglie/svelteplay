@@ -16,7 +16,7 @@
 </svelte:head>
 
 <div>
-	<h1>Posts</h1>
+	<h1>博 客</h1>
 	<hr />
 	{#each posts as post}
 	<div class="flex justify-between items-center">
@@ -27,6 +27,7 @@
 			{post.title}
 		</a>
 		<p>{formatDate(post.date)}</p>
+		
 	</div>
 	{/each}
 </div>

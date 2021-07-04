@@ -18,7 +18,7 @@
 	<title>About</title>
 </svelte:head>
 
-<h1>About</h1>
+<h1>关 于</h1>
 <hr />
 
 <p><strong>嗨，你好！欢迎来到我的小站。 </strong></p>
