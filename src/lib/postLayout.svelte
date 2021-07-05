@@ -18,7 +18,7 @@
 
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
 	<div class="py-8 sm:py-10 sm:text-center">
-		<div class="font-bold text-4xl mb-4">{title}</div>
+		<div class="font-bold text-3xl md:text-4xl mb-4">{title}</div>
 		<div class="text-sm">发表于： {dateDisplay}</div>
 		<div class="mt-3 text-sm">
 			{#each tags as tag}
