@@ -16,7 +16,7 @@
 </svelte:head>
 
 <div>
-	<h1>博 客</h1>
+	<h2>博 客</h2>
 	<hr />
 	{#each posts as post}
 	<div class="flex justify-between items-center">

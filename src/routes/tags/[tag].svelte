@@ -29,7 +29,7 @@
     export let tag;
 </script>
 
-<h1># {tag}</h1>
+<h2># {tag}</h2>
 <hr />
 {#each filteredPosts as { path, metadata: { title } }}
 <li>
