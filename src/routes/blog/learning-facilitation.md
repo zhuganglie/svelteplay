@@ -2,7 +2,6 @@
 title: 'Notes for Learning Facilitation'
 date: '2021-04-26'
 tags: ['training', 'facilitation']
-category: 'work'
 ---
 
 
