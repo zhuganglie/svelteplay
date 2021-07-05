@@ -23,7 +23,7 @@
       </button>
     </ClickOutside>
 
-	<nav class="w-full ml-auto mt-6 text-lg font-medium md:flex md:w-auto" class:hidden="{!open}">
+	<nav class="w-full ml-auto mt-6 text-lg  md:flex md:w-auto" class:hidden="{!open}">
 		<ul class="list-none m-0 md:flex md:items-center md:justify-center">
 			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mt-4 mr-4 md:inline-block">首页</a></li>
 			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mt-4 mr-4 md:inline-block">博客</a></li>
@@ -37,9 +37,7 @@
 <style>
 	
 	.active {
-		text-decoration: underline;
-		font-weight: 700;
-		text-decoration-thickness: 3px;
+		font-weight: 900;
 	}
 	
 	svg {
