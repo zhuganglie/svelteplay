@@ -25,11 +25,13 @@
 </script>
 
 <script>
+    import TagMultiple from "svelte-material-icons/TagMultiple.svelte"
     export let filteredPosts;
     export let tag;
+    export let size = "2.25em"
 </script>
 
-<h2># {tag}</h2>
+<div class="flex space-x-2"><TagMultiple { size } /> <h2>{tag}</h2></div>
 <hr />
 {#each filteredPosts as { path, metadata: { title } }}
 <li>
