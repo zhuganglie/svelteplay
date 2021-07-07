@@ -20,7 +20,7 @@
             <div class="w-full md:w-3/4">
             <h4>{talk.title}</h4>
             <p>{talk.description}</p>
-            <a href={talk.slide} target="_blank" class="rounded-full w-max px-2.5 py-1 bg-yellow-100 text-red-900 text-sm flex items-center space-x-2"><span>下载</span><FilePdfOutline {size} />
+            <a href={talk.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-gray-100 text-red-900 text-sm flex items-center space-x-2"><span>下载</span><FilePdfOutline {size} />
             </a>
             </div>
         </div>

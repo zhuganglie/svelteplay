@@ -5,7 +5,7 @@
 @layer base {
     html,
     body {
-     @apply p-0 m-0 h-screen font-sans bg-yellow-50 text-black;
+     @apply p-0 m-0 h-screen font-sans bg-yellow-50 text-gray-900;
     }
     *,
     *:before,
@@ -18,7 +18,7 @@
     a:hover,
     a:focus,
     a:active{
-    @apply outline-none text-red-600;
+    @apply outline-none text-red-700;
     }
     article,
       aside,
