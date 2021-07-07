@@ -17,8 +17,8 @@
 </svelte:head>
 
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
-	<div class="py-8 sm:py-10 sm:text-center">
-		<div class="font-bold text-3xl md:text-4xl mb-4">{title}</div>
+	<div class="py-4 sm:py-6 sm:text-center">
+		<div class="font-bold text-3xl sm:text-4xl mb-4">{title}</div>
 		<div class="text-sm">发表于： {dateDisplay}</div>
 		<div class="mt-3 text-sm">
 			{#each tags as tag}
@@ -28,8 +28,10 @@
 			{/each}
 		  </div>
 	</div>
+	<hr />
 	<slot />
 	<hr />
 	<a href="/blog/" class="bg-yellow-100 rounded-full px-2.5 py-0.5">&larr; 返回列表</a>
+
 	<Comments identifier="post" />
 </div>

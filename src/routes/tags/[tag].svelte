@@ -36,3 +36,5 @@
     <a href={`/blog/${path.replace(".md", "")}`}>{title}</a>
 </li>
 {/each}
+<hr />
+<a href="/blog/" class="bg-yellow-100 rounded-full px-2.5 py-0.5">&larr; 返回列表</a>

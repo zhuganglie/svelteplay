@@ -19,14 +19,14 @@
 	<h2>博 客</h2>
 	<hr />
 	{#each posts as post}
-	<div class="flex justify-between items-center">
+	<div class="flex justify-between items-end sm:text-lg">
 		<a
 			href={`./blog/${post.slug}`}
-			class="block mb-4 pb-4 last:border-none last:mb-0 font-bold"
+			class="block mb-4 pb-4 last:border-none last:mb-0"
 		>
 			{post.title}
 		</a>
-		<p>{formatDate(post.date)}</p>
+		<p class="block mb-4 pb-4">{formatDate(post.date)}</p>
 		
 	</div>
 	{/each}
