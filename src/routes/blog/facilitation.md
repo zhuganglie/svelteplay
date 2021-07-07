@@ -1,11 +1,11 @@
 ---
-title: 'Notes for Learning Facilitation'
+title: 'Notes for Facilitation'
 date: '2021-04-26'
 tags: ['training', 'facilitation']
 ---
 
 
-Here are some points I learn from class debate during ACTA training.  
+Here are some points I learn from a class debate during ACTA training.  
 
   - Manage tension by balancing the needs of different learners (time vs. interaction)
   - Be committed to the learning of the learners when having fun activities
