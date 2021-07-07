@@ -11,11 +11,10 @@
     export let size = "1em";
     
 	let dateDisplay = formatDate(date);
-    
 </script>
 
 <svelte:head>
-	<title>{title} - Caesar</title>
+	<title>{title} - 一指禅</title>
 </svelte:head>
 
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
@@ -34,6 +33,5 @@
 	<slot />
 	<hr />
 	<a href="/blog/" class="bg-yellow-100 rounded-full px-2.5 py-0.5">&larr; 返回列表</a>
-
-	<Comments identifier="post" />
+<Comments identifier="my post" />
 </div>
