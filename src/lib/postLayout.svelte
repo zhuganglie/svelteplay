@@ -19,7 +19,7 @@
 
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
 	<div class="py-4 sm:py-6 text-center">
-		<div class="font-bold text-3xl sm:text-4xl mb-4">{title}</div>
+		<div class="font-bold text-2xl sm:text-3xl mb-4">{title}</div>
 		<div class="text-sm flex justify-center items-center space-x-1">发表于： <Calendar {size} /> <span>{dateDisplay}</span></div>
 		<div class="mt-3 flex justify-center items-center">
 			{#each tags as tag}
