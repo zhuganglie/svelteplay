@@ -39,4 +39,4 @@
 </li>
 {/each}
 <hr />
-<a href="/blog/" class="bg-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
+<a href="/blog/" class="bg-yellow-10 rounded px-2.5 py-0.5">&larr; 返回列表</a>
