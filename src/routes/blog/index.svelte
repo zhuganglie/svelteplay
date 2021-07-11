@@ -11,7 +11,7 @@
 
  export const load = async() => {
      const posts = await Promise.all(body);
-
+     
      return {
          props: {
              posts,
@@ -20,10 +20,14 @@
  };
 </script>
 
-<script>
+<script lang="ts">
     import {formatDate} from '../../lib/date';
     export let posts;
+    const dateSortedPosts = posts.slice().sort((a, b) => {
+        return new Date(b.metadata.date) - new Date(a.metadata.date);
+    });  
 </script>
+
 <svelte:head>
     <title>Blog</title>
 </svelte:head>
@@ -31,8 +35,7 @@
 <h2>博 客</h2>
 <hr />
 
-
-{#each posts as {path, metadata: {title, date}}}
+{#each dateSortedPosts as {path, metadata: {title, date}}}
 <div class="flex justify-between items-center">
     <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="block mb-4 pb-4">{title}</a>
     <p class="block mb-4 pb-4">
@@ -40,3 +43,4 @@
     </p>
 </div>
 {/each}
+
