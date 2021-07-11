@@ -31,6 +31,10 @@
     export let size = "2.25em"
 </script>
 
+<svelte:head>
+    <title>Posts under tag</title>
+</svelte:head>
+
 <div class="flex space-x-2"><TagMultiple { size } /> <h2>{tag}</h2></div>
 <hr />
 {#each filteredPosts as { path, metadata: { title } }}
