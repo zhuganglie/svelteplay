@@ -24,7 +24,7 @@
     import {formatDate} from '../../lib/date';
     export let posts;
     const dateSortedPosts = posts.slice().sort((a, b) => {
-        return new Date(b.metadata.date) - new Date(a.metadata.date);
+        return Date.parse(b.metadata.date) - Date.parse(a.metadata.date);
     });  
 </script>
 
