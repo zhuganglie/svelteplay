@@ -25,10 +25,10 @@
 
 	<nav class="w-full ml-auto mt-6 text-lg  md:flex md:w-auto" class:hidden="{!open}">
 		<ul class="list-none m-0 md:flex md:items-center md:justify-center">
-			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mx-2 my-1 md:inline-block">首 页</a></li>
-			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mx-2 my-1 md:inline-block">博 客</a></li>
-			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block  mx-2 my-1 md:inline-block">演 讲</a></li>
-			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class="block mx-2 my-1 md:inline-block">关 于</a></li>
+			<li class:active={$page.path === '/'} ><a sveltekit:prefetch href="/" class="block mx-2 my-1 md:inline-block">首页</a></li>
+			<li class:active={$page.path === '/blog'} ><a sveltekit:prefetch href="/blog" class=" block mx-2 my-1 md:inline-block">博客</a></li>
+			<li class:active={$page.path === '/talks'} ><a sveltekit:prefetch href="/talks" class=" block  mx-2 my-1 md:inline-block">演讲</a></li>
+			<li class:active={$page.path === '/about'} ><a sveltekit:prefetch href="/about" class="block mx-2 my-1 md:inline-block">关于</a></li>
 		</ul>	
 	</nav>
 </div>
@@ -37,7 +37,7 @@
 <style>
 	
 	.active {
-		background-color: rgb(243, 233, 174);
+		background-color: rgb(245, 236, 185);
 		}
 	
 	svg {
