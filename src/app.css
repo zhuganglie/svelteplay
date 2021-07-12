@@ -100,7 +100,7 @@
           @apply transform-none outline-none;
       }
       fieldset {
-          @apply border border-gray-50 border-solid mb-5 pt-1.5 px-2.5 pb-3;
+          @apply border border-yellow-50 border-solid mb-5 pt-1.5 px-2.5 pb-3;
       }
       legend {
           @apply max-w-full p-0 table whitespace-normal;
