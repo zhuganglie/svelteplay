@@ -7,8 +7,8 @@
     open = !open;}
 </script>
 
-<header class="sticky w-full bg-yellow-50 shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
-    <div class="container flex flex-wrap items-center justify-between px-3 mx-auto bg-yellow-50">
+<header class="sticky w-full sm:w-3/4 mx-auto bg-yellow-50 opacity-90 rounded-b-lg shadow-lg px-4 md:px-12 top-0 flex-shrink-0">
+    <div class="container flex flex-wrap items-center justify-between px-3 mx-auto">
         <div class="flex items-center justify-center space-x-2">
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-2" />
     <a sveltekit:prefetch href="/" class="text-3xl font-bold hover:text-red-900 hover:bg-yellow-50">一指禅</a>
@@ -37,7 +37,7 @@
 <style>
 	
 	.active {
-		background-color: rgb(245, 236, 185);
+		background-color: rgb(245, 237, 194);
 		}
 	
 	svg {

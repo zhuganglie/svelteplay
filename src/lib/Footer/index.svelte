@@ -3,5 +3,5 @@
 </script>
 
 <footer class="sticky w-full py-3 h-10 bottom-0 text-sm text-center bg-yellow-50 shadow-inner flex-shrink-0">
-    <p>Copyright &copy; {new Date().getFullYear()} <a href="mailto:pyrrhonianpig@gmail.com" class="bg-yellow-100 rounded px-2">Caesar</a></p> 
+    <p>Copyright &copy; {new Date().getFullYear()} <a href="mailto:pyrrhonianpig@gmail.com" class="bg-yellow-100 rounded px-2">zhuganglie</a></p> 
 </footer>
