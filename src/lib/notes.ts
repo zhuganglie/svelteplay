@@ -1,9 +1,9 @@
-export const talks = [
+export const notes = [
     {
       "title": "How to Prioritize Tasks",
       "date": "2021-06-20",
       "description":
-        "This presentation explains how we can manage time effectively by prioritizing tasks.",
+        "This presentation tells how we can manage time effectively by prioritizing tasks.",
       "slide": "/pdfs/prioritize.pdf",
       "image": "/images/talk.png"
     },
