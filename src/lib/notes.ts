@@ -21,5 +21,12 @@ export const notes = [
       "description": "This talk is to explain what body language is and how to read body language.",
       "slide": "/pdfs/body.pdf",
       "image": "/images/talk.png"
+    },
+    {
+      "title": "Combating Climate Change",
+      "date": "2021-07-30",
+      "description": "This talk is to explain why it is so hard to combat climate change.",
+      "slide": "/pdfs/climate.pdf",
+      "image": "/images/talk.png"
     }
 ]
