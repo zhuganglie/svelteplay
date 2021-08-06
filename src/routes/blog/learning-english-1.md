@@ -5,10 +5,9 @@ tags:
     - 学习
     - 英文
 ---
+### Topic: Smarter Consumer
 
-## Smart Consumer
-
-### Vocabulary and Useful Expresions
+#### Vocabulary and Useful Expresions
 
 - halo:
 - hype:
@@ -16,6 +15,6 @@ tags:
 - decode:
 
 
-### Speaking
+#### Speaking
 
-### Writing
+#### Writing
