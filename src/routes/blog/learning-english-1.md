@@ -12,8 +12,9 @@ Smarter Consumer
 
 - halo:
 - hype:
-- scrumber:
+- unscramble:
 - decode:
+- consumerism:
 
 
 #### Speaking
