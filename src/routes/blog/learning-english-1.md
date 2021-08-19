@@ -6,18 +6,21 @@ tags:
     - 英文
 ---
 #### Topic: 
-Smarter Consumer
+Becoming A Smarter Consumer
 
-#### Vocabulary and Useful Expresions
+#### Words and Expresions
 
-- halo:
-- hype:
-- unscramble:
-- decode:
-- consumerism:
+- halo: a ring of light
+- hype: extravagant or excessive promotion
+- unscramble: clarify, decode, restore to intelligible  form
+- incite: stir up
+- bombard: keep attacking or pressing with questions and suggestions
+- landfill site: a place used for disposal of garbage
+- wardrobe: a closet or movable cabinet for holding clothes
+- spring up: come into existence
+- prey on: to exploit, victimize, or take advantage of someone
+- gullible consumers: consumers who are too willing to believe and easily tricked
 
-
-#### Speaking
 
 #### Writing
 
@@ -38,7 +41,7 @@ There are some other qualities one can look for in a product, such as serviceabi
    
 Businesses have invested considerable resources into advertisement, creating hype and halo around their brands. Although smart consumers figure out various ways to unscramble the magic, commercials remain effective in fluencing consumer behavior.
 
-First of all, consumers are human beings. They are as emotional as they are rational. Markettiers can use irrational advertising techniques to exert influence on the emotional side of human characters. For example, a shoe brand can stir up urgence to buy among consumers by advertising a new model that is for market testing purpose as limited edition.
+First of all, consumers are human beings. They are as emotional as they are rational. Marketters can use irrational advertising techniques to exert influence on the emotional side of human characters. For example, a shoe brand can stir up urgence to buy among consumers by advertising a new model that is for market testing purpose as limited edition.
 
 Moreover, various data analysis techniques have made it much easier for markettiers to accurately identify consumer preference than before. With deep understanding of consumer preference, markettiers are able to engineer or optimize commercials in ways that communicate product features more appealingly to targeted audients.
 
