@@ -176,7 +176,7 @@
           @apply mb-3;
       }
      details > summary {
-         @apply cursor-pointer text-red-900 bg-yellow-100 w-max px-2 py-1;
+         @apply cursor-pointer text-red-900 bg-yellow-100 min-w-max px-2 py-1;
      }
     
     
