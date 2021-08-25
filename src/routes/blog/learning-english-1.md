@@ -1,5 +1,5 @@
 ---
-title: 'Learning English'
+title: 'English Lessons'
 date: '2021-08-04'
 tags:
     - 学习
@@ -88,7 +88,7 @@ tags:
 </details>
 
 <details>
-<summary>(2) Writing</summary>
+<summary>(2) Speaking</summary>
 <dl>
 <dt>Tell
 me about your experience of being in a place where there was happiness and a
@@ -107,18 +107,80 @@ think people feel so overworked or stressed? </dt>
 </details>
 
 <details>
-<summary><strong>Customs and Manners</strong><summary>
+<summary><strong>3. Customs and Manners</strong></summary>
+<br />
+
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>finesse</dt><dd>- impressive delicacy and skill</dd>
+<dt>etiquette<dt><dd>- the customary code of polite behaviour in society or among members of a particular profession or group</dd>
+<dt>enunciate</dt><dd>- say and pronounce clearly</dd>
+<dt>rapport</dt><dd>- close and harmonious relationship</dd>
+<dt>strike a balance</dt><dd>- choose a moderate stance<dd>
+<dt>counterfeit</dt><dd>fake, not genuine</dd>
+<dt>attire</dt><dd>- clothes especially fine or formal ones </dd>
+<dt>gown</dt><dd>- a long elegant dress worn on formal occasions, wedding gown</dd>
+<dt>outfit</dt><dd>- a set of clothes worn together, especially for a particular occasion</dd>
+</dl>
+</details>
+
+<details>
+<summary>(2) Speaking</summary>
+<dl>
+<dt>Describe table manners in your family. What food is usually eaten every meal in your family?</dt>
+<dd>
+<p>I am from a Chinese family and the table manner in my family is quite straightforward. To follow good hygiene, we often wash hands before taking dinner. We need to show respect to the seniors, so we often let the most senior members sit and eat first. We are not allowed to use our hands to handle food. If the food is too difficult to be handled by chopstics, we can use spoon or knife instead. Leaving chopstics on the top of bowl means "having finished". Instead, if we put chopstics on the side of bowl, it means "taking a break from eating".</p>
+
+<p>We have a variety of food for dinner. Rice is usually eaten every meal as main food though we occasionally eat noodles and dumplings. In addition, vegetables are also eaten every meal to keep dinners healthy.</p>
+
+<p>Putting chopstics vertically stuck in a bowl of rice is considered as a bad manner because it symbolizes the ritual of incense burning. It is also quite impolite to point chopstics to any other sitting around, because it means you see others as your "dish".</p>
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>4. Talking about Achievements</strong></summary>
 <br />
 <details>
 <summary>(1) Vocabulary</summary>
 <dl>
-<dt></dt><dd></dd>
-</dl>
-<details>
-<details>
-<summary>Writing</summary>
-<dl>
-<dt></dt><dd></dd>
+<dt>excel in</dt><dd>- be proficient in; be exceptionally good at</dd>
+<dt>align oneself with</dt><dd>- give support to (a person, organization, or cause) </dd>
+<dt>My greatest achievement has been ...<dt><dd>- can be used to talk about past achievement</dd>
+<dt>What I'm most proud of is ...</dt><dd>- can be used to talk about past achievement</dd>
+<dt>stride</dt><dd>- a long and decisive step</dd>
+<dt>household duties</dt><dd>- duties of taking care of family</dd>
+<dt>prevailing</dt><dd>- current, existing, having most appealing or influence</dd>
+<dt>unprecedented</dt><dd>- never done or known before</dd>
+<dt>thriving</dt><dd>- prosperous or growing; flourishing</dd>
+<dt>the brunt of</dt><dd>- the worst part or chief impact of a specified action</dd>
+<dt>child-rearing</dt><dd>- bringing up or caring for a child until they are fully grown</dd>
+<dt>conform to</dt><dd>- comply with rules, regulations, or standard</dd>
+<dt>pale</dt><dd>- seem or become less important</dd>
+<dt>harsh</dt><dd>- cruel or severe</dd>
+<dt>be mindful of</dt><dd>- be aware of</dd>
 </dl>
 </details>
+
 <details>
+<summary>(2) Speaking</summary>
+<dl>
+<dt>What sort of professional achievements have you accomplished?</dt>
+<dd>
+<p>My greatest professional achievement has been developing up a productive sales force for my company, which resulted in 30% increase in annual sales revenue. This was a great achievement because the company sales had been stagnant for many years before I joined the company.</p>
+</dd>
+<dt>Did you have to overcome challenges in order to achieve your goals?</dt>
+<dd>
+<p>I would say it was not easy to achieve that much increase in sales. I had to overcome a number of challenges. </p>
+<p>First, there was no budget for me to do advertisement. Second, the sales team was a little bit aged and it was uneasy to hire young people because at that time no young people have interest working in retail line. Last but not least, many of the sales associates were digruntled employees with negative attitude toward work. </p>
+<p>To overcome the challenges, I focused my work on developing sales team. I firstly organized a series of training to improve sales and service skills. And at the same time, I tried to instill positive way of thinking into the sales associates. Most importantly, I deviced a variety of incentive programs, which were effective in motivating sales staff. My effort paid off. The company finally saw continuous improvement in sales.</p>
+</dd>
+<dt>What are most you most proud of?</dt>
+<dd>
+<p>What I am most proud of is I was promoted to the position of sales operation manager. As mentioned above, I had demonstrated strong ability to develop and lead a team. I had also shown a positive attitude toward work. With strong work ability and positive attitude, I was able to excel in the position and reap the benefits.</p>
+</dd>
+</dl>
+</details>
+</details>
