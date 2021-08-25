@@ -184,3 +184,41 @@ think people feel so overworked or stressed? </dt>
 </dl>
 </details>
 </details>
+
+<details>
+<summary><strong>5. Concept Maps</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>intangible</dt><dd>- hard to define or measure; vague and abstract</dd>
+<dt>photosynthesis</dt><dd>- the process by which green plants and some other organisms use sunlight to synthesize nutrients from carbon dioxide and water</dd>
+<dt>colloquial</dt><dd>informal language used in ordinary or familiar conversation </dd>
+</dl>
+</details>
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<dt>Describe the picture you see.</dt>
+<dd>
+<p>This picture shows a cultural event organized by Indians in a big playground.</p>
+
+<p>On the left, a man with moustache is selling colorful balloons. He is wearing a yellow short-sleeved shirt and an orange checkered skirt. The balloons he is selling are displayed on a tree-like stand beside him.</p>
+
+<p>A woman in front of the salesman just bought two balloons for her son. The boy is wearing a red checkered shirt and a short in black. His left hand is in his mother' hand, and his right hand is holding the two balloons his mother just bought for him. They are walking toward the big event tents located on the up-left corner of the playground.</p>
+
+<p>Beside the big tents, people are queuing up to enter the tents.</p>
+
+<p>Right beside the big tents, there is also a line of smaller tents decorated in different colors. In each of the small tent, there is a vendor inside selling products and services. People are walking along the small tents, browsing the products displayed inside.</p>
+
+<p>Just behind the line of small tents, there is a big wheel with some big tubs attached to its rim.</p>
+
+<p>On the right side of the picture, there is a big, round platform. A very big tree rooted in the center of the platform. The trunk of the tree is quite big, showing that the tree is likely an old tree. The leaves of the tree, however, are still fresh and green.</p>
+
+<p>Beside the tree, a magician is performing magic. The magician is wearing a traditional indian outfit. He really looks like a magician because of his long beards and moustaches. And the prop on his right hand looks quite strange also. A a group of audients in differrent ages are sitting around the platform and watching his performance.</p>
+
+<p>A signage board is standing beside the platform, showing what the performance is about.</p>
+</dd>
+</dl>
+</details>
+</details>
