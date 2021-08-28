@@ -222,3 +222,224 @@ think people feel so overworked or stressed? </dt>
 </dl>
 </details>
 </details>
+
+<details>
+<summary><strong>6. Technology at Workplace</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>mechanized</dt><dd>- equipped with machines</dd>
+<dt>automation</dt><dd>- use of automatic eqipments</dd>
+<dt>obsolete</dt><dd>- out of fashion</dd>
+<dt>cutting-edge</dt><dd>- highly advanced</dd>
+<dt>user-friendly</dt><dd>- easy to use</dd>
+</dl>
+</details>
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<dt>Tom: Hi, welcome to the chat group. What do you think of the future of the voice-activated devices in the workplace?</dt>
+<dd>
+<p>Me: Hi Tom. Hi everyone. Voice-activation is a cutting-edge technology. It's quite likely that voice-activated devices will be widely used to automate the business processes in workplace. Take retail shop for example, in future we will see voice-activated robots serve customer in shops. And, storemen in warehouse won't have to do physical jobs any longer. They just need to give instructions and the voice-activated robots will carry the instructions out.</p>
+</dd>
+<dt>Mary: Hi everyone. What is the possibility of technology continuing development?</dt>
+<dd>
+<p>Me: That's an interesting question. I personally think that if technology continues development, most of the technical and physical jobs will be automated or mechanised. This must be a good news because human being will be free from life-burden and thus having time and resources to develop humanity.</p>
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>7. Entertainment and Media</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>cast</dt><dd>- assign a part in a play or film</dd>
+<dt>poverty-stricken</dt><dd>- seriously affected by poverty</dd>
+<dt>stunning</dt><dd>- extremely impressive or attractive </dd>
+<dt>beyond the bubble of familiarity</dt><dd>- take on challenges and go beyond the comfort zone</dd>
+<dt>nomophobia</dt><dd>- can not live without mobile phone</dd>
+<dt>noteworthy</dt><dd>- worth paying attention to</dd>
+<dt>level off</dt><dd>- remain at a steady level after falling or rising</dd>
+<dt>viable</dt><dd>- capable of working successfully, feasible</dd>
+<dt>ban</dt><dd>- officially or legally prohibited</dd>
+</dl>
+</details>
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<dt>Look at the picture and write in 100 words of your thoughts about it.</dt>
+<dd>
+<p>The picture shows what a passive life style typically looks like.</p>
+
+<p>In the picture, a young man is lying on a sofa with his head propped in the palm of his left hand. He looks bored and dispirited as he keeps switching TV channels with the remote control in the palm of his right hand.</p>
+
+<p>The young man did not (maybe never) cook for himself, but ordered pizza and popcorn from a fast food restaurant. Obviously, he eats neither to keep fit nor for pleasure, but merely to get himself out of hunger. There are some empty beer bottles on the table in front of him. It is likely that he needs beer or alcohol to help alleviate his negative mood.</p>
+
+<p>Probably because he rarely exercises, he is overweight and looks fat. His big tummy remains exposed even he is wearing a large size T shirt.</p>
+
+<p>Living an inactive life style may jeopardize your health. It may cause physical and mental diseases. The best way to avoid being caught in passive life style is to stand up and do something meaningful.</p>
+</dd>
+
+<dt>Words about Media</dt>
+<dd>
+
+<strong>Words connected to newspaper</strong>
+<ul>
+<li>Types of newspapers: broadsheet and tabloid</li>
+<li>Contents of newspaper: news report, advertisements, critic reviews, editorial opinions</li>
+<li>Newspaper jobs: journalist, editor, news analyst, column writer</li>
+</ul>
+
+<strong>Words connected to television</strong>
+<ul>
+  <li>Television technology: liquid crystal display (LCD), high resolution, digital light processing (DLP), curved screen, voice activated TV</li>
+  <li>Television programmes: weather broadcasting, news report, news analysis, documentary, TV series, talk shows, fashion shows, sports and recreation, brand advertisement</li>
+  <li>People work for television: documentarian, photographer, performer, writer and editor, visual effect artist, cinematographer, custume designer, casting director, sports commentators</li>
+</ul>
+
+<strong>Words connected to radio</strong>
+<ul>
+  <li>Types of radio stations: AM (amplitude modulation) stations, FM (frequency modulation) stations</li>
+  <li>Genres of radio programmes: news and current affairs, radio comedy, radio drama and music, dialogues</li>
+  <li>People work for radio: news director, announcer, broadcaster, radio station engineer, music director</li>
+</ul>
+
+<strong>Words connected to new media / online media</strong>
+<ul>
+  <li>Types of online media: website, online forum, podcast, blog, email, social networking sites</li>
+  <li>Contents shared across online media: infographics, videos, ebooks, podcasts, gifs, images, blog articles, newsletters, online games, product reviews, tweets, webinars, posts</li>
+  <li>Users of online media: bloggers, influencers, commentators, marketers</li>
+</ul>
+
+<strong>Kinds of news / kinds of news story</strong>
+<ul>
+  <li>sports news, political news, business news, entertainment news, investigative news</li>
+  <li>domestic news, international news, local news</li>
+</ul>
+
+<strong>People connected to news and media</strong>
+<ul>
+<li>journalist, editor, commentator, news analyst, column writer, presenter, broadcaster</li>
+  <li>audients, blogger, influencers and followers</li>
+</ul>
+
+<strong>Positive words connected to news and media</strong>
+<ul>
+  <li>informative, educational, insightful, powerful, impactful, transparent</li>
+  </ul>
+
+<strong>Negative words connected news and media</strong>
+<ul>
+  <li>fake news, rumor, gossip, misleading, violence, pornography, brain-washing</li>
+  </ul>
+
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>8. Formal and Informal Emails</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>subject line</dt><dd>- a line about the topic of an email</dd>
+<dt>recipient</dt><dd>- the person whom an email is intended to be sent to</dd>
+<dt>courteous</dt><dd>- polite, respectful, and considerate in manner</dd>
+<dt>garble</dt><dd>- reproduce in a confused and distorted way</dd>
+<dt>cc</dt><dd>- carbon copy</dd>
+<dt>bcc</dt><dd>- blind carbon copy</dd>
+<dt>unforeseen</dt><dd>- unexpected</dd>
+<dt>dismay</dt><dd>- concern and distress caused by something unexpected</dd>
+<dt>overdose</dt><dd>- an excessive and dangerous dose of a drug</dd>
+<dt>prescription</dt><dd>- an instruction written by a medical practitioner that authorizes a patient to be issued with a medicine or treatment</dd>
+<dt>Some formal writing</dt><dd>
+- Please send my regards to everyone <br>
+- I am writing in response to your ... <br>
+- Look forawrd to hearing from you at your earliest convenience <br>
+- Please find attached the documents you requested <br>
+<dt>Some informal writing</dt>
+- Thank you so much for inviting me to your home yesterday <br>
+- Please email me soon <br>
+- How're you doing? <br>
+- I'm sorry we haven't been in touch for such a long time <br>
+- I thought I'd drop you a line rather than call <br>
+  </dd>
+<dt>
+</dl>
+</details>
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<dt>Write an email about a problem you encountered after you bought an electronic/electrical item from a retail or an online store. Use the model in C2 Activity 1 and the questions below to help you.
+</dt>
+<dd>
+From: yzc@gmail.com <br>
+To: customerservice@electroX.com.sg <br>
+Subject: Defective vacuum cleaner received (order #435231) <br>
+
+<hr />
+
+<p>Dear person-in-charge,</p>
+
+<p>On 5th of July 2021 I purchased a desktop computer (iMac v.11, order #839412345)  at your retail shop in Waterway Point shopping mall. And, I received the computer this afternoon. </p>
+
+<p>Unfortunately, the computer has not performed well because the screen keeps flickering. And, the key of P on the keyboard is not clickable at all.</p>
+
+<p>To solve the problem, I would like to request for a refund. The receipt and delivery order are attached for your reference.</p>
+
+<p>I look forward to your prompt reply. You can contact me at my mobile phone number at 92783375.</p>
+
+
+
+<p>Yours faithfully,</p>
+
+John C
+</dd>
+<dt>You will be attending a business seminar next week. You found out your friend Jamie will be attending too. Write an informal email to her.</dt>
+<dd>
+From: yzc@gmail.com <br>
+To: jamie@gmail.com <br>
+Subject: Attending business seminar together <br>
+
+<hr />
+
+Hi Jamie,
+
+Long time no see! How are you?
+
+I came across you are attending the seminar on "Change Management and Business Adaptability" next week. I am also invited to attend the seminar.
+
+What a good chance to meet up!! I'd love to have coffee together with you after the seminar.
+
+Please confirm your attendance. I will be waiting for you at the main entrance. 
+
+Look forward to seeing you again.
+
+Much love,
+
+John
+
+</dd>
+<dt>You are the head of the department. Your staff Peter Lee will be organizing the upcoming customer-solution conference. Write an email to the staff. Inform them that Peter is in charge, and to attend a meeting with him to discuss the details of the conference.
+</dt>
+<dd>
+From: yzc@abc.com.sg <br>
+To: myteam@abc.com.sg <br>
+Subject: Preparation for Customer-Solution Conference <br>
+
+<hr />
+
+Dear All,
+
+I am writing to inform you that the Peter Lee will be in charge and organising the upcoming customer-solution conference.
+
+</dd>
+</dl>
+</details>
+</details>
