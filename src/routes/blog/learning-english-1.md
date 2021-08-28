@@ -364,13 +364,13 @@ think people feel so overworked or stressed? </dt>
 - Look forawrd to hearing from you at your earliest convenience <br>
 - Please find attached the documents you requested <br>
 <dt>Some informal writing</dt>
+<dd>
 - Thank you so much for inviting me to your home yesterday <br>
 - Please email me soon <br>
 - How're you doing? <br>
 - I'm sorry we haven't been in touch for such a long time <br>
 - I thought I'd drop you a line rather than call <br>
   </dd>
-<dt>
 </dl>
 </details>
 <details>
