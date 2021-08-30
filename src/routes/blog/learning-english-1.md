@@ -5,7 +5,7 @@ tags:
     - 学习
     - 英文
 ---
-<details >
+<details>
 <summary><strong>1. Becoming A Smarter Consumer</strong></summary>
  <br />
  <details>
@@ -363,6 +363,7 @@ think people feel so overworked or stressed? </dt>
 - I am writing in response to your ... <br>
 - Look forawrd to hearing from you at your earliest convenience <br>
 - Please find attached the documents you requested <br>
+- Once again, I apologize for causing you any inconvenience <br>
 <dt>Some informal writing</dt>
 <dd>
 - Thank you so much for inviting me to your home yesterday <br>
@@ -431,15 +432,114 @@ John
 <dd>
 From: yzc@abc.com.sg <br>
 To: myteam@abc.com.sg <br>
-Subject: Preparation for Customer-Solution Conference <br>
+Subject: About the upcoming Customer-Solution Conference <br>
 
 <hr />
 
 Dear All,
 
-I am writing to inform you that the Peter Lee will be in charge and organising the upcoming customer-solution conference.
+I am pleased to announce that the customer-solution conference will be held on 27th of October 2021 and Peter Lee is the person in charge of organizing the conference. 
+
+In order to make a good preparation for the coming event, I need all of you to attend a meeting with Peter Lee, discussing the details of the upcoming conference. The meeting is arranged as below:
+
+1. Topic: Details of Customer-Solution Conference
+2. Date: 2nd of October (Tuesday)
+3. Time: 2:00 PM
+4. Venue: Meeting room
+
+Please attend the meeting punctually and feel free to share your ideas at the meeting.
+
+Cheers.
+
+Yours faithfully,
+John
 
 </dd>
+</dl>
+</details>
+
+<details>
+<summary>(3) 4-Point Plan for eMail Content</summary>
+<dl>
+<dt>1. Introduction</dt><dd>Briefly describe why you are writing the email.</dd>
+<dt>2. Details</dt><dd>Write the content or message that you want to say. Use paragraphs and graphic devices to make the message clear. Take note of the essential details such as who, what, where, when, why, and how.
+<dt>3. Response or Action</dt><dd>List the action you request or need to take. Use paragraphs and graphic devices if necessary.
+<dt>4. Conclusion</dt><dd>Summarize and close the subject.</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>9. Employment Matters</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>devastate</dt><dd>- destroy or ruin</dd>
+<dt>unnerve</dt><dd>- make someone lose courage or confidence</dd>
+<dt>erosion</dt><dd>- gradual destruction</dd>
+<dt>emabrk on</dt><dd>- start</dd>
+<dt>mediation</dt><dd>- resolve disputes</dd>
+<dt>have solid experience in all dimensions of the job</dt><dd>- have thorough knowledge about the job</dd>
+<dt>stifle</dt><dd>- prevent or constrain (an activity or idea)</dd>
+<dt>nasty</dt><dd>- very bad or unpleasant</dd>
+<dt>wear off</dt><dd>- lose effectiveness or intensity</dd>
+<dt>toddler</dt><dd>- young child who is just beginning to walk</dd>
+<dt>tuck into</dt><dd>- eat food heartily</dd>
+<dt>blow up</dt><dd>- explode; lose one's temper</dd>
+<dt>crib</dt><dd>- bed for a small baby</dd>
+<dt>tantrum</dt><dd>- an uncontrolled outburst of anger or frustration, typically in a child</dd>
+<dt>put someone on hold</dt><dd>- delay</dd>
+</details>
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<p><em>The Chow family is on vacation. They are staying in Hawii for five days. They rented a hotel room on the beach in Maui. Everyone is excited. The kids want to go on a submarine tour and see the fish in the Pacific Ocean. Mrs. Chow wants to go shopping and take a sunrise tour of Haleakaia Crater. Mr. Chow wants the family to go hiking in the morning, visit Musems in the afternoon, and have a barbecue on the beach in the evening. He is worried about spending too much money. Mrs. Chow thinks her husband worries too much about money. She wants him to relax and forgot about money while they are on vacation.<em></p>
+
+<dt>What should Mrs. Chow do? How can she solve her problem?</dt>
+<dd>
+<p>Mr. Chow seems to be in a dilemma. On the one hand, he wants his family to have a wonderful vacation; but on the other hand, he is afraid to spend too much.</p>
+
+<p>If I were Mrs. Chow, I would tell Mr. Chow that we should prioritize happiness over others while on vacation. We don't have to worry about spending too much because we can save money by spending smarter. We can list out all the items that each everyone of us wants to do. After assessing the price-benefit ratio of the items, we can remove some items with lower value from the list. Moreover, as the room we rented has a kitchen, we can prepare food by ourselves before going out. Additionally, we can plan our trip route and use public transportation instead of taking taxi. Lastly, we can reschedule our trip and avoid visiting the popular sites on weekends when the fees are higher.</p>
+
+<p>In short, Mrs. Chow can solve her problem by discussing with her family for an optimal trip plan.</p>
+</dd>
+<hr >
+<p><em>Marty drives a cab in New York City. He works six days a week from 5:30am to 5:30pm. He doesnot always get to eat when he's hungry or go to the restroom when he needs to go. Driving a cab is difficult. Traffic in the city is often slow and there are many accidents and construction sites drivers have to go around. Driving a cab is also dangerous. When it rains or snows the roads are slippery. Sometimes criminals steal the cab driver's money. Most of Marty's passengers are nice. They tip him twenty percent of the cab fare. Marty likes his job, but lately he has been feeling tired from working twelve hour shifts. Many of his passengers are tourists, and they like to talk a lot. Unfortunately, Marty is seldom in the mood to talk any more. It's hard to be friendly everyday.</em></p>
+<dt>What should Marty do? How can he solve his problem?</dt>
+<dd>
+
+Marty seems to be in a dilemma. He likes to be a cab driver but he is overworked and no longer be able to get a sense of satisfaction on the job. 
+
+If I were Marty, I would re-skill myself and seek to transition to new job. Actually, I am quite pessimistic about the future of cab driver job. News report on technology has it that driverless vehicles are already in production. With autonomous vehicles taking over driving, cab driver as a job is bound to disappear sooner or later. 
+
+The arrival of autonomous vehicles, however, will also create new job opportunities while transforming the traditional. For instance, with taxi service being replaced by driverless cars, there must be increasing demand for driverless vehicle dispatchers and safety maintenance technicians. 
+
+Drivers like Marty do not have to feel like in a quandary. They can take training courses, retool their skillset, and get themselves ready to embrace the new opportunities.
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>10. Giving Advice and Being Undecided</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt></dt><dd></dd>
+</dl>
+</details>
+
+<details>
+<summary>(2) Writing</summary>
+<dl>
+<dt>chill out</dt><dd>- relax</dd>
+<dt>turn down</dt><dd>- reject</dd>
+<dt>work out</dt><dd></dd>
+<dt>carry on</dt><dd></dd>
+<dt>gut feeling</dt><dd></dd>
+<dt>opportunity of a lifetime</dt><dd></dd>
 </dl>
 </details>
 </details>
