@@ -524,22 +524,67 @@ Drivers like Marty do not have to feel like in a quandary. They can take trainin
 <details>
 <summary><strong>10. Giving Advice and Being Undecided</strong></summary>
 <br />
+
+
 <details>
 <summary>(1) Vocabulary</summary>
 <dl>
-<dt></dt><dd></dd>
+<dt>chill out</dt><dd>- relax</dd>
+<dt>turn down</dt><dd>- reject</dd>
+<dt>work out</dt><dd>- end well</dd>
+<dt>carry on</dt><dd>- continue</dd>
+<dt>gut feeling</dt><dd>- feeling based on intuition, instinctive feeling</dd>
+<dt>opportunity of a lifetime</dt><dd>opportunity that is rare or unique</dd>
+<dt>in two minds</dt><dd></dd>
+<dt>be torn as to what to do</dt><dd></dd>
+<dt>waver in one's decision</dt><dd></dd>
+<dt>backtrack on one's decision</dt><dd></dd>
+<dt>take a huge leap of faith to trust someone</dt><dd></dd>
+<dt>take the plunge and throw in the towl</dt><dd></dd>
+<dt>in a quandary</dt><dd></dd>
+<dt>dwell on something</dt><dd>- keep thinking on something</dd>
+<dt>between a rock and a hard place</dt><dd></dd>
+<dt>be at one's wit end</dt><dd></dd>
+<dt>sell like hotcakes</dt><dd></dd>
+
 </dl>
 </details>
 
 <details>
-<summary>(2) Writing</summary>
+<summary>(2) Speaking</summary>
 <dl>
-<dt>chill out</dt><dd>- relax</dd>
-<dt>turn down</dt><dd>- reject</dd>
-<dt>work out</dt><dd></dd>
-<dt>carry on</dt><dd></dd>
-<dt>gut feeling</dt><dd></dd>
-<dt>opportunity of a lifetime</dt><dd></dd>
+<dt>After thinking about their job offer, you have decided to reject the offer. Tell the company which proposed the offer to you, about your decision.</dt>
+<dd>Thank you for offer me the role of operation manager. But I decided to turn it down, because I had accepted a position with another company. I enjoyed our conversations and appreciated your taking time to interview me. Thank you so much for your consideration.</dd>
+<dt>Describe a situation that led you to have to make a difficult choice. How did you feel about it? What are important factors to think about before making a decision?</dt>
+<dd>
+
+Mr. Jackson is a salesperson in my sales team. One day, his supervisor complained to me that he could not work with Jackson any longer. This is not the first time I received complaint about Jackson's bad work attitude. Actually his recalcitrance has caused a lot of troubles and been a source of complaints.
+
+However, to sack him or to keep him is not an easy decision to make because Jackson is unquestionably brilliant in sales. I feel like I am between a rock and a hard place. If I kick him out, the outlet sales will drop. If I keep him in, the teamwork will be impaired.
+
+To get out of the dilemma, I saught advice from my boss. He told me that, "Nobody is irreplaceable. Brilliant jerks are costly. If you tolerate them, the cost to effective teamwork will become unacceptably high."
+
+I have to say, my boss's advice is insighful and helpful.
+</dd>
+</dl>
+</details>
+<details>
+<summary>(3) Writing</summary>
+<dl>
+<dt>Hello, Thanks for coming for this interview. Can you state what your main skills are?</dt>
+<dd>
+<p>Thank you for the opportunity. As a candidate, here is what I can immediately bring to the table. First of all, I am a great problem solver. I have shown strong ability to identify problem through data analysis. I have been able to develop detailed plan for selected solution. And, I have worked hard to ensure successful implementation of the plan.</p>
+
+<p>I am also good at developing sales force. I am able to identify and recruit talented sales associates. In addition, I have showcased my exceptional skills in coaching and training sales staff.</p>
+</dd>
+<dt>Welcome. Can you tell us what you have been doing in the last three years?</dt>
+<dd>
+I am confident that my previous experience will help me with this new challenge. In the last three years, I have worked for ABC company as an operation manager. This gave me opportunitiy to formulate operational objectives, oversee inventory and warehouse efficiency, manage budgets and forecasts, as well as monitor sales performance. This experience have equipped me with strong leadership ability, which is a must-have for anyone who wants to be successful in this position.
+</dd>
+<dt>Why do you think you will be the best person for this job?</dt>
+<dd>
+ My skillset is a perfect match for the job requirements. In particular, my leadership skills and managerial experience make me a good fit for this position. At my last job, for example, I managed a team of fourty employees. Under my leadership, the sales revenue has increased 20 percent, which breaks historical record of the company. I can bring my success and experience to this job.
+</dd>
 </dl>
 </details>
 </details>
