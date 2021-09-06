@@ -23,7 +23,6 @@
 <script lang="ts">
     import {formatDate} from '../../lib/date';
     export let posts;
-    export let tags;
     const dateSortedPosts = posts.slice().sort((a, b) => {
         return Date.parse(b.metadata.date) - Date.parse(a.metadata.date);
     });  
