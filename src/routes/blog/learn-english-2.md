@@ -505,6 +505,13 @@ To conclude, creativity is an integral part of life. We can have a creative life
 <dt>behind closed doors</dt>
 <dd>- taking place without anyone watching</dd>
 <dt>tournament</dt><dd>- a series of contests between a number of competitors, who compete for an overall prize</dd>
+<dt>do the time</dt><dd>- put into jail</dd>
+<dt>on the run</dt><dd>- escape</dd>
+<dt>whereabouts</dt><dd>- the place where someone or something is</dd>
+<dt>convict</dt><dd>- a person found guilty of a crime offence</dd>
+<dt>turn a blind eye to</dt>- <dd></dd>
+<dt>lock up ... and throw away the key</dt><dd>- </dd>
+<dt>misdemeanor</dt><dd>- a minor wrongdoing</dd>
 </dl>
 </details>
 <details>
