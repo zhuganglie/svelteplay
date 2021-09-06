@@ -289,13 +289,239 @@ Anger issues can be caused by many things --- too much stress, life issues, fami
 <details>
 <summary>(2) Speaking</summary>
 <dl>
-<dt></dt><dd></dd>
+<dt>Talk about a time when you used a persuasion tactic effectively. How do you feel about it? What do you think are some bad persuasion methods? What makes them bad?</dt>
+<dd>
+
+My company invetested considerable resources into branding and marketing. However, the sales did not increase as expected. I believed that the sales would be improved if we could upskill our sales associates. I thus decided to persuade the management team to run a training program for the front-line sales staff. 
+
+You know, it was not easy to convince the management as they had a number of concerns about the training program. Some questioned the usefulness of training. Others feared that it might not be able to arrange sales associates to attend training session that would last 2-3 hours per day. Still others worried that the employees might think they are more employable and jump ship after training.
+
+To clear their concerns, I did a field research and wrote up a proposal based on the research finding. I showed to the management that the branding effort was successful because the number of daily walk-in customers had increased significantly. The reason why sales revenue remained stagnant was because the front-line workers were lack of selling skills and product knowledge and thus unable to convert walk-in customers into actual buyers. To have better sales performance, it was necessary to fill up this competency gap.
+
+In order to show how much difference a training program could make, I divided the employees into two groups and compared the sales performance of the well-trained group with that of the un-trained group. After that, I suggested to take a bite-sized approach to organize the training sessions, so that the schedule of training sessions would not affect the daily operation of retail outlets.
+
+By appealing to the power of information and logic, I finally twisted the management's arm. I felt so happy when the management approved my proposal in the end.
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>17. Health and Fitness</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>lethal</dt><dd>- deadly</dd>
+<dt>postinfarction</dt><dd></dd>
+<dt>angina</dt><dd>- severe pain</dd>
+<dt>dilation</dt><dd>- enlarge, spread out</dd>
+<dt>tonality</dt><dd>- musical key</dd>
+<dt>workout</dt><dd></dd>
+<dt>inter-murals</dt><dd></dd>
+<dt>call it a day</dt><dd>- enough for today, can stop work and go home</dd>
+<dt>outright</dt><dd></dd>
+<dt>in reserve</dt><dd>- being a replacement</dd>
+<dt>clutch at straws</dt><dd></dd>
+<dt>have chance to show your stuff</dt><dd></dd>
+<dt>count on someone</dt><dd></dd>
+<dt>break someone in</dt><dd></dd>
+<dt>leave a big hole in...</dt><dd></dd>
+<dt>sleep on it</dt><dd></dd>
+<dt>make a deal</dt><dd></dd>
+<dt>tub bathing</dt><dd></dd>
+<dt>preventative effect</dt><dd></dd>
+</dl>
+</details>
+<details>
+<summary>(2) Speaking</summary>
+<dl>
+<dt>Discuss the following questions:
+
+- Do you think it's ok to eat lots of chocolate? Why or why not?<br>
+- In your opinion, why do people love eating chocolates?<br>
+- What's your favourite chocolate brand? Why do you like it?<br>
+  
+</dt>
+<dd>
+
+I think it's ok to take chocolate regularly because chocolate is found to have a range of health effects. A study  suggested that regular consumption of chocolate may support cardiovascular health by  lowering cholesterol and improving blood pressure. Another study confirmed that chocolate can induce positive effects on blood flow, and thus able to help keep brain healthy and reduce memory decline. There is also evidence that consuming chocolate can help lower the risk of developing heart disease. 
+
+However, it is not recommended to eat too much chocolate. Too much chocolate consumption, according to a scientific research, may increase the risk of kidney stones and diabetes which later causes obesity. In addition, eating too much chocolate may have negative digestive side effects.
+
+In my opinion, people love eating chocolate for a number of reasons. First, chocolate can stimulate feelings of pleasure when it melts on your tongue. Chocolate lovers often describe this sensation of smoothness as "a true moment of ecstasy". Second, chocolate contains a number of interesting psychoactive chemicals, which can improve your mood. Actually, many chocolate lovers consider chocolate as a comfort food and eat it as a mood booster. Third, chocolate is associated with love and romance. Women are habitually given chocolate as birthday and Valentines day presents. Chocolate makes women feel loved, cared for, and pampered. This could explain why women love chocolate more often than men do. 
+
+The chocolate brand I like most is Dove. I like it because it tasteful. It is sweet but not that sweet. When it melts in your mouth, it gives a thick taste of chocolate instantly. And, the feeling of smoothness is really subtle and exhilarating. I like it also because it is made of dark chocolate, which is considered as less sugar and more healthy.
+  </dd>
+<dt>The greatest wealth is health.</dt>
+<dd>
+I totally agree with this statement. First of all, healthy people will save a lot of money on medical expenses. On the contrary, the people who are not healthy will have to spend their hard-earned money on seeing doctor or having medical treatment. Secondly, people in good health condition are able to stay productive for longer time than those who are not good in health condition. Therefore, it is not surprising that healthier people can earn more as well. Moreover, healthy people can live longer and thus able to keep earning money as long as they would like to. In addition, when people have a higher level of well-being, they are likely to have a can-do attitude, which will enable them to succeed in what they are aspired to do. To conclude, health will make your life wealthier and more cheerful. Let's make some change and live a healthier life style.
+
+</dd>
 </dl>
 </details>
 <details>
 <summary>(3) Writing</summary>
 <dl>
+<dt>Write 100 words about how you can lead a healthy lifestyle.</dt>
+<dd>
 
+Life is beautiful. If you want to enjoy the happy life, you must manage your lifestyle so as to stay healthy. Here are some ways I employ to maintain physical and mental well-being.
+
+A good way to maintain physical wellbeing is to exercise regularly. You can choose walking over transportation for close distance, or climb stairs instead of taking the lift. You can also choose to join a dance class, or pick a sport of your liking. If you prefer to pick exercise, it is advisable to pick the activities that can work out different part of your body. Swimming, tennis, badminton, yoga are some of the good activities that you can get a good body workout.
+
+Balanced diet is another way to maintain physical well-being. It is not advisable to consume junk food and processed food all the time. Eat fresh and different-coloured fruits and vegetables instead. In contrast to junk food, which often carries lots of calories and fats, fruits and vegetables provide more fibre, minerals, and vitamins. In addition to types of food, it is also important to take food in moderate amount. Do not eat excessive amount of food even if the food is tasteful and healthy in terms of nutrition.
+
+In addition to physical well-being, maintaining mental health is equally important. The best-recommended way to maintain mental health is by staying positive. To stay positive, you need to purge negativity from yourself by looking for the bright side of things and focusing on solutions to problems. To avoid being influenced, you also need to purge negative people from your life.
+
+
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>18. Handling Internet Security</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>swipe-card system</dt><dd>- a device used for swiping card</dd>
+<dt>stalk</dt><dd>- pursue or approach stealthily</dd>
+<dt>pitfall</dt><dd>- drawbacks</dd>
+<dt>peril</dt><dd>- (n) serious and immediate danger; (v) expose to danger</dd>
+<dt>vandalism</dt><dd>- action involving deliberate destruction of or damage to public or private property</dd>
+<dt>surveillance camera</dt><dd>- a camera used for close observation</dd>
+</dl>
+</details>
+<details>
+<summary>(2) Speaking</summary>
+<dl>
+<dt>With a partner, ask and answer these three questions.
+<ul>
+<li>Do you think installing a surveillance system is a good or bad idea?  </li>
+   <li>Give a good reason for your answer. </li>
+   <li>What surveillance system are there in your place of work? </li>
+  </ul>
+  </dt>
+  <dd>
+  I think it is a good idea to install a surveillance system at workplace because it provides a reliable and convenient way to curb crimes, protect employees, and improve productivity at workplace.
+
+In my company, there are three types of surveillance systems. There is CCTV in the main office, warehouse, and retail outlets. There is also a card-swipe machine for controlling access to the office. GPS is installed to monitor the movements of vehicles.
+
+  </dd>
+</dl>
+</details>
+<details>
+<summary>(3) Writing</summary>
+<dl>
+<dt>Write 100 words about how you can lead a healthy lifestyle.</dt>
+<dd>
+Life is full of joy. If you want to enjoy the happy life, you must be able to manage your lifestyle in order to stay healthy. Here are some ways I employ to maintain physical and mental well-being.
+
+A good way to maintain physical wellbeing is to exercise regularly. You can choose walking over transportation for close distance, or climb stairs instead of taking the lift. You can also choose to join a dance class, or pick a sport of your liking. If you prefer to pick exercise, it is advisable to pick the activities that can work out different part of your body. Swimming, tennis, badminton, yoga are some of the good activities that you can get a good body workout.
+
+Balanced diet is another way to maintain physical well-being. It is not advisable to consume junk food and processed food all the time. Eat fresh and different-coloured fruits and vegetables instead. In contrast to junk food, which often carries lots of calories and fats, fruits and vegetables provide more fibre, minerals, and vitamins. In addition to types of food, it is also important to take food in moderate amount. Do not eat excessive amount of food even if the food is tasteful and healthy in terms of nutrition.
+
+In addition to physical well-being, maintaining mental health is equally important. The best-recommended way to maintain mental health is by staying positive. To stay positive, you need to purge negativity from yourself by looking for the bright side of things and focusing on solutions to problems. To avoid being influenced, you also need to purge negative people from your life.
+
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>19. Thinking about the Future</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulary</summary>
+<dl>
+<dt>to come under fire</dt><dd>- to be criticised strongly</dd>
+<dt>backlash</dt><dd>- a strong negative reaction by a large number of people</dd>
+<dt>compost</dt><dd>- decayed organic material used as a fertilizer for growing plants </dd>
+<dt>to operate with a veil of secrecy</dt><dd>- to do things with no transparency</dd>
+<dt>take matters into one's own hand</dt><dd>- to deal with problems yourself after others have failed to do so</dd>
+<dt>the lion's share</dt><dd>- the largest part of something </dd>
+<dt>false modesty</dt><dd></dd>
+<dt>beat your own drum</dt><dd>- say something good about yourself</dd>
+<dt>imperative</dt><dd>- essential or urgent things</dd>
+<dt>take a proactive approach</dt><dd></dd>
+<dt>develop trusting relationship</dt><dd></dd>
+</dl>
+</details>
+<details>
+<summary>(2) Speaking</summary>
+<dl>
+<dt>In your opinion, what other jobs will become more popular in the future? Why?</dt>
+<dd>
+In my opinion, with the development of technology, it is predictable that the jobs related to workplace automation and human development will become more popular in the future. Software developers, for example, will be in demand because automation devices all need softwares to function. Cyber security engineers will be in high demand also because businesses will need them to provide sophisticated protection for the data that is vital to the success of business in future. With mundane and repetitive job being taken over by robots, people would have more time and resources to develop themselves. Therefore, it is quite likely that human development jobs such as teacher, trainer, counsellor, mental therapist, artist, and the like will be in high demand also.
+</dd>
+<dt>If your current job is not line with trends, will you change it? Why or why not?</dt>
+<dd>
+My current job is not line with this trend, but I will not change my job. One reason is that I have worked on this position for many years and become seasoned. If I change to other trendy job, the experience I accumulated on my current job will become useless. And, it is not easy to make a mid-career change. Another reason is that I am well-paid on my current position. I am afraid that I won't be able to earn a decent pay if I change to other job and start from entry-level. Nevertheless, I still need to upskill myself so that I can adapt to the latest technology changes at workplace.
+</dd>
+<dt>What do you think is the most competitive field or industry to work in? Why?</dt>
+<dd>
+I think cybersecurity will be the most competitive field to work in. This is because collecting, sharing, and using data will become dominant part of business practices. To protect the critical systems and sensitive data from digital attacks, businesses will have to invest more in cybersecurity. 
+</dd>
+</dl>
+</details>
+<details>
+<summary>(3) Writing</summary>
+<dl>
+<dt>Discuss the life issue: My future starts when I wake up every morning... Every day I find something  creative to do with my life.</dt>
+<dd>
+
+I believe this quote is talking about the importance of being creative. It tells us that each day can be another chance to be creative. And, if we do something special in every single day, our lives can become pleasant and fulfilling. 
+
+When we think of creativity, we tend to relate it to artists, scientists, or somebody great. But actually, every one of us can be creative and we can be creative in everthing we do.  Take daily routines for example. In our daily life, we often find it easy to fall into rut as our days are filled with unvaried routines and repetitive tasks.  We can take a break and think about what we are doing. Can we do it in another way?  Is there a way to do it that would be more fun or more effective? By seeing the tasks in different ways, we can break routines and perk our lives up.
+
+We can also express our creativity when we are faced with problems. Many years ago when my wife gave birth to my first son, I was forced to reorder my daily routines. At first, I was perturbed that my smooth routine was uprooted. But I soon found the change refreshing. I discovered the places where I was wasting time. I started to get my work done earlier in the evening so that I can find more time in the morning to cook for my wife. I got a strong sense of efficacy when I found that I could solve the problem by managing time more efficiently.
+
+To conclude, creativity is an integral part of life. We can have a creative life as long as you are willing to challenge your old beliefs and habits about how things should be done, and look at them from different perspective.
+</dd>
+</dl>
+</details>
+</details>
+
+<details>
+<summary><strong>20. The News</strong></summary>
+<br />
+<details>
+<summary>(1) Vocabulry</summary>
+<dl>
+<dt>anachronism</dt>
+<dd>- out of date</dd>
+<dt>play havoc with</dt>
+<dd>- completely disrupt</dd>
+<dt>standstill</dt>
+<dd>- a situation in which there is no movement at all</dd>
+<dt>suspended until further notice</dt>
+<dd></dd>
+<dt>inconceivable</dt>
+<dd>- not capable of being imagined</dd>
+<dt>sumo</dt>
+<dd>- Japanese style of wrestle</dd>
+<dt>behind closed doors</dt>
+<dd>- taking place without anyone watching</dd>
+<dt>tournament</dt><dd>- a series of contests between a number of competitors, who compete for an overall prize</dd>
+</dl>
+</details>
+<details>
+<summary>(2)Speaking</summary>
+<dl>
+<dt>Have you ever done something similar to these Cuban doctors of your own free will? Why did you want to do this?</dt>
+<dd>
+Yes. Many years ago, I had volunteered to teach in a rural area for 1 year. The reason I was willing to do this was because I thought it was meaningful to help the children lived in rural area where was lack of access to education resources.
+</dd>
+<dt>Do you think your country has a high doctor-to-patient ratio? What about the teacher-to-student ratio? </dt>
+<dd>
+According to statistics, the doctor-to-patient ratio is high in Singapore. For every doctor there are 399 patients. And the teacher-to-student ratio is also high in Singapore. For every teacher there are 15 primary students, 12 secondary students, and 11 Junior college students.
+</dd>
+<dt>Describe a time in your life when you could say 'Every cloud has a silver lining'.</dt>
+<dd>
+In January 2020, my friend and I booked a flight to Wuhan. Unfortunately I missed the flight because I waked up too late on the day. But every cloud has a silver lining. Because I missed the flight, I did not have to be quarantined in Wuhan where was locked down due to the outbreak of Covid-19.
+</dd>
 </dl>
 </details>
 </details>
