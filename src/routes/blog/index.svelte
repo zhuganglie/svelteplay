@@ -36,19 +36,17 @@
 <hr />
 
 {#each dateSortedPosts as {path, metadata: {title, date, tags}}}
-<div class="flex justify-between">
-    <div class="mb-4 pb-4 ">
-    <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-left mb-2 text-gray-900">{title}</a>
+
+    <div class=" mb-4">
+       <span class="text-sm rounded text-gray-50 bg-green-900 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
+    <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-left font-semibold mb-2 text-gray-900">{title}</a>
     <div class="flex justify-start">
         {#each tags as tag}
-          <a sveltekit:prefetch class="rounded bg-gray-100 px-2 py-0.5 mx-1.5 text-sm " href="/tags/{tag}"
-            >{tag}</a>
+          <a sveltekit:prefetch class="mr-1.5 text-sm " href="/tags/{tag}"
+            ># {tag}</a>
         {/each}
         </div>
       </div>
-    <p class="block mb-4 pb-4 text-base">
-        {formatDate(date)}
-    </p>
-</div>
+    <hr />
 {/each}
 
