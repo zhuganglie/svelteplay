@@ -1,6 +1,6 @@
 <script>
     import {formatDate} from "../../lib/date";
-    import {notes} from "../../lib/notes";
+    import notes from "../../lib/data/notes.json";
     import FilePdfOutline from "svelte-material-icons/FilePdfOutline.svelte";
 
     export let size = "1.15em";

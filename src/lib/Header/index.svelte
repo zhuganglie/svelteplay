@@ -45,27 +45,21 @@
 		min-height: 24px;
 		transition: transform 0.2s ease-in-out;
 	}
-	
 	svg line {
 		stroke: currentColor;
 		stroke-width: 3;
 		transition: transform 0.2s ease-in-out
 	}
-	
 	.open svg {
 		transform: scale(1)
 	}
-	
 	.open #top {
 		transform: translate(6px, 0px) rotate(45deg)
 	}
-	
 	.open #middle {
 		opacity: 0;
 	}
-	
   .open #bottom {
 		transform: translate(-12px, 9px) rotate(-45deg)
 	}
-
 </style>
