@@ -20,7 +20,7 @@
             <div class="w-full md:w-3/4">
             <h4>{note.title}</h4>
             <p>{note.description}</p>
-            <a href={note.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-gray-100 text-red-900 text-sm flex items-center space-x-2"><span>下载</span><FilePdfOutline {size} />
+            <a href={note.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-green-900 text-gray-50 hover:text-gray-100 focus:text-gray-100 text-sm flex items-center space-x-2"><span>下载</span><FilePdfOutline {size} />
             </a>
             </div>
         </div>

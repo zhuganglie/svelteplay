@@ -21,7 +21,7 @@
     <a sveltekit:prefetch href="/" class="text-3xl font-bold">一指禅</a>
     </div>
       <ClickOutside on:clickoutside="{() => (open = false)}">
-      <button class="text-red-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none z-20" class:open on:click={toggleHeader}>
+      <button class="text-gray-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none z-20" class:open on:click={toggleHeader}>
         <svg width=32 height=24>
           <line id="top" x1=0 y1=2  x2=32 y2=2/>
           <line id="middle" x1=0 y1=12 x2=24 y2=12/>
