@@ -18,7 +18,7 @@
     <div class="container flex flex-wrap items-center justify-between px-3 mx-auto">
         <div class="flex items-center justify-center space-x-2">
     <img src="/images/avatar.jpeg" alt="avatar" width=48 height=48 class="m-2" />
-    <a sveltekit:prefetch href="/" class="text-3xl font-bold">一指禅</a>
+    <a sveltekit:prefetch href="/" class="text-3xl font-bold text-green-900">一指禅</a>
     </div>
       <ClickOutside on:clickoutside="{() => (open = false)}">
       <button class="text-gray-900 cursor-pointer mr-1 md:hidden border-none focus:outline-none z-20" class:open on:click={toggleHeader}>
