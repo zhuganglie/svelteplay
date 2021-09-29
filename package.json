@@ -41,6 +41,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
+    "@supabase/supabase-js": "^1.23.1",
     "cookie": "^0.4.1",
     "disqus-svelte": "^1.0.9",
     "svelte-material-icons": "^1.0.3",
