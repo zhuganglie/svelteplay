@@ -2,12 +2,14 @@
     import supabase from '$lib/db'
     let newRecipe
     let submit = false
+
     async function getData() {
-        const { data, error } = await supabase.from('recipe').select()
+        const { data, error } = await supabase.from('recipe').select().eq('category', '荤菜').limit(3)
           if (error) throw new Error(error.message)
       console.log(data)
           return data
       }
+
     async function sendData() {
       const { data, error } = await supabase
         .from('recipe')
