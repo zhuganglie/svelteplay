@@ -2,9 +2,10 @@
     import supabase from '$lib/db'
     let newRecipe
     let submit = false
+    let dish
 
     async function getData() {
-        const { data, error } = await supabase.from('recipe').select().eq('category', '荤菜').limit(3)
+        const { data, error } = await supabase.from('recipe').select().eq('category', '荤菜').limit(2)
           if (error) throw new Error(error.message)
       console.log(data)
           return data
@@ -14,7 +15,7 @@
       const { data, error } = await supabase
         .from('recipe')
         .insert([
-          { 'name': newRecipe }
+          { 'dish': newRecipe }
         ])
       if (error) throw new Error(error.message)
       return data
@@ -26,7 +27,7 @@
     <p>Fetching data...</p>
   {:then data}
     {#each data as item}
-      <li>{item.name}</li>
+      <li>{item.dish}</li>
     {/each}
   {:catch error}
     <p>Something went wrong while fetching the data:</p>
