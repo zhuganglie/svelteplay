@@ -1,11 +1,11 @@
 <script>
-  import { onMount } from 'svelte';
+  //import { onMount } from 'svelte';
   import dishes from "$lib/data/dish.json";
   let meatList = dishes.filter(dish => dish.type === '荤菜');
   let vegList = dishes.filter(dish => dish.type === '素菜');
-  let veg = vegList.sort(() => Math.random() - Math.random()).slice(0, 2);
-  let meat = meatList.sort(() => Math.random() - Math.random()).slice(0, 2);
-  let menu = meat.concat(veg);
+    let veg = vegList.sort(() => Math.random() - Math.random()).slice(0, 2);
+    let meat = meatList.sort(() => Math.random() - Math.random()).slice(0, 2);
+    let menu = meat.concat(veg);
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
   
 
 <h3>随机菜单</h3>
-<button on:click={rnd} class=" px-1.5 py-0.5 mb-2 text-green-50 bg-green-900 rounded ">更 新</button>
+<button on:click={menu} class=" px-1.5 py-0.5 mb-2 text-green-50 bg-green-900 rounded ">更 新</button>
 <ul>
   {#each menu as item}
    <li>{item.name} - {item.taste}</li>
