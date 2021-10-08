@@ -140,6 +140,31 @@
     "type": "荤菜",
     "taste": "咸鲜",
     "recipe": ""
+},{
+  "name": "生炒鲈鱼",
+  "type": "荤菜",
+  "taste": "咸鲜",
+  "recipe": ""
+},{
+  "name": "豆角肉丁",
+  "type": "荤菜",
+  "taste": "咸鲜",
+  "recipe": ""
+},{
+  "name": "辣椒炒牛肉",
+  "type": "荤菜",
+  "taste": "咸鲜",
+  "recipe": ""
+},{
+  "name": "香炒白菜杆",
+  "type": "素菜",
+  "taste": "咸鲜",
+  "recipe": ""
+},{
+  "name": "高芭炒肉片",
+  "type": "荤菜",
+  "taste": "咸鲜",
+  "recipe": ""
 }
   
 ]
