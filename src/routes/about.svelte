@@ -29,7 +29,7 @@
 
     <p>除了读书，我还喜欢远足，喜欢骑脚踏车，喜欢听古典音乐，喜欢品茶，喜欢做美食......。我最大的嗜好是下围棋。从大学一年级开始一直下到现在。围棋是富有哲理的游戏，我从中领悟了不少道理。譬如，围棋中的弃子取胜之道就让我懂得有舍才有得，会舍才会得。</p>
 
-    <p>最近, 我又对网站开发产生了浓厚的兴趣，于是就开始了一段 HTML、CSS 和 Javascript 的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
+    <p>最近, 趁新冠疫情在家，我又开始了一段前端开发的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
 
 	
