@@ -51,7 +51,7 @@
 </ul>
 
 <h3>自选菜单</h3>
-<div class="w-1/2 mb-4">
+<div class="w-full md:w-1/2 mb-4">
 <Select items={complexItems} isMulti={true} on:select={handleSelect} />
 </div>
 {#if selected}
