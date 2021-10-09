@@ -1,6 +1,9 @@
 <script>
-  //import { onMount } from 'svelte';
   import dishes from "$lib/data/dish.json";
+
+  const selectDish = dishes.map(dish => dish.name);
+  let selectedOption = [];
+
 
   let meatList = dishes.filter(dish => dish.type === '荤菜');
   let vegList = dishes.filter(dish => dish.type === '素菜');
@@ -13,7 +16,7 @@
     meat = meatList.sort(() => Math.random() - Math.random()).slice(0, 2);
     menu = meat.concat(veg);
   }
-
+  
   const rts = [
     {href: 'https://www.startaster.com.cn/phone.php/restaurant/RE000564/zh-cn?', title: '蛙功夫'},
     {href: 'https://www.startaster.com.cn/phone.php/restaurant/RE000524/zh-cn?', title: '湘菜馆'},
@@ -44,8 +47,16 @@
   {/each}
 </ul>
 <h3>自选菜单</h3>
-<button class=" px-1.5 py-0.5 mb-8 text-green-50 bg-green-900 rounded ">点我选择</button>
-
+<select size=5 multiple bind:value={selectedOption} >
+  {#each selectDish as op}
+  <option value={op} class="px-4 border-2">{op}</option>
+  {/each}
+</select>
+<ul>
+{#each selectedOption as se}
+<li>{se}</li>
+{/each}
+</ul>
 <h3>他山之食</h3>
 <p>
   {#each yts as yt}
@@ -58,3 +69,4 @@
     <a href={rt.href} target="_blank" class="">{rt.title}</a>
     {/each}
     </p>
+
