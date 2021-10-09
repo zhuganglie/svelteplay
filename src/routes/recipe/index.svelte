@@ -1,10 +1,13 @@
 <script>
   import dishes from "$lib/data/dish.json";
+  import Select from "svelte-select";
 
-  const selectDish = dishes.map(dish => dish.name);
-  let selectedOption = [];
-
-
+  const complexItems = dishes.map(dish => dish.name);
+  let selected = [];
+  function handleSelect(event) {
+    selected = event.detail
+  }
+  
   let meatList = dishes.filter(dish => dish.type === '荤菜');
   let vegList = dishes.filter(dish => dish.type === '素菜');
   let veg = vegList.sort(() => Math.random() - Math.random()).slice(0, 2);
@@ -46,27 +49,33 @@
    <li>{item.name} - {item.taste}</li>
   {/each}
 </ul>
+
 <h3>自选菜单</h3>
-<select size=5 multiple bind:value={selectedOption} >
-  {#each selectDish as op}
-  <option value={op} class="px-4 border-2">{op}</option>
-  {/each}
-</select>
+<div class="w-1/2 mb-4">
+<Select items={complexItems} isMulti={true} on:select={handleSelect} />
+</div>
+{#if selected}
 <ul>
-{#each selectedOption as se}
-<li>{se}</li>
-{/each}
-</ul>
-<h3>他山之食</h3>
-<p>
-  {#each yts as yt}
-  <a href={yt.href} target="_blank" class="">{yt.title}</a>
+{#each selected as se}
+	<li> {se.label}</li>
   {/each}
-  </p>
-  <br />
-  <p>
+</ul>
+{/if}
+
+<h3>他山之食</h3>
+<div class="">
+<div>
+  <h5>油管</h5>
+  {#each yts as yt}
+  <li><a href={yt.href} target="_blank" class="">{yt.title}</a></li>
+  {/each}
+</div>
+  
+  <div>
+    <h5>餐馆</h5>
     {#each rts as rt}
-    <a href={rt.href} target="_blank" class="">{rt.title}</a>
+    <li><a href={rt.href} target="_blank" class="">{rt.title}</a></li>
     {/each}
-    </p>
+  </div>
+  </div>
 
