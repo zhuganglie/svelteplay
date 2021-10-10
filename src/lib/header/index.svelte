@@ -9,7 +9,7 @@
 	const routes = [
 		{href: '/', name: '首页'},
 		{href: '/blog', name: '博客'},
-		{href: '/notes', name: '笔记'},
+		{href: '/talks', name: '报告'},
 		{href: '/recipe', name: '吃货'},
 		{href: '/about', name: '关于'}
 	]

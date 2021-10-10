@@ -10,7 +10,7 @@
         <title>Notes</title>
     </svelte:head>
 
-        <h2>笔 记</h2>
+        <h2>报 告</h2>
         <hr />
     
         {#each notes as note}

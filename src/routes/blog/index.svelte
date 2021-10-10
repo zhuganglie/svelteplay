@@ -38,7 +38,7 @@
 {#each dateSortedPosts as {path, metadata: {title, date, tags}}}
 
     <div class=" mb-4">
-       <span class="text-sm rounded text-gray-50 bg-green-900 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
+       <span class="text-sm border-b border-green-900 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
     <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-left font-semibold mb-2 text-gray-900">{title}</a>
     <div class="flex justify-start">
         {#each tags as tag}

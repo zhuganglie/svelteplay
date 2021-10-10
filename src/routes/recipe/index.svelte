@@ -43,7 +43,7 @@
   <hr />
   
 <h3>随机菜单</h3>
-<button on:click={change} class=" px-1.5 py-0.5 mb-2 text-green-50 bg-green-900 rounded ">点我更新</button>
+<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-green-900 text-gray-50 rounded ">点我更新</button>
 <ul>
   {#each menu as item}
    <li>{item.name} - {item.taste}</li>
@@ -53,7 +53,7 @@
 <h3>自选菜单</h3>
 <div class="themed">
 <div class="w-full md:w-1/2 mb-4">
-<Select items={complexItems} isMulti={true} on:select={handleSelect} />
+<Select items={complexItems} isMulti={true} on:select={handleSelect} placeholder="选菜" />
 </div>
 {#if selected}
 <ul>
@@ -83,7 +83,7 @@
 
   <style>
     .themed {
-      --border: 2px solid rgba(6, 78, 59, var(--tw-bg-opacity));
+      --border: 1px solid rgba(6, 78, 59, var(--tw-bg-opacity));
       --borderRadius: 0.25rem;
       --background: rgba(255, 251, 235, var(--tw-bg-opacity));
       --borderFocusColor: green;
