@@ -51,6 +51,7 @@
 </ul>
 
 <h3>自选菜单</h3>
+<div class="themed">
 <div class="w-full md:w-1/2 mb-4">
 <Select items={complexItems} isMulti={true} on:select={handleSelect} />
 </div>
@@ -61,6 +62,7 @@
   {/each}
 </ul>
 {/if}
+</div>
 
 <h3>他山之食</h3>
 <div class="">
@@ -79,3 +81,16 @@
   </div>
   </div>
 
+  <style>
+    .themed {
+      --border: 2px solid rgba(6, 78, 59, var(--tw-bg-opacity));
+      --borderRadius: 0.25rem;
+      --background: rgba(255, 251, 235, var(--tw-bg-opacity));
+      --borderFocusColor: green;
+      --borderHoverColor: green;
+      --itemHoverBG: #f5edc2;
+      --multiItemBG: #f5edc2;
+      --multiItemActiveBG: rgba(6, 78, 59, var(--tw-bg-opacity));
+      --inputColor: rgba(6, 78, 59, var(--tw-bg-opacity));
+    }
+  </style>
