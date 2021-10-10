@@ -41,8 +41,9 @@
 
   <h2>今天吃什么？</h2>
   <hr />
-  
+<p>为了解决上面 👆 这个问题带来的困扰，我特地写了下面 👇 这个小程序。它可以让我方便地从菜单数据库点菜，而不必动脑筋想今天吃什么。</p>
 <h3>随机菜单</h3>
+<p>点击下面的按钮，可随机生成一个两荤两素的菜单，生成次数不限。</p>
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-green-900 text-gray-50 rounded ">点我更新</button>
 <ul>
   {#each menu as item}
@@ -51,6 +52,7 @@
 </ul>
 
 <h3>自选菜单</h3>
+<p>如果不满意随机生成的菜单，可以在这里点选喜欢吃的菜组成菜单，点菜数量不限。</p>
 <div class="themed">
 <div class="w-full md:w-1/2 mb-4">
 <Select items={complexItems} isMulti={true} on:select={handleSelect} placeholder="选菜" />
@@ -65,7 +67,7 @@
 </div>
 
 <h3>他山之食</h3>
-<div class="">
+<p>这里是一些我比较喜欢的油管美食频道和常去的本地餐馆。</p>
 <div>
   <h5>油管</h5>
   {#each yts as yt}
@@ -79,7 +81,7 @@
     <li><a href={rt.href} target="_blank" class="">{rt.title}</a></li>
     {/each}
   </div>
-  </div>
+  
 
   <style>
     .themed {
