@@ -1,7 +1,7 @@
 ---
 title: 'Learning Facilitation'
 date: '2021-04-26'
-tags: ['学习', '培训', '课堂辅助']
+tags: ['学习', '培训', '课堂辅导']
 ---
 
 
