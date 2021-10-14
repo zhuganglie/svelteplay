@@ -46,11 +46,21 @@
 <h3>随机菜单</h3>
 <p>点击下面的按钮，可随机生成一个两荤两素的菜单，生成次数不限。</p>
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-green-900 text-gray-50 rounded ">点我更新</button>
-<ul>
-  {#each menu as item}
-   <li>{item.name} - {item.taste}</li>
-  {/each}
-</ul>
+  
+  <table class="w-full md:w-1/2 text-center"> 
+    <tr>
+    <th>菜名</th>
+    <th>味道</th>
+    </tr>
+    {#each menu as item}
+    <tr>
+      <td>{item.name}</td>
+      <td>{item.taste}</td>
+    </tr>
+    {/each}
+  </table>
+  
+
 
 <h3>自选菜单</h3>
 <p>如果不满意随机生成的菜单，可以在这里点选喜欢吃的菜组成菜单，点菜数量不限。</p>
