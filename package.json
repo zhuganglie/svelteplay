@@ -25,10 +25,6 @@
     "postcss": "^8.3.9",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.4.0",
-    "rehype-autolink-headings": "^5.0.1",
-    "rehype-slug": "^4.0.1",
-    "remark-abbr": "^1.4.1",
-    "remark-github": "^10.0.1",
     "svelte": "^3.43.1",
     "svelte-check": "^2.2.7",
     "svelte-click-outside": "^1.0.0",
@@ -45,7 +41,6 @@
     "@supabase/supabase-js": "^1.24.0",
     "cookie": "^0.4.1",
     "disqus-svelte": "^1.0.9",
-    "svelte-material-icons": "^1.0.3",
-    "tailwind": "^4.0.0"
+    "svelte-material-icons": "^1.0.3"
   }
 }
