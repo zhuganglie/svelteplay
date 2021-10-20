@@ -2,6 +2,7 @@
 title: '鲜虾粉丝煲'
 date: '2021-04-02'
 tags: ['海鲜','菜谱', '生活']
+draft: false
 ---
 
 今天是 Good Friday。本来想叫个[蛙功夫](https://www.facebook.com/wahkungfu/)打打牙祭，不料人家店大欺客，公共假期不送餐。今天吃什么的问题一下子就摆到面前来了。
