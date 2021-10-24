@@ -24,6 +24,7 @@ draft: false
 这个模型是基于加涅的学习条件理论<a href= "https://en.wikipedia.org/wiki/Conditions_of_Learning">（conditions of learning）</a>提出的。加涅认为，学习是一个对信息进行处理的过程，而教学则是为学习的发生创造必要的条件。
 
 <table class="w-full md:w-1/2 text-center">
+<caption>教学环节与学习过程</caption>
   <tr>
     <th>步骤</th>
     <th>教学环节</th>
@@ -164,3 +165,12 @@ draft: false
 5. 要求学员制作工作流程图
 6. 要求学员制作其它参考资料
    
+
+   <style>
+     table, td, th {
+      border: 1px solid green;
+    }
+    td, th {
+      padding: 0.5rem;
+    }
+    </style>
