@@ -1,10 +1,8 @@
 ---
 title: 'English Lessons - Part 2'
 date: '2021-09-02'
+tags: ['学习', '英文']
 draft: false
-tags:
-    - 学习
-    - 英文
 ---
 
 <details>
@@ -15,7 +13,7 @@ tags:
 <dl>
 <dt>chance of advancing</dt><dd>- opportunity to be promoted</dd>
 <dt>make the best of impression possible at interview</dt><dd>- to present the best at interview</dd>
-<dt>transferrable skills<dt><dd>- skills that can be applied to other areas</dd>
+<dt>transferrable skills</dt><dd>- skills that can be applied to other areas</dd>
 </dl>
 </details>
 <details>
@@ -66,12 +64,14 @@ The reason why I like to be a web developer is that it is quite easy to land a j
 <dt>deter someone from something</dt><dd>- to make someone stop doing something</dd>
 <dt>half the battle</dt><dd>- not complete yet</dd>
 <dt>old habits die hard</dt><dd>- difficult to change old habits</dd>
-<dt>expressions for expressing opinions:</dt><dd>
-- I tend to think that ... <br>
-- I believe that ... <br>
-- In my opinion <br>
-- It is important to think about what ... <br>
-- I honestly feel that ... <br>
+<dt>expressions for expressing opinions:</dt>
+<dd>
+- I tend to think that ... <br />
+- I believe that ... <br />
+- In my opinion <br />
+- It is important to think about what ... <br />
+- I honestly feel that ... <br /> 
+</dd>
 </dl>
 </details>
 <details>
@@ -103,21 +103,21 @@ The reason why I like to be a web developer is that it is quite easy to land a j
 <dt>reinforce the message</dt><dd>- stengthen the message</dd>
 <dt>audible</dt><dd>- able to be heard</dd>
 <dt>visual aid</dt><dd></dd>
-<dt>pictograph<dt><dd></dd>
+<dt>pictograph</dt><dd></dd>
 <dt>projection screen</dt><dd></dd>
 <dt>expressions for giving vague information:</dt>
 <dd>
-- about <br>
-- approximately <br>
-- or so <br>
-- a large number <br>
-- hardly <br>
-- difficult to say <br>
-- not really sure <br>
-- kind of <br>
-- sort of <br>
-- no clear cut <br>
-- I guess <br>
+- about <br />
+- approximately <br />
+- or so <br />
+- a large number <br />
+- hardly <br />
+- difficult to say <br />
+- not really sure <br />
+- kind of <br />
+- sort of <br />
+- no clear cut <br />
+- I guess <br />
 </dd>
 <dt>exhale</dt><dd>- breathe out</dd>
 <dt>respiration</dt><dd>- the action of breathing</dd>
@@ -339,9 +339,9 @@ By appealing to the power of information and logic, I finally twisted the manage
 <dl>
 <dt>Discuss the following questions:
 
-- Do you think it's ok to eat lots of chocolate? Why or why not?<br>
-- In your opinion, why do people love eating chocolates?<br>
-- What's your favourite chocolate brand? Why do you like it?<br>
+- Do you think it's ok to eat lots of chocolate? Why or why not?<br />
+- In your opinion, why do people love eating chocolates?<br />
+- What's your favourite chocolate brand? Why do you like it?<br />
   
 </dt>
 <dd>

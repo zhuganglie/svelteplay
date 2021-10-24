@@ -7,7 +7,7 @@ draft: false
 
 #### 教学设计的九步模型
 
-美国教育心理学家加涅<a href="https://en.wikipedia.org/wiki/Robert_M._Gagn%C3%A9" target="_blank">（Robert Gagne）</a>提出了一个九步教学模型。根据这个模型，一个完整的教学过程应包含以下九个环节。
+美国教育心理学家加涅<a href="https://en.wikipedia.org/wiki/Robert_M._Gagn%C3%A9"  target="_blank">（Robert Gagne）</a>提出了一个九步教学模型。根据这个模型，一个完整的教学过程应包含以下九个环节。
 
 1. 集中学员注意力
 2. 告知学习目标
@@ -21,7 +21,7 @@ draft: false
 
 
 #### 学习条件理论
-这个模型是基于加涅的学习条件理论<a href="https://en.wikipedia.org/wiki/Conditions_of_Learning" >（conditions of learning）</a>提出的。加涅认为，学习是一个对信息进行处理的过程，而教学则是为学习的发生创造必要的条件。
+这个模型是基于加涅的学习条件理论<a href= "https://en.wikipedia.org/wiki/Conditions_of_Learning">（conditions of learning）</a>提出的。加涅认为，学习是一个对信息进行处理的过程，而教学则是为学习的发生创造必要的条件。
 
 <table class="w-full md:w-1/2 text-center">
   <tr>
@@ -164,14 +164,3 @@ draft: false
 5. 要求学员制作工作流程图
 6. 要求学员制作其它参考资料
    
-
-
-
-<style>
-    tr:nth-child(even) {
-  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
-}
-    tr {
-        height: 30px;
-    }
-</style>

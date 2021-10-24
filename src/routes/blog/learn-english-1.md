@@ -1,11 +1,10 @@
 ---
 title: 'English Lessons - Part 1'
 date: '2021-08-04'
+tags: ['学习', '英文']
 draft: false
-tags:
-    - 学习
-    - 英文
 ---
+
 <details>
 <summary><strong>1. Becoming A Smarter Consumer</strong></summary>
  <br />
@@ -15,7 +14,7 @@ tags:
   <dt>halo</dt> <dd> - a ring of light</dd>
   <dt>hype</dt> <dd> - extravagant or excessive promotion</dd>
   <dt>unscramble</dt> <dd> - clarify, decode, restore to intelligible  form</dd>
-  <dt>incite<dt> <dd> - stir up</dd>
+  <dt>incite</dt> <dd> - stir up</dd>
   <dt>bombard</dt> <dd> - keep attacking or pressing with questions and suggestions</dd>
   <dt>landfill site</dt> <dd> - a place used for disposal of garbage</dd>
   <dt>wardrobe</dt> <dd> - a closet or movable cabinet for holding clothes</dd>
@@ -60,6 +59,7 @@ tags:
 
 <p>Additionally, product quality is a multi-demensional concept. Whether ot not a product is of good quality depends on how you define quality. For this reason, a well engineered advertising may educate its targeted group and construct a new way to perceive good product. Take durability of fashion prodcut for example. A fashion brand, which targets at low-income group, advertised its brand as "leading the fast-paced fashion". With such notion in mind, durability will be construed as "uneasy to follow the fast pace of fashion". Instead, consumers will perceive "cheap", which means easy to make change, as the most important quality.</p>
 </dd>
+</dl>
 </details>
 </details>
 
@@ -115,10 +115,10 @@ think people feel so overworked or stressed? </dt>
 <summary>(1) Vocabulary</summary>
 <dl>
 <dt>finesse</dt><dd>- impressive delicacy and skill</dd>
-<dt>etiquette<dt><dd>- the customary code of polite behaviour in society or among members of a particular profession or group</dd>
+<dt>etiquette</dt><dd>- the customary code of polite behaviour in society or among members of a particular profession or group</dd>
 <dt>enunciate</dt><dd>- say and pronounce clearly</dd>
 <dt>rapport</dt><dd>- close and harmonious relationship</dd>
-<dt>strike a balance</dt><dd>- choose a moderate stance<dd>
+<dt>strike a balance</dt><dd>- choose a moderate stance</dd>
 <dt>counterfeit</dt><dd>fake, not genuine</dd>
 <dt>attire</dt><dd>- clothes especially fine or formal ones </dd>
 <dt>gown</dt><dd>- a long elegant dress worn on formal occasions, wedding gown</dd>
@@ -149,7 +149,7 @@ think people feel so overworked or stressed? </dt>
 <dl>
 <dt>excel in</dt><dd>- be proficient in; be exceptionally good at</dd>
 <dt>align oneself with</dt><dd>- give support to (a person, organization, or cause) </dd>
-<dt>My greatest achievement has been ...<dt><dd>- can be used to talk about past achievement</dd>
+<dt>My greatest achievement has been ...</dt><dd>- can be used to talk about past achievement</dd>
 <dt>What I'm most proud of is ...</dt><dd>- can be used to talk about past achievement</dd>
 <dt>stride</dt><dd>- a long and decisive step</dd>
 <dt>household duties</dt><dd>- duties of taking care of family</dd>
@@ -359,19 +359,21 @@ think people feel so overworked or stressed? </dt>
 <dt>dismay</dt><dd>- concern and distress caused by something unexpected</dd>
 <dt>overdose</dt><dd>- an excessive and dangerous dose of a drug</dd>
 <dt>prescription</dt><dd>- an instruction written by a medical practitioner that authorizes a patient to be issued with a medicine or treatment</dd>
-<dt>Some formal writing</dt><dd>
-- Please send my regards to everyone <br>
-- I am writing in response to your ... <br>
-- Look forawrd to hearing from you at your earliest convenience <br>
-- Please find attached the documents you requested <br>
-- Once again, I apologize for causing you any inconvenience <br>
+<dt>Some formal writing</dt>
+<dd>
+- Please send my regards to everyone <br />
+- I am writing in response to your ... <br />
+- Look forawrd to hearing from you at your earliest convenience <br />
+- Please find attached the documents you requested <br />
+- Once again, I apologize for causing you any inconvenience <br />
+</dd>
 <dt>Some informal writing</dt>
 <dd>
-- Thank you so much for inviting me to your home yesterday <br>
-- Please email me soon <br>
-- How're you doing? <br>
-- I'm sorry we haven't been in touch for such a long time <br>
-- I thought I'd drop you a line rather than call <br>
+- Thank you so much for inviting me to your home yesterday <br />
+- Please email me soon <br />
+- How're you doing? <br />
+- I'm sorry we haven't been in touch for such a long time <br />
+- I thought I'd drop you a line rather than call <br />
   </dd>
 </dl>
 </details>
@@ -381,9 +383,9 @@ think people feel so overworked or stressed? </dt>
 <dt>Write an email about a problem you encountered after you bought an electronic/electrical item from a retail or an online store. Use the model in C2 Activity 1 and the questions below to help you.
 </dt>
 <dd>
-From: yzc@gmail.com <br>
-To: customerservice@electroX.com.sg <br>
-Subject: Defective vacuum cleaner received (order #435231) <br>
+From: yzc@gmail.com <br />
+To: customerservice@electroX.com.sg <br />
+Subject: Defective vacuum cleaner received (order #435231) <br />
 
 <hr />
 
@@ -405,9 +407,9 @@ John C
 </dd>
 <dt>You will be attending a business seminar next week. You found out your friend Jamie will be attending too. Write an informal email to her.</dt>
 <dd>
-From: yzc@gmail.com <br>
-To: jamie@gmail.com <br>
-Subject: Attending business seminar together <br>
+From: yzc@gmail.com <br />
+To: jamie@gmail.com <br />
+Subject: Attending business seminar together <br />
 
 <hr />
 
@@ -431,9 +433,9 @@ John
 <dt>You are the head of the department. Your staff Peter Lee will be organizing the upcoming customer-solution conference. Write an email to the staff. Inform them that Peter is in charge, and to attend a meeting with him to discuss the details of the conference.
 </dt>
 <dd>
-From: yzc@abc.com.sg <br>
-To: myteam@abc.com.sg <br>
-Subject: About the upcoming Customer-Solution Conference <br>
+From: yzc@abc.com.sg <br />
+To: myteam@abc.com.sg <br />
+Subject: About the upcoming Customer-Solution Conference <br />
 
 <hr />
 
@@ -463,8 +465,8 @@ John
 <summary>(3) 4-Point Plan for eMail Content</summary>
 <dl>
 <dt>1. Introduction</dt><dd>Briefly describe why you are writing the email.</dd>
-<dt>2. Details</dt><dd>Write the content or message that you want to say. Use paragraphs and graphic devices to make the message clear. Take note of the essential details such as who, what, where, when, why, and how.
-<dt>3. Response or Action</dt><dd>List the action you request or need to take. Use paragraphs and graphic devices if necessary.
+<dt>2. Details</dt><dd>Write the content or message that you want to say. Use paragraphs and graphic devices to make the message clear. Take note of the essential details such as who, what, where, when, why, and how.</dd>
+<dt>3. Response or Action</dt><dd>List the action you request or need to take. Use paragraphs and graphic devices if necessary.</dd>
 <dt>4. Conclusion</dt><dd>Summarize and close the subject.</dd>
 </dl>
 </details>
@@ -491,11 +493,12 @@ John
 <dt>crib</dt><dd>- bed for a small baby</dd>
 <dt>tantrum</dt><dd>- an uncontrolled outburst of anger or frustration, typically in a child</dd>
 <dt>put someone on hold</dt><dd>- delay</dd>
+</dl>
 </details>
 <details>
 <summary>(2) Writing</summary>
 <dl>
-<p><em>The Chow family is on vacation. They are staying in Hawii for five days. They rented a hotel room on the beach in Maui. Everyone is excited. The kids want to go on a submarine tour and see the fish in the Pacific Ocean. Mrs. Chow wants to go shopping and take a sunrise tour of Haleakaia Crater. Mr. Chow wants the family to go hiking in the morning, visit Musems in the afternoon, and have a barbecue on the beach in the evening. He is worried about spending too much money. Mrs. Chow thinks her husband worries too much about money. She wants him to relax and forgot about money while they are on vacation.<em></p>
+<p><em>The Chow family is on vacation. They are staying in Hawii for five days. They rented a hotel room on the beach in Maui. Everyone is excited. The kids want to go on a submarine tour and see the fish in the Pacific Ocean. Mrs. Chow wants to go shopping and take a sunrise tour of Haleakaia Crater. Mr. Chow wants the family to go hiking in the morning, visit Musems in the afternoon, and have a barbecue on the beach in the evening. He is worried about spending too much money. Mrs. Chow thinks her husband worries too much about money. She wants him to relax and forgot about money while they are on vacation.</em></p>
 
 <dt>What should Mrs. Chow do? How can she solve her problem?</dt>
 <dd>
@@ -505,7 +508,7 @@ John
 
 <p>In short, Mrs. Chow can solve her problem by discussing with her family for an optimal trip plan.</p>
 </dd>
-<hr >
+<hr />
 <p><em>Marty drives a cab in New York City. He works six days a week from 5:30am to 5:30pm. He doesnot always get to eat when he's hungry or go to the restroom when he needs to go. Driving a cab is difficult. Traffic in the city is often slow and there are many accidents and construction sites drivers have to go around. Driving a cab is also dangerous. When it rains or snows the roads are slippery. Sometimes criminals steal the cab driver's money. Most of Marty's passengers are nice. They tip him twenty percent of the cab fare. Marty likes his job, but lately he has been feeling tired from working twelve hour shifts. Many of his passengers are tourists, and they like to talk a lot. Unfortunately, Marty is seldom in the mood to talk any more. It's hard to be friendly everyday.</em></p>
 <dt>What should Marty do? How can he solve his problem?</dt>
 <dd>
