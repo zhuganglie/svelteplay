@@ -42,11 +42,11 @@
 
   <h2>今天吃什么？</h2>
   <hr />
-  <img src="/images/crab.jpeg" width="" alt="crab" loading="lazy" class="max-w-full h-auto object-fill"/>
+  <img src="/images/crab.jpeg" width="" alt="crab" loading="lazy" class="max-w-full rounded h-auto object-fill"/>
 <p>为了解决上面 👆 这个问题带来的困扰，我特地写了下面 👇 这个小程序。通过这个程序，我可以从菜单数据库点菜生成菜谱，而不必动脑筋想今天吃什么，非常方便。</p>
 <h3>随机菜单</h3>
 <p>点击下面的按钮，可随机生成一个两荤两素的菜单，生成次数不限。</p>
-<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-green-900 text-gray-50 rounded ">点我更新</button>
+<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-gray-700 text-gray-300 rounded ">点我更新</button>
   
   <table class="w-full md:w-1/2 text-center"> 
     <tr>
@@ -97,18 +97,19 @@
 
   <style>
     .themed {
-      --border: 1px solid rgba(6, 78, 59, var(--tw-bg-opacity));
+      --border: 1px solid gray;
       --borderRadius: 0.25rem;
-      --background: rgba(255, 251, 235, var(--tw-bg-opacity));
-      --borderFocusColor: green;
-      --borderHoverColor: green;
-      --itemHoverBG: #f5edc2;
-      --multiItemBG: #f5edc2;
-      --multiItemActiveBG: rgba(6, 78, 59, var(--tw-bg-opacity));
+      --background: rgba(55, 65, 81, var(--tw-text-opacity));
+      --borderFocusColor: rgba(165, 180, 252, var(--tw-text-opacity));
+      --borderHoverColor: rgba(165, 180, 252, var(--tw-text-opacity));
+      --itemHoverBG: rgba(17, 24, 39, var(--tw-text-opacity));
+      --multiItemBG: rgba(17, 24, 39, var(--tw-text-opacity));
+      --multiItemActiveBG: rgba(55, 65, 81, var(--tw-text-opacity));
       --inputColor: rgba(6, 78, 59, var(--tw-bg-opacity));
+      --listBackground: rgba(55, 65, 81, var(--tw-text-opacity));
     }
     table, td, th {
-      border: 1px solid green;
+      border: 1px solid gray;
     }
     td, th {
       padding: 0.5rem;

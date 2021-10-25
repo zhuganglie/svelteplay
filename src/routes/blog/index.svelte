@@ -38,12 +38,12 @@
 {#each dateSortedPosts as {path, metadata: {title, date, tags, draft}}}
 {#if !draft}
     <div class=" mb-4">
-       <span class="text-sm border-b border-green-900 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
-    <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-left font-semibold mb-2 text-gray-900">{title}</a>
+       <span class="text-sm border-b border-gray-300 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
+    <a href={`/blog/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-gray-300 hover:text-gray-100 text-left font-semibold mb-2">{title}</a>
     
-    <div class="flex justify-start">
+    <div class="flex flex-wrap justify-start">
         {#each tags as tag}
-          <a sveltekit:prefetch class="mr-1.5 text-sm " href="/tags/{tag}"
+          <a sveltekit:prefetch class="mr-1.5 text-sm bg-gray-700 rounded text-gray-300 hover:text-gray-100" href="/tags/{tag}"
             ># {tag}</a>
         {/each}
         </div>

@@ -20,10 +20,10 @@
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
 	<div class="py-4 sm:py-6 text-center">
 		<div class="font-bold text-2xl sm:text-3xl mb-4">{title}</div>
-		<div class="text-sm flex justify-center items-center space-x-1">发表于： <Calendar {size} /> <span>{dateDisplay}</span></div>
-		<div class="mt-3 flex justify-center items-center">
+		<div class="text-sm flex flax-wrap justify-center items-center space-x-1"><Calendar {size} /> <span>{dateDisplay}</span></div>
+		<div class="mt-3 flex flex-wrap justify-center items-center">
 			{#each tags as tag}
-			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-green-900 px-2.5 py-0.5 mx-1.5 text-sm text-gray-50 hover:text-gray-100" href="/tags/{tag}"
+			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-gray-700 px-2.5 py-0.5 mx-1.5 text-sm text-gray-300 hover:text-gray-100" href="/tags/{tag}"
 				><TagOutline {size} /><span>{tag}</span></a
 			  >
 			{/each}
@@ -32,6 +32,6 @@
 	<hr />
 	<slot />
 	<hr />
-	<a href="/blog/" class="bg-green-900 text-gray-50 hover:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
+	<a href="/blog/" class="bg-gray-700 text-gray-300 hover:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
 <Comments identifier="blog" />
 </div>

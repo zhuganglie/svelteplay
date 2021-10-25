@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="text-center flex-col">
-	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto object-fill"/>
+	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill"/>
 		<div class="mb-8">
 	<h3>棋经十三篇</h3>
 	<span>[宋] &middot; 张拟</span>
