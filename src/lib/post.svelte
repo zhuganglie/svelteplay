@@ -23,7 +23,7 @@
 		<div class="text-sm flex flax-wrap justify-center items-center space-x-1"><Calendar {size} /> <span>{dateDisplay}</span></div>
 		<div class="mt-3 flex flex-wrap justify-center items-center">
 			{#each tags as tag}
-			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-gray-700 px-2.5 py-0.5 mx-1.5 text-sm text-gray-300 hover:text-gray-100" href="/tags/{tag}"
+			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-gray-700 px-2.5 py-0.5 mx-1.5 my-1 text-sm text-gray-300 hover:text-gray-100" href="/tags/{tag}"
 				><TagOutline {size} /><span>{tag}</span></a
 			  >
 			{/each}
