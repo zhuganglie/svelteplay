@@ -43,7 +43,7 @@
     
     <div class="flex flex-wrap justify-start">
         {#each tags as tag}
-          <a sveltekit:prefetch class="mr-1.5 text-sm bg-gray-700 rounded text-gray-300 hover:text-gray-100" href="/tags/{tag}"
+          <a sveltekit:prefetch class="mr-1.5 my-1 text-sm bg-gray-700 rounded text-yellow-500 hover:text-gray-100" href="/tags/{tag}"
             ># {tag}</a>
         {/each}
         </div>

@@ -4,7 +4,7 @@
     import '../app.postcss';
     import MenuOpen from 'svelte-material-icons/MenuOpen.svelte';
 
-    export let size = "1.625rem";
+    export let size = "1.525rem";
 
     let open = false;
     const toggleHeader = () => {
@@ -23,7 +23,7 @@
     <aside class="flex md:flex flex-col items-center justify-around w-full md:w-1/5 border-r-4 border-gray-700 px-2 min-w-max" class:hidden={!open}>
    <header class="text-center">
        <p class="text-2xl font-bold">一指禅</p>
-   <p class="text-sm">惯看秋月春风</p>
+   <p class="text-sm text-yellow-500">惯看秋月春风</p>
     </header>
    <nav>
     <ul class="list-none text-center m-0">
@@ -40,7 +40,7 @@
 </aside>
     <main class="pt-6 px-4 md:px-16 mx-auto w-full md:w-4/5 overflow-auto">
         <ClickOutside on:clickoutside="{() => (open = false)}">
-        <button class:open on:click={toggleHeader} class="bg-indigo-700 text-gray-300 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><MenuOpen {size} /><span class="text-lg font-bold">一指禅</span></button>
+        <button class:open on:click={toggleHeader} class="bg-gray-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><MenuOpen {size} /><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>

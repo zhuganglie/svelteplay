@@ -23,7 +23,7 @@
 		<div class="text-sm flex flax-wrap justify-center items-center space-x-1"><Calendar {size} /> <span>{dateDisplay}</span></div>
 		<div class="mt-3 flex flex-wrap justify-center items-center">
 			{#each tags as tag}
-			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-gray-700 px-2.5 py-0.5 mx-1.5 my-1 text-sm text-gray-300 hover:text-gray-100" href="/tags/{tag}"
+			  <a sveltekit:prefetch class="flex justify-center items-center space-x-1 rounded bg-gray-700 px-2.5 py-0.5 mx-1.5 my-1 text-sm text-yellow-500 hover:text-yellow-300" href="/tags/{tag}"
 				><TagOutline {size} /><span>{tag}</span></a
 			  >
 			{/each}
@@ -32,6 +32,6 @@
 	<hr />
 	<slot />
 	<hr />
-	<a href="/blog/" class="bg-gray-700 text-gray-300 hover:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
-<Comments identifier="blog" />
+	<a href="/blog/" class="bg-gray-700 text-yellow-500 hover:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
+<Comments identifier="blog mt-6" />
 </div>
