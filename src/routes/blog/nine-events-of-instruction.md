@@ -168,7 +168,7 @@ draft: false
 
    <style>
      table, td, th {
-      border: 1px solid gray;
+      border: 1px solid rgba(55, 65, 81, var(--tw-text-opacity));
     }
     td, th {
       padding: 0.5rem;

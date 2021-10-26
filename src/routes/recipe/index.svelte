@@ -46,7 +46,7 @@
 <p>为了解决上面 👆 这个问题带来的困扰，我特地写了下面 👇 这个小程序。通过这个程序，我可以从菜单数据库点菜生成菜谱，而不必动脑筋想今天吃什么，非常方便。</p>
 <h3>随机菜单</h3>
 <p>点击下面的按钮，可随机生成一个两荤两素的菜单，生成次数不限。</p>
-<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-gray-700 text-gray-300 rounded ">点我更新</button>
+<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-gray-700 text-yellow-500 rounded ">点我更新</button>
   
   <table class="w-full md:w-1/2 text-center"> 
     <tr>
@@ -109,7 +109,7 @@
       --listBackground: rgba(55, 65, 81, var(--tw-text-opacity));
     }
     table, td, th {
-      border: 1px solid gray;
+      border: 1px solid rgba(55, 65, 81, var(--tw-text-opacity));
     }
     td, th {
       padding: 0.5rem;
