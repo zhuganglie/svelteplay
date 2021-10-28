@@ -15,9 +15,9 @@
 	<div class="self-center justify-self-center">
 	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill mb-12"/>
 		
-			<div class="one text-3xl ">
-				<h2 class="md:ml-12 mb-12 text-center">临江仙</h2>
-				<h6 class="md:ml-12 mb-12 text-center">【明】杨慎 </h6>
+	<div class="one text-3xl text-center">
+		<h2 class="md:ml-12 mb-12">临江仙</h2>
+		<h6 class="md:ml-12 mb-12">【明】杨慎 </h6>
 				<p class="md:ml-4">滚滚长江东逝水，</p>
 				<p class="md:ml-4">浪花淘尽英雄。</p>
 				<p class="md:ml-4">是非成败转头空。</p>
