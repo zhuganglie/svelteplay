@@ -40,8 +40,14 @@
 </aside>
     <main class="pt-6 px-4 md:px-16 mx-auto w-full md:w-4/5 overflow-auto">
         <ClickOutside on:clickoutside="{() => (open = false)}">
-        <button class:open on:click={toggleHeader} class="bg-gray-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><MenuLeftOutline {size} /><span class="text-lg font-bold">一指禅</span></button>
+        <button class:open on:click={toggleHeader} class="bg-gray-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="icon"><MenuLeftOutline {size} /></div><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>
 </div>
+
+<style>
+    .open .icon {
+        transform: rotate(-180deg); 
+    }
+</style>

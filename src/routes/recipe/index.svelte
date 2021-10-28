@@ -82,16 +82,20 @@
 <p>这里是一些我比较喜欢的油管美食频道和常去的本地中餐馆。</p>
 <div>
   <h5>油管</h5>
+  <ul class="list-none flex flex-wrap">
   {#each yts as yt}
   <li><a href={yt.href} target="_blank" class="">{yt.title}</a></li>
   {/each}
+  </ul>
 </div>
   
   <div>
     <h5>餐馆</h5>
+    <ul class="flex flex-wrap list-none">
     {#each rts as rt}
     <li><a href={rt.href} target="_blank" class="">{rt.title}</a></li>
     {/each}
+    </ul>
   </div>
   
 
