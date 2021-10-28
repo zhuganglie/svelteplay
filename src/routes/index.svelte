@@ -11,10 +11,11 @@
 	<title>Home</title>
 </svelte:head>
 
-<section class="grid place-content-center">
+<section class="grid h-full w-full">
+	<div class="self-center justify-self-center">
 	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill mb-12"/>
 		
-			<div class="one text-3xl">
+			<div class="one text-3xl ">
 				<h2 class="md:ml-12 mb-12 text-center">临江仙</h2>
 				<h6 class="md:ml-12 mb-12 text-center">【明】杨慎 </h6>
 				<p class="md:ml-4">滚滚长江东逝水，</p>
@@ -29,7 +30,7 @@
 				<p class="md:ml-4">古今多少事，</p>
 				<p class="md:ml-4">都付笑谈中。</p>
 				 </div> 
-
+</div>
 	</section>
 	
 

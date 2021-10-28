@@ -43,9 +43,9 @@
   <h2>今天吃什么？</h2>
   <hr />
   <img src="/images/crab.jpeg" width="" alt="crab" loading="lazy" class="max-w-full rounded h-auto object-fill"/>
-<p>为了解决上面 👆 这个问题带来的困扰，我特地写了下面 👇 这个小程序。通过这个程序，我可以从菜单数据库点菜生成菜谱，而不必动脑筋想今天吃什么，非常方便。</p>
+<p>上面 👆 这个问题给我带来了不少困扰。为此，我特地写了下面 👇 这个小程序。有了这个程序，不必动脑筋想菜名，只需点击按钮就可解决今天吃什么的问题，非常方便。</p>
 <h3>随机菜单</h3>
-<p>点击下面的按钮，可随机生成一个两荤两素的菜单，生成次数不限。</p>
+<p>点击下面的按钮，会随机生成一个两荤两素的菜单，可无限次数更新哦。</p>
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-gray-700 text-yellow-500 rounded ">点我更新</button>
   
   <table class="w-full md:w-1/2 text-center"> 
