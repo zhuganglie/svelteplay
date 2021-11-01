@@ -3,7 +3,8 @@
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
     import MenuLeftOutline from 'svelte-material-icons/MenuLeftOutline.svelte';
-
+    import Rightbar from '$lib/rightbar.svelte';
+    
     export let size = "1.525rem";
 
     let open = false;
@@ -38,16 +39,21 @@
    <span>&copy 2020 - {new Date().getFullYear()}</span>
 </footer>
 </aside>
-    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-4/5 overflow-auto">
+    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto">
         <ClickOutside on:clickoutside="{() => (open = false)}">
         <button class:open on:click={toggleHeader} class="bg-gray-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="icon"><MenuLeftOutline {size} /></div><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>
+    <div class="min-w-max md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
+        <Rightbar />
+    </div>
+
 </div>
 
 <style>
     .open .icon {
         transform: rotate(-180deg); 
     }
+   
 </style>
