@@ -21,7 +21,7 @@
 </script>
 
 <div class="flex h-screen">
-    <aside class="flex md:flex flex-col items-center justify-around w-full md:w-1/5 border-r-4 border-gray-700 px-2 min-w-max" class:hidden={!open}>
+    <aside class="flex md:flex flex-col items-center justify-evenly w-full md:w-1/5 border-r-4 border-gray-700 px-2 min-w-max" class:hidden={!open}>
    <header class="text-center">
        <p class="text-2xl font-bold">一指禅</p>
    <p class="text-sm text-yellow-500">惯看秋月春风</p>
