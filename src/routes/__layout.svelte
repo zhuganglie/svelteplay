@@ -3,7 +3,7 @@
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
     import MenuLeftOutline from 'svelte-material-icons/MenuLeftOutline.svelte';
-    import Rightbar from '$lib/rightbar.svelte';
+    import Todo from '$lib/todo.svelte';
     
     export let size = "1.525rem";
 
@@ -46,7 +46,8 @@
         <slot />
     </main>
     <div class="min-w-max md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
-        <Rightbar />
+        <h3>日清月结</h3>
+        <Todo />
     </div>
 
 </div>
