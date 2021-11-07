@@ -5,9 +5,9 @@
     let newItem = '';
 
     let todoList = [
-        {text:"散步、打拳", status:true},
-        {text:"吃早餐、中餐、晚餐", status:false},
-        {text:"挣三百块钱", status:false},
+        {text:"运动三十分钟", status:false},
+        {text:"吃三餐饭", status:false},
+        {text:"挣三百块钱", status:true},
         {text:"睡觉休息", status:false},
     ];
 	
