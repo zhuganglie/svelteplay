@@ -3,7 +3,7 @@
 
     let size;
     let newItem = '';
-	
+
     let todoList = [
         {text:"散步、打拳", status:true},
         {text:"吃早餐、中餐、晚餐", status:false},
@@ -21,6 +21,7 @@
 		todoList = todoList;
     }
 </script>
+
 <div class="flex flex-col space-y-1">
 <input bind:value={newItem} type="text" placeholder="今天要做的事项" class="bg-gray-700 text-gray-300">
 <button on:click={addToList} class="py-1 px-2 bg-gray-700 text-gray-300">添加</button>
