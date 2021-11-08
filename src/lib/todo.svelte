@@ -42,8 +42,9 @@ const { data, error } = await supabase
 {:then data}
 {#each data as todo}
 <div class="flex justify-between items-center">
-	<span>{todo.text}</span>
-	
+	<span>{todo.id}</span>
+  <span>{todo.text}</span>
+  <hr />
     </div>
 	<br/>
 {/each} 
