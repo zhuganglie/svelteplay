@@ -1,4 +1,5 @@
 <script context="module">
+    
     const allTalks = import.meta.glob("./*.{md,svx}");
     let body = [];
     for(let path in allTalks) {
@@ -18,6 +19,7 @@
             },
         };
     };
+
    </script>
    
    <script lang="ts">
@@ -44,5 +46,7 @@
        <hr />
        {/if}
    {/each}
+
+   
    
    

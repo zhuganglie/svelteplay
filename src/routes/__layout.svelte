@@ -1,10 +1,10 @@
+
 <script lang="ts">
     import { page } from '$app/stores';
-    import { fly } from 'svelte/transition';
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
     import MenuRightOutline from 'svelte-material-icons/MenuRightOutline.svelte';
-    import Todo from '$lib/todo.svelte';
+    import Contact from '$lib/contact.svelte';
     
     export let size = "1.525rem";
 
@@ -47,9 +47,9 @@
     </ClickOutside>
         <slot />
     </main>
-    <div class="min-w-max md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
-        <h3>日清月结</h3>
-        <Todo />
+    <div class="md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
+        <h4>联系我</h4>
+        <Contact />
     </div>
 
 </div>
