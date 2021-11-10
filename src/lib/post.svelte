@@ -33,5 +33,7 @@
 	<slot />
 	<hr />
 	<a href="/blog/" class="bg-gray-700 text-yellow-500 hover:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
-<Comments identifier="blog mt-6" />
+<div class="mt-6">
+<Comments identifier="blog" />
+</div>
 </div>
