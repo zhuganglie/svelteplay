@@ -2,7 +2,7 @@
 <script>
     //import { page } from '$app/stores';
 	import Comments from 'disqus-svelte';
-	import {formatDate} from './date';
+	import {formatDate} from '../date';
 	import TagOutline from 'svelte-material-icons/TagOutline.svelte';
 	import Calendar from 'svelte-material-icons/Calendar.svelte';
 	export let title;
