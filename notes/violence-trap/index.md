@@ -10,20 +10,7 @@ category: "政治学"
 draft: false
 ---
 
-##### 研究问题
-
-为什么发展中国家不采用那些有助于发展的制度和政策？
-
-##### 研究假设
-
-暴力陷阱：可持续的政治改革需要经济发展，而经济发展又以政治改革为条件。
-
-
-##### 理论逻辑
-
-|自然国家|开放国家|
-|:-----:|:-----:|
-|有限准入|开放准入|
+Why do developing countries fail to adopt the institutions and policies that promote development? Our answer is the violence trap. Key political reforms — opening access and reducing rents — are typically feasible only when the domestic economy reaches a given level of complexity (for reasons we specify); yet complex economies typically can emerge only when key political reforms are already in place (for standard reasons). The interdependence of political reform and economic complexity entails violence because, as we show, unreformed polities lack adaptive efficiency. The literature sparked by Lipset’s modernization thesis has operationalized “economic development” as a higher GDP per capita. Building on Steuart, we view development as creating a more complex economy whose workings will be more seriously disrupted by political violence. Empirically, we show that economic complexity (as measured by the Hidalgo-Hausmann index) strongly deters coups, even controlling for GDP per capita and level of democracy.
 
 
 
