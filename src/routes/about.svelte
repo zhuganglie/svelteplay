@@ -1,17 +1,30 @@
 <script context="module">
-	//import { browser, dev } from '$app/env';
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
-	//export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
-	//export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
 	export const prerender = true;
+	export async function load({ session }) {
+        console.log("/profile - session: ", session);
+        if (!session.user.authenticated) {
+            return {
+                status: 302,
+                redirect: '/auth/unauthorized'
+            };
+        }
+        return {
+            props: {
+                email: session.user.email,
+            }
+        };
+    }
+</script>
+<script>
+    import { onMount } from 'svelte';
+    export let email;
+    export let name;
+    onMount(async () => {
+        const res = await fetch('/user');
+        const user = await res.json();
+        name = user.name;
+        email = user.email;
+    });
 </script>
 
 <svelte:head>
@@ -20,7 +33,8 @@
 
 <h2>关 于</h2>
 <hr />
-
+{#if email }
+    
 <p><strong>嗨，你好！欢迎来我的小站做客。 </strong></p>
     <p>本人小凯，外号猪刚鬣，是一名培训师。</p>
     <p>在生活中，我是一个乐天派。我相信办法总比问题多，相信没有什么过不去的坎儿，相信事情总会向好的方面转化。遇到问题的时候，别人急得跳脚，我却能淡定自若，表现得跟没事儿一样。因为这样的性格，常常被某个人骂“没心没肺”。下面这张图画出了我这种性格背后的逻辑。</p>
@@ -33,4 +47,6 @@
 
     <p>最近, 因新冠疫情在家办公。趁这段时间，我开始了一段前端开发的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
- 
+	{:else}
+    <p>Oops You are not logged in.  <a href="/"> Please click here to login again.</a></p>
+    {/if}

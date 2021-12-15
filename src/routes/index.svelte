@@ -5,6 +5,14 @@
 <script>
 	export let src="/images/lanke.webp"
 	export let alt="lanke"
+	import Login from '$lib/Login.svelte';
+    import Register from '$lib/Register.svelte';
+    import { goto } from '$app/navigation';
+
+    // Redirection to /profile
+    function redirectToProfile() {
+        goto('/profile');
+    }
 </script>
 
 <svelte:head>
@@ -32,6 +40,16 @@
 				 </div> 
 </div>
 	</section>
+
+	<div class="">
+		<!-- on:success listens for dispatched 'success' events -->
+		<p>
+			<Login on:success={redirectToProfile} />
+			</p>
+		<p>
+		<Register on:success={redirectToProfile} />
+		</p>
+		</div>
 	
 
 	
