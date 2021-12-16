@@ -40,16 +40,6 @@
 				 </div> 
 </div>
 	</section>
-
-	<div class="">
-		<!-- on:success listens for dispatched 'success' events -->
-		<p>
-			<Login on:success={redirectToProfile} />
-			</p>
-		<p>
-		<Register on:success={redirectToProfile} />
-		</p>
-		</div>
 	
 
 	

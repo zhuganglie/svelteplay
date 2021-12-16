@@ -1,30 +1,5 @@
 <script context="module">
 	export const prerender = true;
-	export async function load({ session }) {
-        console.log("/profile - session: ", session);
-        if (!session.user.authenticated) {
-            return {
-                status: 302,
-                redirect: '/auth/unauthorized'
-            };
-        }
-        return {
-            props: {
-                email: session.user.email,
-            }
-        };
-    }
-</script>
-<script>
-    import { onMount } from 'svelte';
-    export let email;
-    export let name;
-    onMount(async () => {
-        const res = await fetch('/user');
-        const user = await res.json();
-        name = user.name;
-        email = user.email;
-    });
 </script>
 
 <svelte:head>
@@ -33,7 +8,7 @@
 
 <h2>关 于</h2>
 <hr />
-{#if email }
+
     
 <p><strong>嗨，你好！欢迎来我的小站做客。 </strong></p>
     <p>本人小凯，外号猪刚鬣，是一名培训师。</p>
@@ -47,6 +22,4 @@
 
     <p>最近, 因新冠疫情在家办公。趁这段时间，我开始了一段前端开发的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
-	{:else}
-    <p>Oops You are not logged in.  <a href="/"> Please click here to login again.</a></p>
-    {/if}
+	
