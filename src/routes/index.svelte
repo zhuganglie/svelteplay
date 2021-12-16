@@ -5,14 +5,6 @@
 <script>
 	export let src="/images/lanke.webp"
 	export let alt="lanke"
-	import Login from '$lib/Login.svelte';
-    import Register from '$lib/Register.svelte';
-    import { goto } from '$app/navigation';
-
-    // Redirection to /profile
-    function redirectToProfile() {
-        goto('/profile');
-    }
 </script>
 
 <svelte:head>
