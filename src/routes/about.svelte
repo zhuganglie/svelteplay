@@ -2,18 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script>
-    import {user} from "./sessionStore"
-    import supabase from "$lib/db"
-    import Auth from "./Auth.svelte"
-    import Profile from "./Profile.svelte"
-
-    user.set(supabase.auth.user())
-
-    supabase.auth.onAuthStateChange((_, session) => {
-     user.set(session.user);
-    })
-</script>
 
 <svelte:head>
 	<title>About</title>
@@ -22,8 +10,6 @@
 <h2>关 于</h2>
 <hr />
 
-
-    {#if $user} 
 <p><strong>嗨，你好！欢迎来我的小站做客。 </strong></p>
     <p>本人小凯，外号猪刚鬣，是一名培训师。</p>
     <p>在生活中，我是一个乐天派。我相信办法总比问题多，相信没有什么过不去的坎儿，相信事情总会向好的方面转化。遇到问题的时候，别人急得跳脚，我却能淡定自若，表现得跟没事儿一样。因为这样的性格，常常被某个人骂“没心没肺”。下面这张图画出了我这种性格背后的逻辑。</p>
@@ -36,7 +22,5 @@
 
     <p>最近, 因新冠疫情在家办公。趁这段时间，我开始了一段前端开发的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
-    {:else}
-    <Auth />
-{/if}
+    
 	
