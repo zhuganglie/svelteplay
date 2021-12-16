@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
 	export const prerender = true;
+	
 </script>
 
 <script>
@@ -10,6 +11,7 @@
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
+
 
 <section class="grid h-full w-full">
 	<div class="self-center justify-self-center">
