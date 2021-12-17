@@ -29,7 +29,6 @@
 	}
 
 	let currentTab = "Signin";
-
 	const changeTab = (tab) => {
 		currentTab = tab;
 	};
@@ -38,35 +37,37 @@
 <h2>欢迎你！</h2>
 <hr />
 
-<div class="h-full w-full px-4 mx-auto grid content-evenly self-center justify-self-center text-center">
-<<<<<<< HEAD
-
-	<div class="flex">
-		<div class="col tab-heading {currentTab == 'Signin' ? 'tab-active': ''}" on:click={() => changeTab("Signin")}>
-			<span>登录</span>
+<div class="h-96 w-full md:w-2/5 mx-auto px-4 grid self-center justify-self-center content-center text-center ">
+	<div class="flex justify-center place-items-center space-x-2">
+		<div class=" {currentTab == 'Signin' ? 'tab-active': ''}" on:click={() => changeTab("Signin")}>
+			<span class="px-2 py-0.5">登录</span>
 		</div>
-		<div class="col tab-heading {currentTab == 'Signup' ? 'tab-active': ''}" on:click={() => changeTab("Signup")}>
-			<span>注册</span>
+		<div class=" {currentTab == 'Signup' ? 'tab-active': ''}" on:click={() => changeTab("Signup")}>
+			<span class="px-2 py-0.5">注册</span>
 		</div>
 	</div>
+	<br />
+    <div>
+	{#if currentTab === "Signin"}
+	<form on:submit|preventDefault={signIn} class="">
+		<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /> <br />
+		<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
+		<button class="bg-gray-700 text-gray-100 px-2 py-0.5">登录</button>
+	</form>
 
-	{#if currentTab === "Signup"}
-=======
->>>>>>> 0e591a7994d59bb14ebc864af55d7a9525cbcfe5
-<form on:submit|preventDefault={signUp} class="">
-	<label for="email">电邮</label> &nbsp;
-	<input id="email" name="email" type="email" onfocus="this.value=''" class="bg-gray-700 text-gray-300" /><br /><br />
-	<label for="password">密码</label> &nbsp;
-	<input id="password" name="password" type="password" onfocus="this.value=''" class="bg-gray-700 text-gray-300" /><br /><br />
-	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">注册</button>
-</form>
 {:else}
-<form on:submit|preventDefault={signIn} class="">
-	<label for="email">电邮</label> &nbsp;
-	<input id="email" name="email" type="email" class="bg-gray-700 text-gray-300" /><br /> <br />
-	<label for="password">密码</label> &nbsp;
-	<input id="password" name="password" type="password" class="bg-gray-700 text-gray-300" /><br /><br />
-	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">登入</button>
+<form on:submit|preventDefault={signUp} class="">
+	<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
+	<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
+	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">注册</button>
 </form>
 {/if}
 </div>
+</div>
+
+<style>
+	.tab-active {
+		border-bottom: 2px solid white;
+	}
+	
+</style>
