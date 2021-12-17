@@ -29,20 +29,24 @@
 	}
 </script>
 
-<h1>Welcome to my app!</h1>
-<h2>Sign up!</h2>
-<form on:submit|preventDefault={signUp}>
-	<label for="email">Email</label>
-	<input id="email" name="email" type="email" /><br />
-	<label for="password">Password</label>
-	<input id="password" name="password" type="password" /><br />
-	<button>Sign Up</button>
+<h2>欢迎你！</h2>
+<hr />
+
+<div class="h-full w-full mx-auto grid content-evenly self-center justify-self-center text-center">
+<form on:submit|preventDefault={signUp} class="">
+	<label for="email">电邮</label> &nbsp;
+	<input id="email" name="email" type="email" onfocus="this.value=''" size="30%" class="bg-gray-700 text-gray-300" /><br /><br />
+	<label for="password">密码</label> &nbsp;
+	<input id="password" name="password" type="password" onfocus="this.value=''" size="30%" class="bg-gray-700 text-gray-300" /><br /><br />
+	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">注册</button>
 </form>
-<h2>..or Log in!</h2>
-<form on:submit|preventDefault={signIn}>
-	<label for="email">Email</label>
-	<input id="email" name="email" type="email" /><br />
-	<label for="password">Password</label>
-	<input id="password" name="password" type="password" /><br />
-	<button>Login</button>
+
+<form on:submit|preventDefault={signIn} class="">
+	<label for="email">电邮</label> &nbsp;
+	<input id="email" name="email" type="email" size="30%" class="bg-gray-700 text-gray-300" /><br /> <br />
+	<label for="password">密码</label> &nbsp;
+	<input id="password" name="password" type="password" size="30%" class="bg-gray-700 text-gray-300" /><br /><br />
+	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">登入</button>
 </form>
+
+</div>
