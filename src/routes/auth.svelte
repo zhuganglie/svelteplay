@@ -3,7 +3,7 @@
 		if (session) {
 			return {
 				status: 302,
-				redirect: '/about'
+				redirect: '/'
 			};
 		}
 		return {};
@@ -16,7 +16,7 @@
 			method: 'post',
 			body: new FormData(e.target)
 		});
-		if (response.ok) window.location = '/about';
+		if (response.ok) window.location = '/';
 		else alert(await response.text());
 	}
 	async function signIn(e) {
@@ -24,7 +24,7 @@
 			method: 'post',
 			body: new FormData(e.target)
 		});
-		if (response.ok) window.location = '/about';
+		if (response.ok) window.location = '/';
 		else alert(await response.text());
 	}
 </script>
