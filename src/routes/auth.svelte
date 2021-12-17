@@ -24,7 +24,7 @@
 			method: 'post',
 			body: new FormData(e.target)
 		});
-		if (response.ok) window.location = '/';
+		if (response.ok) window.location = '/about';
 		else alert(await response.text());
 	}
 </script>
