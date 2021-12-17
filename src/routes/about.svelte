@@ -37,7 +37,7 @@
     </p>
 
     <form action="/logout" method="get">
-        <button> Log out </button>
+        <button class=""> Log out </button>
     </form>
     
 	
