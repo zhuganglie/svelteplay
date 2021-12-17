@@ -37,7 +37,7 @@
     </p>
 
 	<form action="/logout" method="get">
-		<button class=""> Log out </button>
+		<button class="bg-gray-700 text-gray-300 px-2 py-0.5"> 登出 </button>
 	</form>
 
    
