@@ -32,7 +32,7 @@
 <h2>欢迎你！</h2>
 <hr />
 
-<div class="h-full w-full mx-auto grid content-evenly self-center justify-self-center text-center">
+<div class="h-full w-full px-4 mx-auto grid content-evenly self-center justify-self-center text-center">
 <form on:submit|preventDefault={signUp} class="">
 	<label for="email">电邮</label> &nbsp;
 	<input id="email" name="email" type="email" onfocus="this.value=''" size="30%" class="bg-gray-700 text-gray-300" /><br /><br />
