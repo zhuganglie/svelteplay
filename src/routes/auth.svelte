@@ -36,7 +36,7 @@
 
 <h2>欢迎你！</h2>
 <hr />
-
+<p>请在下面登录后浏览本页面内容。</p>
 <div class="h-96 w-full md:w-2/5 mx-auto px-4 grid self-center justify-self-center content-center text-center ">
 	<div class="flex justify-center place-items-center space-x-2">
 		<div class=" {currentTab == 'Signin' ? 'tab-active': ''}" on:click={() => changeTab("Signin")}>
