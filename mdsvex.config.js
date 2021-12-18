@@ -1,5 +1,22 @@
-import { createRequire } from "module";
+//import { createRequire } from "module";
+//const require = createRequire(import.meta.url)
+//export const mdsvexConfig = require("./mdsvex.config.cjs");
+import github from 'remark-github';
 
-const require = createRequire(import.meta.url)
+const config = {
+  "extensions": [".svelte.md", ".md", ".svx"],
 
-export const mdsvexConfig = require("./mdsvex.config.cjs");
+  layout: {
+		blog: './src/lib/templates/post.svelte',
+		slides: './src/lib/templates/slide.svelte',
+	},
+
+  "smartypants": {
+    "dashes": "oldschool"
+  },
+
+  "remarkPlugins": [github],
+  "rehypePlugins": [],
+};
+
+export default config;

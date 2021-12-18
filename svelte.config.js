@@ -1,5 +1,5 @@
 import { mdsvex } from "mdsvex";
-import { mdsvexConfig } from "./mdsvex.config.js";
+import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-vercel';
 
