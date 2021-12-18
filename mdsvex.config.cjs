@@ -1,3 +1,4 @@
+
 module.exports = {
 	extensions: [".svelte.md", ".md", ".svx"],
 	layout: {
