@@ -12,7 +12,7 @@
 
 <script>
 	async function signUp(e) {
-		const response = await fetch('/signup', {
+		const response = await fetch('/api/signup', {
 			method: 'post',
 			body: new FormData(e.target)
 		});
@@ -20,7 +20,7 @@
 		else alert(await response.text());
 	}
 	async function signIn(e) {
-		const response = await fetch('/signin', {
+		const response = await fetch('/api/signin', {
 			method: 'post',
 			body: new FormData(e.target)
 		});

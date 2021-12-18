@@ -36,7 +36,7 @@
     <p>最近, 因新冠疫情在家办公。趁这段时间，我开始了一段前端开发的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">Sveltekit</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
 
-	<form action="/logout" method="get">
+	<form action="/api/logout" method="get">
 		<button class="bg-gray-700 text-gray-300 px-2 py-0.5"> 登出 </button>
 	</form>
 

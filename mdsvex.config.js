@@ -15,7 +15,7 @@ const config = {
     "dashes": "oldschool"
   },
 
-  "remarkPlugins": ["github"],
+  "remarkPlugins": [github],
   "rehypePlugins": [],
 };
 

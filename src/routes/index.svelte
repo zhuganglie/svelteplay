@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+	//export const prerender = true;
 	
 </script>
 
@@ -34,9 +34,6 @@
 				 </div> 
 </div>
 	</section>
-	
-
-	
 
 		<style>  
 		@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
