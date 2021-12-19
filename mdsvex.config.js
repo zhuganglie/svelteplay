@@ -1,22 +1,21 @@
-//import { createRequire } from "module";
-//const require = createRequire(import.meta.url)
-//export const mdsvexConfig = require("./mdsvex.config.cjs");
-import * as github from "remark-github";
+
+import remarkGfm  from 'remark-gfm';
+import emoji from 'remark-emoji';
 
 const config = {
-  "extensions": [".svelte.md", ".md", ".svx"],
+  extensions: [".svelte.md", ".md", ".svx"],
 
-  "layout": {
+  layout: {
 		"blog": "./src/lib/templates/post.svelte",
 		"slides": "./src/lib/templates/slide.svelte",
 	},
 
-  "smartypants": {
+  smartypants: {
     "dashes": "oldschool"
   },
 
-  "remarkPlugins": [github],
-  "rehypePlugins": [],
+  remarkPlugins: [emoji, remarkGfm],
+  rehypePlugins: [],
 };
 
 export default config;
