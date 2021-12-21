@@ -22,7 +22,7 @@
             <div class="w-full md:w-11/12 m-0">
             <h4>{talk.title}</h4>
             <p>{talk.description}</p>
-            <a href={talk.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-gray-700 text-yellow-500 text-sm flex items-center space-x-2">
+            <a href={talk.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-zinc-700 text-yellow-500 text-sm flex items-center space-x-2">
                 <span>详 情</span><FilePdfOutline {size} />
             </a>
             </div>

@@ -40,7 +40,7 @@
    {#each dateSortedTalks as {path, metadata: {title, date, draft}}}
    {#if !draft}
        <div class=" mb-4">
-          <span class="text-sm border-b border-gray-300 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
+          <span class="text-sm border-b border-zinc-300 px-2 py-0.5 mb-3 min-w-max"> {formatDate(date)}</span> <br /> <br />
        <a href={`/slides/${path.replace(".md", "").replace(".svx", "")}`} class="text-md text-yellow-500 hover:text-yellow-300 text-left font-semibold mb-2">{title}</a>
          </div>
        <hr />

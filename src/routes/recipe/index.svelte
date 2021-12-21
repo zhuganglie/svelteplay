@@ -46,7 +46,7 @@
 <p>上面 👆 这个问题给我带来了不少困扰。为此，我特地写了下面 👇 这个小程序。有了这个程序，不必动脑筋想菜名，只需点击按钮就可解决今天吃什么的问题，非常方便。</p>
 <h3>随机菜单</h3>
 <p>点击下面的按钮，会随机生成一个两荤两素的菜单，可无限次数更新哦。</p>
-<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-gray-700 text-yellow-500 rounded ">点我更新</button>
+<button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-zinc-700 text-yellow-500 rounded ">点我更新</button>
   
   <table class="w-full md:w-1/2 text-center"> 
     <tr>
@@ -101,19 +101,19 @@
 
   <style>
     .themed {
-      --border: 1px solid gray;
+      --border: 1px solid rgb(63 63 70);
       --borderRadius: 0.25rem;
-      --background: rgba(55, 65, 81, var(--tw-text-opacity));
-      --borderFocusColor: rgba(165, 180, 252, var(--tw-text-opacity));
-      --borderHoverColor: rgba(165, 180, 252, var(--tw-text-opacity));
-      --itemHoverBG: rgba(17, 24, 39, var(--tw-text-opacity));
-      --multiItemBG: rgba(17, 24, 39, var(--tw-text-opacity));
-      --multiItemActiveBG: rgba(55, 65, 81, var(--tw-text-opacity));
+      --background: rgb(63 63 70);
+      --borderFocusColor: rgb(113 113 122);
+      --borderHoverColor: rgb(113 113 122);
+      --itemHoverBG: rgb(39 39 42);
+      --multiItemBG: rgb(39 39 42);
+      --multiItemActiveBG: rgb(39 39 42);
       --inputColor: rgba(6, 78, 59, var(--tw-bg-opacity));
-      --listBackground: rgba(55, 65, 81, var(--tw-text-opacity));
+      --listBackground: rgb(63 63 70);
     }
     table, td, th {
-      border: 1px solid rgba(55, 65, 81, var(--tw-text-opacity));
+      border: 1px solid rgb(63 63 70);
     }
     td, th {
       padding: 0.5rem;

@@ -43,4 +43,4 @@
 </li>
 {/each}
 <hr />
-<a href="/blog/" class="bg-gray-700 text-gray-300 hover:text-gray-100 focus:text-gray-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
+<a href="/blog/" class="bg-zinc-700 text-zinc-300 hover:text-zinc-100 focus:text-zinc-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>

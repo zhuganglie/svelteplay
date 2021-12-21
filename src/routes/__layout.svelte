@@ -23,7 +23,7 @@
 </script>
 
 <div class="flex h-screen">
-    <aside class="flex md:flex flex-col items-center justify-evenly w-full md:w-1/5 border-r-4 border-gray-700 px-2 min-w-max" class:hidden={!open}>
+    <aside class="flex md:flex flex-col items-center justify-evenly w-full md:w-1/5 border-r-4 border-zinc-700 px-2 min-w-max" class:hidden={!open}>
    <header class="text-center">
        <p class="text-2xl font-bold">一指禅</p>
    <p class="text-sm text-yellow-500">惯看秋月春风</p>
@@ -31,8 +31,8 @@
    <nav>
     <ul class="list-none text-center m-0">
         {#each routes as route}
-        <li class="my-4 mx-0 border-gray-300" class:border-b-2={$page.path === route.href}>
-        <a sveltekit:prefetch href={route.href} class="block text-gray-300 hover:text-gray-100">{route.name}</a>
+        <li class="my-4 mx-0 border-zinc-300" class:border-b-2={$page.path === route.href}>
+        <a sveltekit:prefetch href={route.href} class="block text-zinc-300 hover:text-zinc-100">{route.name}</a>
         </li>
         {/each}
     </ul>	
@@ -44,7 +44,7 @@
 
     <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto">
         <ClickOutside on:clickoutside="{() => (open = false)}">
-        <button class:open on:click={toggleHeader} class="bg-gray-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="icon"><MenuRightOutline {size} /></div><span class="text-lg font-bold">一指禅</span></button>
+        <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="icon"><MenuRightOutline {size} /></div><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>

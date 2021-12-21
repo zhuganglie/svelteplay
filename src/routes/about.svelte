@@ -37,7 +37,7 @@
     </p>
 
 	<form action="/api/logout" method="get">
-		<button class="bg-gray-700 text-gray-300 px-2 py-0.5"> 登出 </button>
+		<button class="bg-zinc-700 text-zinc-300 px-2 py-0.5"> 登出 </button>
 	</form>
 
    

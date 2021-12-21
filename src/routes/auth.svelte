@@ -50,16 +50,16 @@
     <div>
 	{#if currentTab === "Signin"}
 	<form on:submit|preventDefault={signIn} class="">
-		<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /> <br />
-		<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
-		<button class="bg-gray-700 text-gray-100 px-2 py-0.5">登录</button>
+		<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-zinc-700 text-zinc-300 w-full" /><br /> <br />
+		<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-zinc-700 text-zinc-300 w-full" /><br /><br />
+		<button class="bg-zinc-700 text-zinc-100 px-2 py-0.5">登录</button>
 	</form>
 
 {:else}
 <form on:submit|preventDefault={signUp} class="">
-	<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
-	<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-gray-700 text-gray-300 w-full" /><br /><br />
-	<button class="bg-gray-700 text-gray-100 px-2 py-0.5">注册</button>
+	<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-zinc-700 text-zinc-300 w-full" /><br /><br />
+	<input id="password" name="password" type="password" placeholder="密码" onfocus="this.value=''" class="bg-zinc-700 text-zinc-300 w-full" /><br /><br />
+	<button class="bg-zinc-700 text-zinc-100 px-2 py-0.5">注册</button>
 </form>
 {/if}
 </div>
@@ -67,7 +67,7 @@
 
 <style>
 	.tab-active {
-		border-bottom: 2px solid white;
+		border-bottom: 2px solid rgb(212 212 216);
 	}
 	
 </style>
