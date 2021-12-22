@@ -31,7 +31,7 @@
       <hr />
       <ul>
           <li>书名：{book}</li>
-          <li><div class="flex flex-wrap space-x-2 md:space-y-0 space-y-2">作者：{#each authors as author}<span class="rounded max-w-max px-2.5 py-0.5 bg-gray-700">{author}</span>{/each}</div></li>
+          <li><div class="flex flex-wrap space-x-2 md:space-y-0 space-y-2">作者：{#each authors as author}<span class="rounded max-w-max px-2.5 py-0.5 bg-zinc-700">{author}</span>{/each}</div></li>
           <li>出版社：{publisher}</li>
           <li>出版时间：{year} 年</li>
           <li>分类：{category}</li>
@@ -42,7 +42,7 @@
       </article>
       <hr />
       <footer>
-	<a href="/notes/" class="bg-gray-700 text-yellow-500 hover:text-gray-100 rounded mb-4 px-2.5 py-0.5">&larr; 返回列表</a>
+	<a href="/notes/" class="bg-zinc-700 text-yellow-500 hover:text-zinc-100 rounded mb-4 px-2.5 py-0.5">&larr; 返回列表</a>
       </footer>
     </div>
   </article>

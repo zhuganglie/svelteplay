@@ -109,7 +109,7 @@
       --itemHoverBG: rgb(39 39 42);
       --multiItemBG: rgb(39 39 42);
       --multiItemActiveBG: rgb(39 39 42);
-      --inputColor: rgba(6, 78, 59, var(--tw-bg-opacity));
+      --inputColor: rgb(113 113 122);
       --listBackground: rgb(63 63 70);
     }
     table, td, th {
