@@ -16,7 +16,7 @@
   </script>
 
 <svelte:head>
-  <title>Blog</title>
+  <title>Notes</title>
 </svelte:head>
   
   <div class="flex flex-col flex-grow">
