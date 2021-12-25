@@ -1,4 +1,3 @@
-
 <script>
     //import { page } from '$app/stores';
 	import Comments from 'disqus-svelte';
