@@ -4,7 +4,7 @@
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
     import MenuRightOutline from 'svelte-material-icons/MenuRightOutline.svelte';
-    import Contact from '$lib/contact.svelte';
+    import Contact from '../lib/contact.svelte';
     
     export let size = "1.525rem";
 
