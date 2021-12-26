@@ -15,7 +15,7 @@
 	const routes = [
 		{href: '/', name: '首 页'},
 		{href: '/blog', name: '博 客'},
-        {href: '/notes', name: '笔 记'},
+        {href: '/notes', name: '读 书'},
 		{href: '/talks', name: '报 告'},
 		{href: '/recipe', name: '吃 货'},
 		{href: '/about', name: '关 于'}

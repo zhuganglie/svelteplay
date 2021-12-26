@@ -20,7 +20,7 @@
 </svelte:head>
   
   <div class="flex flex-col flex-grow">
-    <h2>读书笔记</h2>
+    <h2>读 书</h2>
     <hr />
     {#each notes as note}
       {#if !note.draft}
