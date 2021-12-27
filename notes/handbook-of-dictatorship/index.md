@@ -1,6 +1,6 @@
 ---
 title: 独裁者手册
-date: 2011-12-18
+date: 2019-12-18
 book: "The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics"
 authors: ["Bruce Bueno de Mesquita", " Alastair Smith"]
 publisher: PublicAffairs

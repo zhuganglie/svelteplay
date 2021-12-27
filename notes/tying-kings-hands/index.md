@@ -1,6 +1,6 @@
 ---
-title: 缚住国王的手
-date: 2011-11-26
+title: 捆住国王的手
+date: 2004-11-26
 book: "Tying the King's hands: Credible commitments and royal fiscal policy during the old regime"
 authors: ["Hilton L. Root"]
 publisher: Rationality and Society, Vol 1, Issue 2, 240-258

@@ -1,6 +1,6 @@
 ---
 title: 宪法和承诺
-date: 2011-11-26
+date: 2003-11-26
 book: "Constitutions and Commitment: The Evolution of Institutions Governing Public Choice in Seventeenth-Century England"
 authors: ["Douglass C. North", "Barry R. Weingast"]
 publisher: The Journal of Economic History, Vol 49, No. 4, 803-832

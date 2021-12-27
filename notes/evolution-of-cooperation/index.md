@@ -1,6 +1,6 @@
 ---
 title: 合作的演进
-date: 2011-12-21
+date: 2008-12-21
 book: "The Evolution of Cooperation"
 authors: ["	Robert Axelrod"]
 publisher: Basic Books

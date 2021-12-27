@@ -1,6 +1,6 @@
 ---
 title: 民主与法治的政治基础
-date: 2011-11-26
+date: 2006-11-26
 book: "The Political Foundations of Democracy and the Rule of Law"
 authors: ["Barry R. Weingast"]
 publisher: The American Political Science Review, Vol 91, No. 2, 245-263
