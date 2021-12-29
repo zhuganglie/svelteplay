@@ -19,7 +19,7 @@
     export let note
     export let size = "1em";
     
-    let { html, date, title, book, publisher, year, authors, category } = note
+    let { html, date, title, book, publisher, year, authors, categories } = note
     let dateDisplay = formatDate(date);
   </script>
 
@@ -34,7 +34,7 @@
           <li><div class="flex flex-wrap space-x-2 space-y-2">作者：{#each authors as author}<span class="rounded max-w-max px-2.5 py-0.5 bg-zinc-700">{author}</span>{/each}</div></li>
           <li>出版社：{publisher}</li>
           <li>出版时间：{year} 年</li>
-          <li>分类：{category}</li>
+          <li>分类：{#each categories as category}<span class="rounded max-w-max px-2.5 py-0.5 bg-zinc-700">{category}</span>{/each}</li>
           </ul>
       <hr />
       <article>

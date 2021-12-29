@@ -5,7 +5,7 @@ book: "Violence and Social Orders: A Conceptual Framework for Interpreting Recor
 authors: ["Douglass C. Morth", "John Joseph Wallis", "Barry R. Weingast"]
 publisher: Cambridge University Press
 year: 2009
-category: "政治学"
+categories: ["政治学"]
 draft: false
 ---
 
