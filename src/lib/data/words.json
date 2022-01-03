@@ -1,0 +1,36 @@
+[
+    {
+        "word":"jeopardize",
+        "level":"S2",
+        "property": {
+            "verb": {
+                "meaning":["put (someone or something) into a situation in which there is a danger of loss, harm, or failure"],
+                "example": "A devaluation of the dollar would jeopardize New York's position as a financial centre."
+            }
+        },
+        "picture": "",
+        "synonym":[""],
+        "antonym": [""],
+        "pronunciation":[""],
+        "affix":[]
+    },
+    {
+        "word":"manoeuver",
+        "level":"S3",
+        "property": {
+            "verb": {
+                "meaning": ["carefully guide or manipulate (someone or something) in order to achieve an end","move skillfully or carefully"],
+                "example": "They were manoeuvring him into betraying his friend."
+            },
+            "noun": {
+                "meaning":"",
+                "example":""
+            }
+        },
+        "picture": "",
+        "synonym":[""],
+        "antonym": [""],
+        "pronunciation":[""],
+        "affix": []
+    }
+]
