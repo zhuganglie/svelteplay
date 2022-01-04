@@ -1,36 +1,43 @@
 [
     {
-        "word":"jeopardize",
+        "word":"郁郁葱葱",
         "level":"S2",
-        "property": {
-            "verb": {
-                "meaning":["put (someone or something) into a situation in which there is a danger of loss, harm, or failure"],
-                "example": "A devaluation of the dollar would jeopardize New York's position as a financial centre."
+        "content": [
+            {
+        "property": "形容词",
+        "meaning":"形容草木苍翠茂盛、生机勃勃的样子。",
+        "example": "树林里的树木都长得郁郁葱葱的。",
+        "pronunciation":["yù yù cōng cōng"]
             }
-        },
-        "picture": "",
-        "synonym":[""],
+        ],
+        "image": "",
+        "audio": "",
+        "video":"",
+        "synonym":["生机勃勃"],
         "antonym": [""],
-        "pronunciation":[""],
         "affix":[]
     },
     {
         "word":"manoeuver",
         "level":"S3",
-        "property": {
-            "verb": {
-                "meaning": ["carefully guide or manipulate (someone or something) in order to achieve an end","move skillfully or carefully"],
-                "example": "They were manoeuvring him into betraying his friend."
+        "content": [
+           {"property": "verb", 
+            "meaning": "carefully guide or manipulate (someone or something) in order to achieve an end",
+            "example": "They were manoeuvring him into betraying his friend.",
+            "pronunciation":[""]
             },
-            "noun": {
-                "meaning":"",
-                "example":""
+             {
+                 "property": "noun",
+                "meaning":"A",
+                "example":"A",
+                "pronunciation":["HH"]
             }
-        },
-        "picture": "",
+        ],
+        "image": "",
+        "audio": "",
+        "video": "",
         "synonym":[""],
         "antonym": [""],
-        "pronunciation":[""],
         "affix": []
     }
 ]

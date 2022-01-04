@@ -13,7 +13,7 @@ import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     mediaQuery: 'max',
     breakpoints: {
       1000: {
-        height: '25rem',
+        height: '35rem',
       },
     },
   }
@@ -23,6 +23,26 @@ import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 <hr />
 
   <Splide options={options}>
- <SplideSlide>One</SplideSlide>
- <SplideSlide>Two</SplideSlide>
+    {#each Words as word}
+ <SplideSlide>
+   <div class="h-full w-4/5 grid place-content-center m-auto">
+    <details>
+      <summary class="text-xl mb-6">{word.word}</summary>
+      <div class="flex">
+        {#each word.content as item}
+        <div>
+        <p>读音：{item.pronunciation}</p>
+        <p>词性：{item.property}</p>
+        <p>解释：{item.meaning}</p>
+        <p>例句：{item.example}</p>
+        </div>
+        {/each}
+        </div>
+        <p>近义词：</p>
+        <p>看图：</p>
+          <p>视频：</p>
+          <p>音频：</p>
+    </details>
+ </SplideSlide>
+ {/each}
   </Splide>
