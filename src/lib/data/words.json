@@ -18,16 +18,16 @@
         "affix":[]
     },
     {
-        "word":"manoeuver",
-        "level":"S3",
+        "word":"肥沃",
+        "level":"S4",
         "content": [
-           {"property": "verb", 
-            "meaning": "carefully guide or manipulate (someone or something) in order to achieve an end",
-            "example": "They were manoeuvring him into betraying his friend.",
-            "pronunciation":[""]
+           {"property": "形容词", 
+            "meaning": "形容土质养分充足，生产力大。",
+            "example": "这里是一片肥沃的土地。",
+            "pronunciation":["féi wò"]
             },
              {
-                 "property": "noun",
+                 "property": "形容词",
                 "meaning":"A",
                 "example":"A",
                 "pronunciation":["HH"]
