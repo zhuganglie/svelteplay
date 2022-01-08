@@ -1,5 +1,5 @@
 <script context="module">
-	export async function load({ page, fetch, session, context }) {
+	export async function load({ params, fetch, session, context }) {
 		if (session) {
 			return {
 				status: 302,

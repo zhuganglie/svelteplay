@@ -3,6 +3,7 @@
     import { page } from '$app/stores';
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
+    //import 'uno.css';
     import MenuRightOutline from 'svelte-material-icons/MenuRightOutline.svelte';
     import Contact from '../lib/contact.svelte';
     

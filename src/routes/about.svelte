@@ -1,6 +1,6 @@
 <script context="module">
 	//export const prerender = true;
-	export async function load({ page, fetch, session, context }) {
+	export async function load({ params, fetch, session, context }) {
 		if (!session) {
 			return {
 				status: 302,
