@@ -31,7 +31,7 @@
    <nav>
     <ul class="list-none text-center m-0">
         {#each routes as route}
-        <li class="my-4 mx-0 border-zinc-300" class:border-b-2={$page.path === route.href}>
+        <li class="my-4 mx-0 border-zinc-300" class:border-b-2={$page.url.pathname === route.href}>
         <a sveltekit:prefetch href={route.href} class="block text-zinc-300 hover:text-zinc-100">{route.name}</a>
         </li>
         {/each}

@@ -1,6 +1,6 @@
 <script context="module">
     // export const prerender = true
-    export async function load({ fetch, page: { params } }) {
+    export async function load({ fetch, params }) {
       const { slug } = params
       const res = await fetch(`/notes/${slug}.json`)
       if (res.ok) {
