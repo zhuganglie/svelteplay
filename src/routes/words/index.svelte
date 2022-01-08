@@ -34,8 +34,8 @@ import '@splidejs/splide/dist/css/splide.min.css';
       <div class="flex space-x-8">
         {#each word.content as item}
         <div class="">
-        <p>读音：{item.pronunciation}</p>
         <p>词性：{item.property}</p>
+        <p>读音：{item.pronunciation}</p>
         <p>解释：{item.meaning}</p>
         <p>例句：{item.example}</p>
         </div>
