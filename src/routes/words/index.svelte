@@ -31,17 +31,18 @@ import '@splidejs/splide/dist/css/splide.min.css';
    <div class="h-full w-5/6 grid place-content-center m-auto">
     <details>
       <summary class="text-3xl mb-6">{word.word}</summary>
-      <div class="flex space-x-8">
+      <ol class="flex space-x-8 list-decimal ">
         {#each word.content as item}
-        <div class="">
+        <li class="border p-2">
         <p>词性：{item.property}</p>
         <p>读音：{item.pronunciation}</p>
         <p>解释：{item.meaning}</p>
         <p>例句：{item.example}</p>
-        </div>
+        
+        </li>
         {/each}
-        </div>
-        <p>近义词：{#each word.synonym as item}<span class="mr-2">{item}</span>{/each}</p>
+      </ol>
+      <p>近义词：{#each word.synonym as item}<span class="mr-2">{item}</span>{/each}</p>
         <p>看图：</p>
           <p>视频：</p>
           <p>音频：</p>
