@@ -2,8 +2,8 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-vercel';
-//import Unocss from 'unocss/vite';
-//import { presetUno } from 'unocss';
+import Unocss from 'unocss/vite';
+import { presetIcons } from 'unocss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,12 +18,12 @@ const config = {
 		adapter: adapter(),
 		ssr: false,
 		vite: {
-		/*	plugins: [
+			plugins: [
 				Unocss({ 
-					presets: [presetUno()],
-					rules:[]
+					presets: [presetIcons({})],
+					rules:[],
 				})
-			  ],*/
+			  ],
 			server: {
 				fs: {
 					allow: ['..'],

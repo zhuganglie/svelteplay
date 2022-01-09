@@ -1,9 +1,6 @@
 <script>
     import {formatDate} from "../../lib/date";
     import talks from "$lib/data/talks.json";
-    import FilePdfOutline from "svelte-material-icons/FilePdfOutline.svelte";
-
-    export let size = "1.15em";
     </script>
 
     <svelte:head>
@@ -23,7 +20,7 @@
             <h4>{talk.title}</h4>
             <p>{talk.description}</p>
             <a href={talk.slide} target="_blank" class="rounded w-max px-2.5 py-1 bg-zinc-700 text-yellow-500 text-sm flex items-center space-x-2">
-                <span>详 情</span><FilePdfOutline {size} />
+                <span>详 情</span><div class="i-mdi-presentation" />
             </a>
             </div>
         </div>

@@ -3,12 +3,9 @@
     import { page } from '$app/stores';
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
-    //import 'uno.css';
-    import MenuRightOutline from 'svelte-material-icons/MenuRightOutline.svelte';
+    import 'uno.css';
     import Contact from '../lib/contact.svelte';
     
-    export let size = "1.525rem";
-
     let open = false;
     const toggleHeader = () => {
     open = !open;}
@@ -45,7 +42,7 @@
 
     <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto">
         <ClickOutside on:clickoutside="{() => (open = false)}">
-        <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="icon"><MenuRightOutline {size} /></div><span class="text-lg font-bold">一指禅</span></button>
+        <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><span class="i-mdi-menu-right-outline icon" /><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>

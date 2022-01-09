@@ -14,10 +14,8 @@
   
   <script lang='ts'>
     import {formatDate} from '$lib/date';
-    import Calendar from 'svelte-material-icons/Calendar.svelte';
     
     export let note
-    export let size = "1em";
     
     let { html, date, title, book, publisher, year, authors, categories } = note
     let dateDisplay = formatDate(date);
@@ -27,7 +25,7 @@
   <article class="flex flex-col flex-grow">
     <h2>{title}</h2>
     <div class="">
-        <div class="flex flax-wrap pl-4 justify-start items-center space-x-1"><Calendar {size} /> <span>{dateDisplay}</span></div>
+        <div class="flex flax-wrap pl-4 justify-start items-center space-x-1"> <div class="i-mdi-calendar" /><span>{dateDisplay}</span></div>
       <hr />
       <ul>
           <li>书名：{book}</li>

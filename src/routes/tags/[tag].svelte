@@ -10,9 +10,9 @@
         );
     }
 
-    export const load = async ({page}) => {
+    export const load = async ({params}) => {
         const posts = await Promise.all(body);
-        const tag = page.params.tag;
+        const tag = params.tag;
         const filteredPosts = posts.filter((post) => {
             return post.metadata.tags.includes(tag);
         })
@@ -25,17 +25,15 @@
 </script>
 
 <script>
-    import TagMultiple from "svelte-material-icons/TagMultiple.svelte"
     export let filteredPosts;
     export let tag;
-    export let size = "2.25em"
 </script>
 
 <svelte:head>
     <title>Posts under tag</title>
 </svelte:head>
 
-<div class="flex space-x-2"><TagMultiple { size } /> <h2>{tag}</h2></div>
+<div class="flex space-x-2"> <div class="i-mdi-tag-multiple" /><h2>{tag}</h2></div>
 <hr />
 {#each filteredPosts as { path, metadata: { title } }}
 <li>
