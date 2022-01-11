@@ -17,9 +17,6 @@ const config = {
 		target: '#svelte',
 		adapter: adapter(),
 		//ssr: false,
-		files: {
-			hooks: 'src/hooks',
-		},
 		vite: {
 			plugins: [
 				Unocss({ 
