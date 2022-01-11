@@ -16,7 +16,10 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		adapter: adapter(),
-		ssr: false,
+		//ssr: false,
+		files: {
+			hooks: 'src/hooks',
+		},
 		vite: {
 			plugins: [
 				Unocss({ 
