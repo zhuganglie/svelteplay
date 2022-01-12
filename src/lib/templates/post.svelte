@@ -14,6 +14,8 @@ export const ssr = false;
 
 <svelte:head>
 	<title>{title} - 一指禅</title>
+	<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>commentBox('5750314422501376-proj')</script>
 </svelte:head>
 
 <div class="prose prose-sm sm:prose page max-w-none sm:max-w-none">
@@ -33,6 +35,6 @@ export const ssr = false;
 	<hr />
 	<a href="/blog/" class="bg-zinc-700 text-yellow-500 hover:text-zinc-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
 <div class="mt-6">
-	
+	<div class="commentbox"></div>
 </div>
 </div>
