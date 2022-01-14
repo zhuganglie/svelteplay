@@ -12,12 +12,12 @@
     open = !open;}
 
 	const routes = [
-		{href: '/', name: '首 页'},
-		{href: '/blog', name: '博 客'},
-        {href: '/notes', name: '读 书'},
-		{href: '/talks', name: '报 告'},
-		{href: '/recipe', name: '吃 货'},
-		{href: '/about', name: '关 于'}
+		{href: '/', icon:'i-mdi-home-outline', name: '首 页'},
+		{href: '/blog', icon:'i-mdi-post-outline', name: '博 客'},
+        {href: '/notes', icon:'i-mdi-book-outline', name: '读 书'},
+		{href: '/talks', icon:'i-mdi-presentation', name: '报 告'},
+		{href: '/recipe', icon:'i-mdi-food-outline', name: '吃 货'},
+		{href: '/about', icon:'i-mdi-account-outline', name: '关 于'}
 	]
 </script>
 
@@ -30,8 +30,8 @@
    <nav>
     <ul class="list-none text-center m-0">
         {#each routes as route}
-        <li class="my-4 mx-0 border-zinc-300" class:border-b-2={$page.url.pathname === route.href}>
-        <a sveltekit:prefetch href={route.href} class="block text-zinc-300 hover:text-zinc-100">{route.name}</a>
+        <li class="my-4 mx-0 border-zinc-300 " >
+    <a sveltekit:prefetch href={route.href} class=" text-zinc-300 hover:text-zinc-100 flex items-center justify-center space-x-4"><div class="{route.icon}"/><span class:border-b-2={$page.url.pathname === route.href}>{route.name}</span></a>
         </li>
         {/each}
     </ul>	

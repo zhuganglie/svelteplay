@@ -43,8 +43,8 @@
     
     <div class="flex flex-wrap justify-start">
         {#each tags as tag}
-          <a sveltekit:prefetch class="mr-1.5 my-1 text-sm bg-zinc-700 rounded text-zinc-300 hover:text-zinc-100" href="/tags/{tag}"
-            ># {tag}</a>
+          <a sveltekit:prefetch class="flex items-center justify-center py-0.5 px-2.5 mr-1.5 my-1 text-sm bg-zinc-700 rounded text-zinc-300 hover:text-zinc-100" href="/tags/{tag}"
+            ><div class="i-mdi-tag-outline mr-1 " /> {tag}</a>
         {/each}
         </div>
       </div>
