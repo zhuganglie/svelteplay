@@ -4,6 +4,7 @@
 	import ClickOutside from "svelte-click-outside";
     import '../app.postcss';
     import 'uno.css';
+    //import '../global.css';
     import Contact from '../lib/contact.svelte';
     
     let open = false;
@@ -56,7 +57,6 @@
 
 <style>
     .open .icon {
-        transform: rotate(-180deg); 
+     @apply -rotate-180;
     }
-   
 </style>
