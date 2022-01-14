@@ -2,9 +2,10 @@
 <script lang="ts">
     import { page } from '$app/stores';
 	import ClickOutside from "svelte-click-outside";
-    import '../app.postcss';
+    //import '../app.postcss';
     import 'uno.css';
-    //import '../global.css';
+    import '@unocss/reset/tailwind.css';
+    import '../global.css';
     import Contact from '../lib/contact.svelte';
     
     let open = false;

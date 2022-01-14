@@ -3,7 +3,8 @@ import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-vercel';
 import Unocss from 'unocss/vite';
-import { presetIcons } from 'unocss';
+import { presetUno, presetIcons } from 'unocss';
+import { extractorSvelte } from '@unocss/core'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -20,7 +21,8 @@ const config = {
 		vite: {
 			plugins: [
 				Unocss({ 
-					presets: [presetIcons({})],
+					extractors: [extractorSvelte],
+					presets: [presetIcons({}), presetUno()],
 					rules:[],
 				})
 			  ],

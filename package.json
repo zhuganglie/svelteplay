@@ -44,6 +44,7 @@
     "@lukeed/uuid": "^2.0.0",
     "@splidejs/svelte-splide": "^0.1.15",
     "@supabase/supabase-js": "^1.29.0",
+    "@unocss/reset": "^0.22.2",
     "cookie": "^0.4.1",
     "dotenv": "^11.0.0",
     "remark-emoji": "^3.0.2",
