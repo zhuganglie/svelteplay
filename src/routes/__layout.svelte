@@ -57,6 +57,6 @@
 
 <style>
     .open .icon {
-     @apply -rotate-180;
+     transform: rotate(-180deg);
     }
 </style>
