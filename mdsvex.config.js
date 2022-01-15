@@ -1,5 +1,5 @@
 
-//import remarkGfm  from 'remark-gfm';
+import remarkGfm  from 'remark-gfm';
 import emoji from 'remark-emoji';
 import remarkFootnotes from 'remark-footnotes';
 
@@ -15,7 +15,7 @@ const config = {
     "dashes": "oldschool"
   },
 
-  remarkPlugins: [emoji, remarkFootnotes],
+  remarkPlugins: [emoji, remarkGfm, remarkFootnotes],
   rehypePlugins: [],
 };
 
