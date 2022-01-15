@@ -203,11 +203,15 @@ article,
         margin: 0 0 1.25rem 0;
         padding:0;
     }
-    ul,
-      ol {
+    ul {
           margin: 0 0 1.25rem 1.25rem;
           list-style-type: disc; 
           list-style-position: outside;
+      }
+      ol {
+        margin: 0 0 1.25rem 1.25rem;
+        list-style-position: outside;
+        list-style-type: decimal;
       }
       dl,
       dd,
