@@ -5,7 +5,7 @@ book: "The Political Foundations of Democracy and the Rule of Law"
 authors: ["Barry R. Weingast"]
 publisher: The American Political Science Review, Vol 91, No. 2, 245-263
 year: 1997
-categories: ["政治学"]
+categories: ["政治科学"]
 draft: false
 ---
 

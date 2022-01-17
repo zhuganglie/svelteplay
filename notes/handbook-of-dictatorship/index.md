@@ -5,7 +5,7 @@ book: "The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics"
 authors: ["Bruce Bueno de Mesquita", " Alastair Smith"]
 publisher: PublicAffairs
 year: 2011
-categories: ["政治学"]
+categories: ["政治科学"]
 draft: false
 ---
 

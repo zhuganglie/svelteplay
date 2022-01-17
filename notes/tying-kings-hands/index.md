@@ -5,7 +5,7 @@ book: "Tying the King's hands: Credible commitments and royal fiscal policy duri
 authors: ["Hilton L. Root"]
 publisher: Rationality and Society, Vol 1, Issue 2, 240-258
 year: 1989
-categories: ["政治学"]
+categories: ["政治科学"]
 draft: false
 ---
 

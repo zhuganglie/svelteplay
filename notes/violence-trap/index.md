@@ -6,7 +6,7 @@ to the problems of development"
 authors: ["Gary W. Cox", "Douglass C. Morth", "Barry R. Weingast"]
 publisher: Journal of Public Finance and Public Choices, vol. 34, no. 1, 3-19
 year: 2019
-categories: ["政治学"]
+categories: ["政治科学"]
 draft: false
 ---
 
