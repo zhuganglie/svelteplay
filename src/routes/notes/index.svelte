@@ -19,12 +19,20 @@
   <title>Notes</title>
 </svelte:head>
   
-  <div class="flex flex-col flex-grow">
+  
     <h2>读 书</h2>
     <hr />
     {#each notes as note}
       {#if !note.draft}
-      <li> <a sveltekit:prefetch href={`/notes/${note.slug}`}>{note.title}</a> </li>
+    <div class="mb-6">
+        <a sveltekit:prefetch href={`/notes/${note.slug}`} class="text-md text-yellow-500 hover:text-yellow-300 text-left font-semibold mb-2">{note.title}</a>
+        <div class="flex flex-wrap justify-start ml-4">
+          {#each note.categories as category}
+            <a sveltekit:prefetch class="flex items-center justify-center py-0.5 px-2.5 mr-1.5 my-1 text-sm bg-zinc-700 rounded text-zinc-300 hover:text-zinc-100" href="/categories/{category}"
+              > {category}</a>
+          {/each}
+          </div>
+       </div>
       {/if}
     {/each}
-  </div>
+  

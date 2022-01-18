@@ -32,7 +32,7 @@
           <li><div class="md:flex md:flex-wrap space-x-2"><div class="my-1">作者：</div>{#each authors as author}<div class="rounded max-w-max my-1 px-2.5 py-0.5 bg-zinc-700">{author}</div>{/each}</div></li>
           <li>出版社：{publisher}</li>
           <li>出版时间：{year} 年</li>
-          <li>分类：{#each categories as category}<span class="rounded max-w-max px-2.5 py-0.5 bg-zinc-700">{category}</span>{/each}</li>
+          <li>分类：{#each categories as category}<a href="/categories/{category}" class="rounded max-w-max px-2.5 py-0.5 bg-zinc-700">{category}</a>{/each}</li>
           </ul>
       <hr />
       <article>
