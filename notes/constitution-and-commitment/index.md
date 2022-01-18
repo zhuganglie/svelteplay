@@ -5,7 +5,7 @@ book: "Constitutions and Commitment: The Evolution of Institutions Governing Pub
 authors: ["Douglass C. North", "Barry R. Weingast"]
 publisher: The Journal of Economic History, Vol 49, No. 4, 803-832
 year: 1989
-categories: ["政治科学"]
+categories: ["政治科学", "可信承诺"]
 draft: false
 ---
 

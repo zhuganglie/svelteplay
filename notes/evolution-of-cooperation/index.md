@@ -5,7 +5,7 @@ book: "The Evolution of Cooperation"
 authors: ["	Robert Axelrod"]
 publisher: Basic Books
 year: 1984
-categories: ["政治科学"]
+categories: ["政治科学", "博弈论"]
 draft: false
 ---
 

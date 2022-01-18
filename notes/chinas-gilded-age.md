@@ -5,7 +5,7 @@ book: " China's Gilded Age: The Paradox of Economic Boom and Vast Corruption"
 authors: ["Yuen Yuen Ang"]
 publisher: Cambridge University Press
 year: 2020
-categories: ["比较政治学"]
+categories: ["比较政治", "政治经济"]
 draft: false
 ---
 

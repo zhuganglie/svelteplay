@@ -5,7 +5,7 @@ book: "Dictatorship, Democracy, and Development"
 authors: ["Mancur Olson"]
 publisher: American Political Science Review, Vol.87, 567-576
 year: 1993
-categories: ["政治科学"]
+categories: ["政治科学", "政体理论"]
 draft: false
 ---
 

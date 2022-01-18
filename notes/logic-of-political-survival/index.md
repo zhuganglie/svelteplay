@@ -5,7 +5,7 @@ book: "The Logic of Political Survival"
 authors: ["Bruce Bueno de Mesquita", " Alastair Smith", "Randolph M. Siverson", "James D. Morrow"]
 publisher: MIT Press
 year: 2003
-categories: ["政治科学"]
+categories: ["政治科学", "政体理论"]
 draft: false
 ---
 

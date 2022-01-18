@@ -5,7 +5,7 @@ book: "States and Social Revolutions"
 authors: ["Theda Skopcpol"]
 publisher: Cambridge University Press
 year: 1979
-categories: ["比较政治学"]
+categories: ["比较政治", "革命理论"]
 draft: false
 ---
 
