@@ -5,6 +5,8 @@ export function getSession(event) {
 	return cookie.parse(event.request.headers.cookie || '').session || null;
 }
 
+
+
 /** @type {import('@sveltejs/kit').Handle} */
 export async function handle({event,resolve}) {
 	const response = await resolve(event, {
