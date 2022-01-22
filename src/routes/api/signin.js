@@ -1,12 +1,12 @@
 import supabase from '$lib/db';
 
-export async function post({request}) {
+export async function post(request) {
 	let email =  request.body.get('email');
 	let password = request.body.get('password');
 
 	const { session, error } = await supabase.auth.signIn({ email, password });
 
-
+ console.log(body)
 	if (error) {
 		return {
 			status: error.status,
