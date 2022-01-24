@@ -1,22 +1,24 @@
 import supabase from '$lib/db';
 
-export async function post(request) {
-	let email =  request.body.get('email');
-	let password = request.body.get('password');
-
+export async function post({request}) {
+	//let email =  request.body.get('email');
+	//let password = request.body.get('password');
+	
+	const data = await request.formData()
+	let email = data.get('email')
+	let password = data.get('password')
 	const { session, error } = await supabase.auth.signIn({ email, password });
 
- console.log(body)
 	if (error) {
 		return {
 			status: error.status,
-			body: error.message
+			body:  error.message ,
 		};
 	}
 
 	return {
 		status: 200,
-		body: 'success',
+		body:  'success' ,
 		headers: {
 			'set-cookie': `session=${
 				session.user.email
@@ -26,3 +28,4 @@ export async function post(request) {
 		}
 	};
 }
+
