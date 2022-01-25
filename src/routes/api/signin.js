@@ -8,7 +8,7 @@ export async function post({request}) {
 	const email = await body.get('email')
 	const password = await body.get('password')
 	const { session, error } = await supabase.auth.signIn({ email, password });
-
+	
 	if (error) {
 		return {
 			status: error.status,
