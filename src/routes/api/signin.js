@@ -4,9 +4,9 @@ export async function post({request}) {
 	//let email =  request.body.get('email');
 	//let password = request.body.get('password');
 	
-	const data = await request.formData()
-	const email = data.get('email')
-	const password = data.get('password')
+	const body = await request.formData()
+	const email = await body.get('email')
+	const password = await body.get('password')
 	const { session, error } = await supabase.auth.signIn({ email, password });
 
 	if (error) {
@@ -18,7 +18,7 @@ export async function post({request}) {
 
 	return {
 		status: 200,
-		body:  'success' ,
+		body: 'success' ,
 		headers: {
 			'set-cookie': `session=${
 				session.user.email
