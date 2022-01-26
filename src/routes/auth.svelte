@@ -13,16 +13,16 @@
 <script>
 	async function signUp(e) {
 		const response = await fetch('/api/signup', {
-			method: 'post',
-			body: new FormData(e.target)
+			method: 'POST',
+			body: new FormData(e.target),
 		});
-		if (response.ok) window.location = '/';
+		if (response.ok)  window.location = '/' ;
 		else alert(await response.text());
 	}
 	async function signIn(e) {
 		const response = await fetch('/api/signin', {
-			method: 'post',
-			body: new FormData(e.target)
+			method: 'POST',
+			body: new FormData(e.target),
 		});
 		if (response.ok) window.location = '/about';
 		else alert(await response.text());
