@@ -20,6 +20,7 @@ export async function post({request}) {
 		status: 200,
 		body: 'success' ,
 		headers: {
+			location: '/about',
 			'set-cookie': `session=${
 				session.user.email
 			}; Path=/; HttpOnly; Secure; SameSite=Strict; Expires=${new Date(

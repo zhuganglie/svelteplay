@@ -1,4 +1,4 @@
-export const post = async(request) => {
+export const post = async({request}) => {
     const formID = "1FAIpQLSco-48vyzr92Wt4u73dIcJwBijGMdKwZuBNi_FLzZf6i0KzSw"
     const body = await request.formData()
     const name = await body.get("name")

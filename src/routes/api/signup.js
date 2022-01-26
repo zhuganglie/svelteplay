@@ -35,20 +35,20 @@ export async function post({request}) {
 	if (error) {
 		return {
 			status: error.status,
-			body:  error.message ,
+			body: error.message ,
 		};
 	}
 
 	return {
 		status: 200,
-		body:  'success' ,
-		headers: new Headers({
+		body: 'success' ,
+		headers: {
 			'set-cookie': `session=${
 				session.user.email
 			}; Path=/; HttpOnly; Secure; SameSite=Strict; Expires=${new Date(
 				session.expires_at * 1000
 			).toUTCString()};`
-		})
+		}
 	};
 }
 

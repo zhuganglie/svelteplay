@@ -11,7 +11,7 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.0.13",
+    "@iconify-json/mdi": "^1.0.14",
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
@@ -39,11 +39,11 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "@splidejs/svelte-splide": "^0.1.17",
+    "@splidejs/svelte-splide": "^0.1.18",
     "@supabase/supabase-js": "^1.29.4",
     "@unocss/reset": "^0.22.6",
     "cookie": "^0.4.1",
-    "dotenv": "^14.3.0",
+    "dotenv": "^14.3.2",
     "remark-emoji": "^3.0.2",
     "remark-footnotes": "^2.0.0",
     "remark-gfm": "^3.0.1",
