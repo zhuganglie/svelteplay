@@ -5,8 +5,8 @@ export async function post({request}) {
 	//let password = request.body.get('password');
 	
 	const body = await request.formData()
-	const email = await body.get('email')
-	const password = await body.get('password')
+	const email = body.get('email')
+	const password = body.get('password')
 	const { session, error } = await supabase.auth.signIn({ email, password });
 	
 	if (error) {
@@ -20,7 +20,7 @@ export async function post({request}) {
 		status: 200,
 		body: 'success' ,
 		headers: {
-			location: '/about',
+			'Content-Type': 'application/json',
 			'set-cookie': `session=${
 				session.user.email
 			}; Path=/; HttpOnly; Secure; SameSite=Strict; Expires=${new Date(
