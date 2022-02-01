@@ -17,7 +17,7 @@
 {#each test as item}
 <li>
 <a href={item.url}>
-   {item.url}
+   {item.id}
 </a>
 </li>
 {/each}
