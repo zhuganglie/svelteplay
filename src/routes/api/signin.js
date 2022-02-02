@@ -1,8 +1,6 @@
 import supabase from '$lib/db';
 
 export async function post({request}) {
-	//let email =  request.body.get('email');
-	//let password = request.body.get('password');
 	
 	const body = await request.formData()
 	const email = body.get('email')

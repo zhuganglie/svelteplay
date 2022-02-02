@@ -1,10 +1,12 @@
 <script context="module">
-    export async function load({fetch}){
-     const res = await fetch(`/test.json`)
+    export async function load({fetch, Params}){
+     const res = await fetch(`/notion.json`)
+     
     if(res.ok){
         const test = await res.json() 
+        
         return {
-            props: { test }
+            props:  { test }
         }
     }
     }
@@ -16,8 +18,6 @@
 
 {#each test as item}
 <li>
-<a href={item.url}>
-   {item.id}
-</a>
+   {item.properties.Name.title}
 </li>
 {/each}

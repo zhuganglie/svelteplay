@@ -11,6 +11,7 @@ export async function get() {
  })
  console.log(response.results)
     return {
-        body:  response.results
+        body: response.results
     }
 }
+
