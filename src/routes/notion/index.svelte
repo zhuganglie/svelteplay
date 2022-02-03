@@ -3,21 +3,32 @@
      const res = await fetch(`/notion.json`)
      
     if(res.ok){
-        const test = await res.json() 
+        const notion = await res.json() 
         
         return {
-            props:  { test }
+            props:  { notion },
+            revalidate: 1,
         }
     }
     }
 </script>
 
 <script>
-    export let test
+    export let notion
 </script>
 
-{#each test as item}
-<li>
-   {item.properties.Name.title}
-</li>
+<h2>食 谱</h2>
+<hr />
+{#each notion as item}
+<div>
+   <h4>{item.properties.Name.title[0].plain_text}</h4>
+   <p>
+   {#each item.properties.Tags.multi_select as i}
+   <span class="mr-2">{i.name}</span>
+   {/each}
+   </p>
+   <p>{item.properties.Recipe.rich_text[0].plain_text}</p>
+   <p>{item.properties.URL.url}</p>
+   <p>{item.properties.Slug.rich_text[0].plain_text}</p>
+</div>
 {/each}

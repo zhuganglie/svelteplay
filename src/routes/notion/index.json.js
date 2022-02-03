@@ -10,8 +10,8 @@ export async function get() {
     database_id: databaseId,
  })
  console.log(response.results)
-    return {
-        body: response.results
-    }
+    return { 
+      body: response.results
+     }
 }
 
