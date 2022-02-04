@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({fetch, Params}){
-     const res = await fetch(`/notion.json`)
+     const res = await fetch(`/notion/database.json`)
      
     if(res.ok){
         const notion = await res.json() 
