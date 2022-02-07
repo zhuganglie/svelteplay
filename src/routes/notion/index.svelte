@@ -21,7 +21,7 @@
 <hr />
 <div class="flex flex-col md:flex-row md:flex-wrap items-center justify-center place-self-center gap-4 ">
 {#each data as item}
-<div class="bg-zinc-700 w-48 h-auto rounded p-4 grid place-items-center my-4">
+<div class="bg-zinc-700 w-full md:w-48 h-auto rounded p-4 grid place-items-center my-4">
    <h3>{item.properties.Name.title[0].plain_text}</h3>
    <p>{item.properties.Recipe.rich_text[0].plain_text}</p>
   <!--- <p>{item.properties.URL.url}</p>
