@@ -9,7 +9,7 @@ export async function get() {
  const response = await notion.databases.query({
     database_id: databaseId,
  })
- 
+ console.log(response.results)
     return { 
       body: response.results
      }
