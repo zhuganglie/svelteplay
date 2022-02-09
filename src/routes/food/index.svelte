@@ -55,7 +55,7 @@
 <div class="md:flex md:items-center md:justify-center md:flex-wrap gap-4">
     {#each menu as item}
     <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 px-4 py-4 mb-4 hover:scale-110">
-    <h4>{item.Name.title[0].plain_text}</h4>
+    <a href="/blog/{item.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{item.Name.title[0].plain_text}</h4></a>
      <p class=""> {#each item.Tags.multi_select as i}
       <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
       {/each}
