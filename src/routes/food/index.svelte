@@ -12,7 +12,27 @@
     }
 </script>
 
-<script>
+<script lang="ts">
+  import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+  import type { Options } from '@splidejs/splide';
+  import '@splidejs/splide/dist/css/splide.min.css'; 
+
+  const options: Options = {
+    rewind : true,
+    autoplay: false,
+    perPage: 4,
+    //direction: 'ttb',
+    width: '55rem',
+    cover: false,
+    mediaQuery: 'max',
+    breakpoints: {
+      1024: {
+        width: '35rem',
+        perpage: 1,
+      },
+    },
+  }
+
     export let data
     let x = data.map(data => data.properties)
     let xMeat = x.filter(x => x.Category.select.name === '荤菜')
@@ -64,6 +84,22 @@
       </div>
     {/each}
     </div>
+<br>
+<h3>自选菜单</h3>
+<Splide options={options}>
+  {#each x as i}
+  <SplideSlide>
+    <div class="mx-auto bg-zinc-700 px-4 py-4 w-36">
+      <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{i.Name.title[0].plain_text}</h4></a>
+       <p class=""> {#each i.Tags.multi_select as i}
+        <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
+        {/each}
+        </p>
+        <p class="border-b max-w-max">类别：{i.Category.select.name}</p>
+        </div>
+  </SplideSlide>
+  {/each}
+</Splide>
 <br>
     <h3>他山之食</h3>
     <p>这里是一些我比较喜欢的油管美食频道和常去的本地中餐馆。</p>
