@@ -56,8 +56,8 @@
     {#each menu as item}
     <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 px-4 py-4 mb-4 hover:scale-110">
     <h4>{item.Name.title[0].plain_text}</h4>
-     <p class="flex gap-2"> {#each item.Tags.multi_select as i}
-      <span class="bg-zinc-800 text-sm px-2 py-0.5 rounded">{i.name}</span>
+     <p class=""> {#each item.Tags.multi_select as i}
+      <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
       {/each}
       </p>
       <p class="border-b max-w-max">类别：{item.Category.select.name}</p>
