@@ -54,7 +54,7 @@
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-zinc-700 text-yellow-500 rounded mb-6">点我更新</button>
 <div class="md:flex gap-4">
     {#each menu as item}
-    <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/4 p-4 mb-4 hover:scale-110">
+    <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 p-4 mb-4 hover:scale-110">
     <h4>{item.Name.title[0].plain_text}</h4>
      <p class="flex gap-2"> {#each item.Tags.multi_select as i}
       <span class="bg-zinc-800 text-sm px-2 py-0.5 rounded">{i.name}</span>
