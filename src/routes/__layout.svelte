@@ -17,7 +17,7 @@
 		{href: '/blog', icon:'i-mdi-post-outline', name: '博 客'},
         {href: '/notes', icon:'i-mdi-book-outline', name: '读 书'},
 		{href: '/talks', icon:'i-mdi-presentation', name: '报 告'},
-		{href: '/recipe', icon:'i-mdi-food-outline', name: '吃 货'},
+		{href: '/food', icon:'i-mdi-food-outline', name: '吃 货'},
 		{href: '/about', icon:'i-mdi-account-outline', name: '关 于'}
 	]
 </script>
