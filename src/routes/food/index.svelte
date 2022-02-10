@@ -20,17 +20,21 @@
   const options: Options = {
     rewind : true,
     autoplay: false,
-    perPage: 4,
+   // type: 'fade',
+    perPage: 1,
+    //focus: 'center',
+    gap: '2rem',
+    padding: '4rem',
     //direction: 'ttb',
-    width: '55rem',
+    //width: 1000,
     cover: false,
     mediaQuery: 'max',
-    breakpoints: {
-      1024: {
-        width: '35rem',
+    /*breakpoints: {
+      480: {
         perpage: 1,
+        gap: '.7rem',
       },
-    },
+    },*/
   }
 
     export let data
@@ -74,7 +78,7 @@
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-zinc-700 text-yellow-500 rounded mb-6">点我更新</button>
 <div class="md:flex md:items-center md:justify-center md:flex-wrap gap-4">
     {#each menu as item}
-    <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 px-4 py-4 mb-4 hover:scale-110">
+    <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 px-4 py-4 mb-4 ">
     <a href="/blog/{item.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{item.Name.title[0].plain_text}</h4></a>
      <p class=""> {#each item.Tags.multi_select as i}
       <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
@@ -86,10 +90,12 @@
     </div>
 <br>
 <h3>自选菜单</h3>
+<p>如果不满意随机生成的菜单，可以在这里浏览全部菜品，点选自己喜欢吃的菜。</p>
+<div class="w-full md:4/5">
 <Splide options={options}>
   {#each x as i}
   <SplideSlide>
-    <div class="mx-auto bg-zinc-700 px-4 py-4 w-36">
+    <div class="mx-auto bg-zinc-700 px-4 py-4 w-36 md:w-96">
       <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{i.Name.title[0].plain_text}</h4></a>
        <p class=""> {#each i.Tags.multi_select as i}
         <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
@@ -100,6 +106,8 @@
   </SplideSlide>
   {/each}
 </Splide>
+</div>
+
 <br>
     <h3>他山之食</h3>
     <p>这里是一些我比较喜欢的油管美食频道和常去的本地中餐馆。</p>
