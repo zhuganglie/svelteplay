@@ -20,7 +20,7 @@
   const options: Options = {
     rewind : true,
     autoplay: false,
-   // type: 'fade',
+    type: 'loop',
     perPage: 1,
     //focus: 'center',
     gap: '2rem',
@@ -95,7 +95,7 @@
 <Splide options={options}>
   {#each x as i}
   <SplideSlide>
-    <div class="mx-auto bg-zinc-700 px-4 py-4 w-36 md:w-96">
+    <div class="mx-auto bg-zinc-700 px-4 py-4 w-36 md:w-72">
       <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{i.Name.title[0].plain_text}</h4></a>
        <p class=""> {#each i.Tags.multi_select as i}
         <span class="bg-zinc-900 text-sm px-2 py-0.5 mr-2 rounded">{i.name}</span>
