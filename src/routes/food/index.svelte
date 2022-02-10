@@ -80,10 +80,12 @@
     {#each menu as item}
     <div class="mx-auto bg-zinc-700 w-4/5 md:w-1/5 px-4 py-4 mb-4 ">
     <a href="/blog/{item.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{item.Name.title[0].plain_text}</h4></a>
-     <ul class="flex gap-6"> {#each item.Tags.multi_select as i}
-      <li class="list-square text-sm rounded">{i.name}</li>
+     <p class="flex gap-6"> {#each item.Tags.multi_select as i}
+      <div class="flex items-center justify-center gap-1">
+      <div class="i-mdi-tag-outline" /><span>{i.name}</span>
+      </div>
       {/each}
-     </ul>
+     </p>
       <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{item.Category.select.name}</p>
       </div>
     {/each}
@@ -97,11 +99,13 @@
   <SplideSlide>
     <div class="mx-auto bg-zinc-700 px-4 py-4 w-full md:w-3/5">
       <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{i.Name.title[0].plain_text}</h4></a>
-       <ul class="flex gap-6"> 
+       <p class="flex gap-6"> 
          {#each i.Tags.multi_select as i}
-        <li class="list-square text-sm rounded">{i.name}</li>
+         <div class="flex items-center justify-center gap-1">
+          <div class="i-mdi-tag-outline" /><span>{i.name}</span>
+          </div>
         {/each}
-       </ul>
+       </p>
         <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{i.Category.select.name}</p>
         </div>
   </SplideSlide>
