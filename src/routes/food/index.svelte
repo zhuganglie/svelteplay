@@ -98,7 +98,7 @@
   {#each x as i}
   <SplideSlide>
     <div class="mx-auto bg-zinc-700 px-4 py-4 w-full md:w-3/5">
-      <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{i.Name.title[0].plain_text}</h4></a>
+      <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h3 class="text-xl">{i.Name.title[0].plain_text}</h3></a>
        <p class="flex gap-6"> 
          {#each i.Tags.multi_select as i}
          <div class="flex items-center justify-center gap-1">
