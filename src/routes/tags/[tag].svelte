@@ -33,7 +33,7 @@
     <title>Posts under tag</title>
 </svelte:head>
 
-<div class="flex space-x-2"> <div class="i-mdi-tag-multiple" /><h2>{tag}</h2></div>
+<div class="flex space-x-2"> <div class="i-mdi-tag-multiple" /><h1 class="text-3xl">{tag}</h1></div>
 <hr />
 {#each filteredPosts as { path, metadata: { title, draft } }}
 {#if !draft}

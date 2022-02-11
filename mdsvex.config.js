@@ -8,7 +8,7 @@ const config = {
 
   layout: {
 		"blog": "./src/lib/templates/post.svelte",
-		"slides": "./src/lib/templates/slide.svelte",
+	//	"slides": "./src/lib/templates/slide.svelte",
 	},
 
   smartypants: {

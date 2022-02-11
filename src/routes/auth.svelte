@@ -34,7 +34,7 @@
 	};
 </script>
 
-<h2>欢迎你！</h2>
+<h1 class="text-3xl">欢迎你！</h1>
 <hr />
 <p>这里埋藏着一些关于我的秘密，请注册登录后浏览。</p>
 <div class="h-96 w-full md:w-2/5 mx-auto px-4 grid self-center justify-self-center content-center text-center ">

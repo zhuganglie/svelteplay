@@ -32,7 +32,7 @@
     <title>Blog</title>
 </svelte:head>
 
-<h2>博客文章</h2>
+<h1 class="text-3xl">博客文章</h1>
 <hr />
 
 {#each dateSortedPosts as {path, metadata: {title, date, tags, draft}}}

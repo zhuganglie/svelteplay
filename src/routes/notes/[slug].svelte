@@ -23,7 +23,7 @@
 
   
   <article class="flex flex-col flex-grow">
-    <h2>{title}</h2>
+    <h1 class="text-3xl">{title}</h1>
     <div class="">
         <div class="flex flax-wrap pl-4 justify-start items-center space-x-1"> <div class="i-mdi-calendar" /><span>{dateDisplay}</span></div>
       <hr />

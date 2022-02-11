@@ -1,10 +1,13 @@
+<script context="module">
+    import 'uno.css';
+    import '@unocss/reset/tailwind.css';
+</script>
 
 <script lang="ts">
     import { page } from '$app/stores';
 	import ClickOutside from "svelte-click-outside";
-    //import '../app.postcss';
-    import 'uno.css';
-    import '@unocss/reset/tailwind.css';
+   // import 'uno.css';
+  //  import '@unocss/reset/tailwind.css';
     import '../global.css';
     import Contact from '../lib/contact.svelte';
     
@@ -25,7 +28,7 @@
 <div class="flex h-screen">
     <aside class="hidden md:flex flex-col items-center justify-evenly w-full md:w-1/5 border-r-4 border-zinc-700 px-2 min-w-max" class:flex={open}>
    <header class="text-center">
-       <p class="text-2xl font-bold">一指禅</p>
+       <h1 class="text-2xl font-bold">一指禅</h1>
    <p class="text-sm text-yellow-500">惯看秋月春风</p>
     </header>
    <nav>
@@ -48,10 +51,10 @@
     </ClickOutside>
         <slot />
     </main>
-    <div class="md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
-        <h4>联系我</h4>
+    <aside class="md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
+        <div class="mb-4 font-bold text-xl">联系我</div>
         <Contact />
-    </div>
+    </aside>
 </div>
 
 

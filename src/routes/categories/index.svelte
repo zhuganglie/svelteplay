@@ -38,7 +38,7 @@
 
 
 <div class="">
-  <h2>笔记分类</h2>
+  <h1 class="text-3xl">笔记分类</h1>
   <hr />
   
   <ul>

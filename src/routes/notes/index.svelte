@@ -20,7 +20,7 @@
 </svelte:head>
   
   
-    <h2>读 书</h2>
+    <h1 class="text-3xl">读 书</h1>
     <hr />
     {#each notes as note}
       {#if !note.draft}
