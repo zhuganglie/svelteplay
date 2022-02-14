@@ -29,13 +29,14 @@
     //width: 1000,
     cover: false,
     mediaQuery: 'max',
-    /*breakpoints: {
+    breakpoints: {
       480: {
         perpage: 1,
         gap: '.7rem',
+        padding: '1rem',
         arrows: false,
       },
-    },*/
+    },
   }
 
     export let data
