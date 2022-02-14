@@ -1,5 +1,5 @@
 <script context="module">
-	export const load = async ({ fetch }) => {
+export const load = async ({ fetch }) => {
 		const res = await fetch(`../notes.json`)
 		let { notes } = await res.json()
     let uniqueCategories = {}

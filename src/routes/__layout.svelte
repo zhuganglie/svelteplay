@@ -1,13 +1,13 @@
 <script context="module">
-    import 'uno.css';
-    import '@unocss/reset/tailwind.css';
+   /* import 'uno.css';
+    import '@unocss/reset/tailwind.css';*/
 </script>
 
 <script lang="ts">
     import { page } from '$app/stores';
 	import ClickOutside from "svelte-click-outside";
-   // import 'uno.css';
-  //  import '@unocss/reset/tailwind.css';
+    import 'uno.css';
+    import '@unocss/reset/tailwind.css';
     import '../global.css';
     import Contact from '../lib/contact.svelte';
     

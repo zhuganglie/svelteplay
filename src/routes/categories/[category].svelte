@@ -11,7 +11,7 @@
         category
       }
 		}
-	}
+} 
 </script>
 
 <script>
