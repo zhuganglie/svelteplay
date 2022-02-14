@@ -80,7 +80,7 @@
 <button on:click={change} class=" px-1.5 py-0.5 mb-2 bg-zinc-700 text-yellow-500 rounded mb-6">点我更新</button>
 <div class="md:flex md:items-center md:justify-center gap-2">
     {#each menu as item}
-    <div class="mx-auto bg-zinc-700 w-3/5 md:w-1/4 px-3 py-3 mb-4 rounded">
+    <div class=" bg-zinc-700 w-3/5 md:w-1/4 px-3 py-3 mb-4 rounded">
     <a href="/blog/{item.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{item.Name.title[0].plain_text}</h4></a>
      <p class="flex gap-2 lg:gap-6"> {#each item.Tags.multi_select as i}
       <div class="flex items-center justify-center gap-1">
@@ -99,7 +99,7 @@
 <Splide options={options}>
   {#each x as i}
   <SplideSlide>
-    <div class="mx-auto bg-zinc-700 px-4 py-4 w-full md:w-3/5">
+    <div class="mx-auto grid place-items-center bg-zinc-700 px-4 py-4 w-full md:w-3/5">
       <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h3 class="text-xl">{i.Name.title[0].plain_text}</h3></a>
        <p class="flex gap-6"> 
          {#each i.Tags.multi_select as i}
