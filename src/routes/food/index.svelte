@@ -20,7 +20,7 @@
   const options: Options = {
     rewind : true,
     autoplay: false,
-    type: 'loop',
+    type: 'fade',
     perPage: 1,
     //focus: 'center',
     gap: '2rem',
@@ -33,6 +33,7 @@
       480: {
         perpage: 1,
         gap: '.7rem',
+        arrows: false,
       },
     },*/
   }
