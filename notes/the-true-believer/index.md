@@ -1,0 +1,64 @@
+---
+title: 狂热分子
+date: 2022-02-15
+book: "The True Believer: Thoughts on the Nature of Mass Movements"
+authors: ["Eric Hoffer"]
+publisher: Harper and Brothers
+year: 1951
+categories: ["政治科学", "社会运动"]
+draft: false
+---
+### Summary[^1]
+
+#### Part 1. The Appeal of Mass Movements
+Hoffer states that mass movements begin with a widespread "desire for change" from discontented people who place their locus of control outside their power and who also have no confidence in existing culture or traditions. Feeling their lives are "irredeemably spoiled" and believing there is no hope for advancement or satisfaction as an individual, true believers seek "self-renunciation". Thus, such people are ripe to participate in a movement that offers the option of subsuming their individual lives in a larger collective. Leaders are vital in the growth of a mass movement, as outlined below, but for the leader to find any success, the seeds of the mass movement must already exist in people's hearts.
+
+While mass movements are usually some blend of nationalist, political and religious ideas, Hoffer argues there are two important commonalities: "All mass movements are competitive" and perceive the supply of converts as zero-sum; and "all mass movements are interchangeable". As examples of the interchangeable nature of mass movements, Hoffer cites how almost 2000 years ago Saul, a fanatical opponent of Christianity, became Paul, a fanatical apologist and promoter of Christianity. Another example occurred in Germany during the 1920s and the 1930s, when Communists and Fascists were ostensibly bitter enemies but in fact competed for the same type of angry, marginalized people; Nazis Adolf Hitler and Ernst Röhm, and Communist Karl Radek, all boasted of their prowess in converting their rivals.
+
+#### Part 2. The Potential Converts
+The "New Poor" are the most likely source of converts for mass movements, for they recall their former wealth with resentment and blame others for their current misfortune. Examples include the mass evictions of relatively prosperous tenants during the English Civil War of the 1600s or the middle- and working-classes in Germany who passionately supported Hitler in the 1930s after suffering years of economic hardship. In contrast, the "abjectly poor" on the verge of starvation make unlikely true believers as their daily struggle for existence takes pre-eminence over any other concern.
+
+Racial and religious minorities, particularly those only partly assimilated into mainstream culture, are also found in mass movements. Those who live traditionalist lifestyles tend to be content, but the partially assimilated feel alienated from both their forbearers and the mainstream culture.
+
+A variety of what Hoffer terms "misfits" are also found in mass movements. Examples include "chronically bored", the physically disabled or perpetually ill, the talentless, and criminals or "sinners". In all cases, Hoffer argues, these people feel as if their individual lives are meaningless and worthless.
+
+Hoffer argues that the relatively low number of mass movements in the United States at that time was attributable to a culture that blurred traditionally rigid boundaries between nationalist, racial and religious groups and allowed greater opportunities for individual accomplishment.
+
+#### Part 3. United Action and Self-Sacrifice
+In mass movements, an individual's goals or opinions are unimportant. Rather, the mass movement's "chief preoccupation is to foster, perfect and perpetuate a facility for united action and self-sacrifice". Mass movements have several means.
+
+Mass movements demand a "total surrender of a distinct self". One identifies the most as “a member of a certain tribe or family," whether religious, political, revolutionary, or nationalist. Every important part of the true believer's persona and life must ultimately come from their identification with the larger community; even when alone, the true believer must never feel isolated and unwatched. Hoffer identifies this communal sensibility as the reappearance of a "primitive state of being" common among pre-modern cultures. Mass movements also use play-acting and spectacle designed to make the individual feel overwhelmed and awed by their membership in the tribe, as with the massive ceremonial parades and speeches of the Nazis.
+
+While mass movements idealize the past and glorify the future, the present world is denigrated: "The radical and the reactionary loathe the present." Thus, by regarding the modern world as vile and worthless, mass movements inspire a perpetual battle against the present.
+
+Mass movements aggressively promote the use of doctrines that elevate faith over reason and serve as "fact-proof screens between the faithful and the realities of the world". The doctrine of the mass movement must not be questioned under any circumstances. Examples include the Japanese holdouts, who refused to believe that the Second World War was over, or the staunch defenders of the Soviet Union, who rejected overwhelming evidence of Bolshevik atrocities.
+
+To spread and reinforce their doctrine, mass movements use persuasion, coercion, and proselytization. Persuasion is preferable but practical only with those already sympathetic to the mass movement. Moreover, persuasion must be thrilling enough to excite the listener yet vague enough to allow "the frustrated to... hear the echo of their own musings in the impassioned double talk". Hoffer quotes Nazi propagandist Joseph Goebbels: "a sharp sword must always stand behind propaganda if it is to be really effective". The urge to proselytize comes not from a deeply held belief in the truth of doctrine but from an urge of the fanatic to "strengthen his own faith by converting others".
+
+Successful mass movements need not believe in a god, but they must believe in a devil. Hatred unifies the true believers, and "the ideal devil is a foreigner" attributed with nearly supernatural powers of evil. For example, Hitler described Jews as foreign interlopers and moreover an ephemeral Jewishness, alleged to taint the German soul, was as vehemently condemned as were flesh-and-blood Jews. The hatred of a true believer is actually a disguised self-loathing, as with the condemnation of capitalism by socialists while Russia under the Bolsheviks saw more intensive monopolization of the economy than any other nation in history. Without a devil to hate, mass movements often falter (for example, Chiang Kai-shek effectively led millions of Chinese during the Japanese occupation of the 1930s and the 1940s but quickly fell out of favor once the Japanese were defeated).
+
+Fanaticism is encouraged in mass movements. Hoffer argues that "the fanatic is perpetually incomplete and insecure" and thus uses uncompromising action and personal sacrifice to give meaning to his life.
+
+#### Part 4. Beginning and End
+Hoffer identifies three main personality types as the leaders of mass movements, "men of words", "fanatics", and "practical men of action". No person falls exclusively into one category, and their predominant quality may shift over time.
+
+Mass movements begin with "men of words" or "fault-finding intellectuals" such as clergy, journalists, academics, and students who condemn the established social order (such as Gandhi, Trotsky, Mohammed, and Lenin). The men of words feel unjustly excluded from or mocked and oppressed by the existing powers in society, and they relentlessly criticize or denigrate present institutions. Invariably speaking out in the name of disadvantaged commoners, the man of words is actually motivated by a deep personal grievance. The man of words relentlessly attempts to "discredit the prevailing creeds" and creates a "hunger for faith" which is then fed by "doctrines and slogans of the new faith". A cadre of devotees gradually develops around the man of words, leading to the next stage in a mass movement.
+
+Eventually, the fanatic takes over leadership of the mass movement from the man of words. While the "creative man of words" finds satisfaction in his literature, philosophy or art, the "noncreative man of words" feels unrecognized or stifled and thus veers into an extremism against the social order. Though the man of words and the fanatic share a discontent with the world, the fanatic is distinguished by his viciousness and urge to destroy. The fanatic feels fulfilled only in a perpetual struggle for power and change. Examples include Jean-Paul Marat, Maximilien de Robespierre, Benito Mussolini, and Adolf Hitler.
+
+The book also explores the behavior of mass movements once they become established as social institutions (or leave the "active phase"). With their collapse of a communal framework, people can no longer defeat their abiding feelings of insecurity and uncertainty by belonging to a compact whole. If the isolated individual lacks opportunities for personal advancement, development of talents, and action (such as those found on a frontier), he will seek substitutes. The substitutes would be pride instead of self-confidence, memberships in a collective whole like a mass movement, absolute certainty instead of understanding. The "practical men of action" take over leadership from the fanatics, marking the end of the "dynamic phase" and steering the mass movement away from the fanatic's self-destructiveness. "Hitler, who had a clear vision of the whole course of a movement even while he was nursing his infant National Socialism, warned that a movement retains its vigor only so long as it can offer nothing in the present.... The movement at this stage still concerns itself with the frustrated—not to harness their discontent in a deadly struggle with the present, but to reconcile them with it; to make them patient and meek."
+
+The focus shifts from immediate demands for revolution to establishing the mass movement as a social institution where the ambitious can find influence and fame. Leadership uses an eclectic bricolage of ideological scraps to reinforce the doctrine, borrowing from whatever source is successful in holding the attention of true believers. For example, proto-Christians were fanatics, predicting the end of the world, condemning idolatry, demanding celibacy and sowing discontent between family members, yet from those roots grew Roman Catholicism, which mimicked the elaborate bureaucratic structure of the Roman Empire, canonized early Christians as saints, and borrowed pagan holidays and rites. In the absence of a practical man of action, the mass movement often withers and dies with the fanatic (Nazism died as a viable mass movement with Hitler's death).
+
+Mass movements that succeed in causing radical change often exceed in brutality the former regime that the mass movement opposed. The Bolsheviks in Russia and the Jacobins in France ostensibly formed in reaction to the oppression of their respective monarchies but proved themselves far more vicious and brutal in oppressing their opponents.
+
+Hoffer does not take an exclusively negative view of "true believers" and the mass movements they begin. He gives examples of how the same forces that give rise to true believer mass movements can be channelled in more positive ways:
+
+"There are, of course, rare leaders such as Lincoln, Gandhi, even F.D.R., Churchill, and Nehru. They do not hesitate to harness man's hungers and fears to weld a following and make it zealous unto death in service of a holy cause; but unlike a Hitler, a Stalin, or even a Luther and a Calvin, they are not tempted to use the slime of frustrated souls as mortar in the building of a new world.... They know that no one can be honorable unless he honors mankind".[^2]
+
+Hoffer argues that the length of the "active phase" of a mass movement, the most energetic phase when fanatics are in control, can be predicted with some accuracy. Mass movements with a specific goal tend to be shorter-lived and feature less terror and bloodshed (such as the American Revolution). In contrast, an amorphous goal tends to result in a longer active phase of decades rather than months or years and also include substantially more bloodshed (such as the Bolsheviks in Russia, National Socialism in Germany).
+
+In either case, Hoffer suggests that mass movements are accompanied by a dearth of creative innovation because so much energy is devoted to the mass movement. For example, in England, John Milton began a draft of his epic poem Paradise Lost in the 1640s before turning his literary talents to pamphleteering for the Commonwealth of England, only to finish the poem and his other major works after a change in government in 1660.
+
+[^1]: This summary is from <a href="https://en.wikipedia.org/wiki/The_True_Believer" target="_blank">Wikipedia</a>.
+[^2]: P. 147.

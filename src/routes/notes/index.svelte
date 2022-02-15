@@ -22,7 +22,7 @@
   
     <h1 class="text-3xl">读 书</h1>
     <hr />
-    <div class="grid place-items-center place-content-center grid-cols-1 md:grid-cols-3 gap-2">
+    <div class="grid place-items-center place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
     {#each notes as note}
       {#if !note.draft}
     <div class="bg-zinc-700/60 gap-2 p-4 rounded shadow-lg w-full">

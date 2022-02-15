@@ -23,4 +23,4 @@ China’s fast economic growth over the last 40 years is remarkable: it is among
 
 China’s Gilded Age presents the most sophisticated analysis of corruption to date. It is nuanced, full of context, with methodological innovations. It challenges us to transcend the usual cliches about corruption and examines the topic thoughtfully. The book draws from history to highlight how nothing is genuinely exceptional about Chinese corruption and its relation to growth. [^1]
 
-[^1]: This note is excerpted from book review by Diego Castañeda Garza,  [which can be found here:](https://blogs.lse.ac.uk/lsereviewofbooks/2021/05/12/book-review-chinas-gilded-age-the-paradox-of-economic-boom-and-vast-corruption-by-yuen-yuen-ang/)
+[^1]: This note is excerpted from book review by Diego Castañeda Garza,  which can be found [here]:(https://blogs.lse.ac.uk/lsereviewofbooks/2021/05/12/book-review-chinas-gilded-age-the-paradox-of-economic-boom-and-vast-corruption-by-yuen-yuen-ang/)
