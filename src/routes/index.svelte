@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	export let src="/images/lanke.webp"
+	export let src="/images/qianlijiangshantu.jpeg"
 	export let alt="lanke"
 </script>
 
