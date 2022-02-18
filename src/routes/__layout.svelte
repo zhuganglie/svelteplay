@@ -1,6 +1,13 @@
 <script context="module">
-   /* import 'uno.css';
-    import '@unocss/reset/tailwind.css';*/
+export const load = ({ url }) => {
+    const currentRoute = url.pathname
+
+    return {
+      props: {
+        currentRoute
+      }
+    }
+  }
 </script>
 
 <script lang="ts">
@@ -10,6 +17,9 @@
     import '@unocss/reset/tailwind.css';
     import '../global.css';
     import Contact from '../lib/contact.svelte';
+
+    import { fade } from 'svelte/transition'
+    export let currentRoute
     
     let open = false;
     const toggleHeader = () => {
@@ -45,12 +55,15 @@
 </footer>
 </aside>
 
-    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto">
+{#key currentRoute}
+    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
         <ClickOutside on:clickoutside="{() => (open = false)}">
         <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><span class="i-mdi-menu-right-outline icon" /><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>
+{/key}
+
     <aside class="md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
         <div class="mb-4 font-bold text-xl">联系我</div>
         <Contact />
