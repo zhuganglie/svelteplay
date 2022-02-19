@@ -21,6 +21,7 @@
     rewind : true,
     autoplay: false,
     type: 'fade',
+    speed: 1000,
     perPage: 1,
     //focus: 'center',
     gap: '2rem',
