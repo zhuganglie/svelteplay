@@ -7,4 +7,4 @@ My personal website powered by
 - [Notion api](https://developers.notion.com)
 - [Svelte-splide](https://splidejs.com/integration/svelte-splide/)
 
-I learn to build the blog and contact form by watching [WebJeda](https://www.youtube.com/c/WebJeda).
+I learn to build the contact form by watching [WebJeda](https://www.youtube.com/c/WebJeda).

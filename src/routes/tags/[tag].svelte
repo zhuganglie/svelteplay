@@ -1,46 +1,45 @@
 <script context="module">
-	const allPosts = import.meta.glob("../blog/*.{md,svx}");
-
-    let body = [];
-    for (let path in allPosts){
-        body.push(
-            allPosts[path]().then(({ metadata }) => {
-                return {path, metadata };
-            })
-        );
-    }
-
-    export const load = async ({params}) => {
-        const posts = await Promise.all(body);
-        const tag = params.tag;
-        const filteredPosts = posts.filter((post) => {
-            return post.metadata.tags.includes(tag);
-        })
-        return { props: {
-            filteredPosts,
-            tag,
-        },
-    };
-    };
+	export const load = async ({ fetch, params }) => {
+    const tag = params.tag
+    const res = await fetch(`../blog.json`)
+		let { posts } = await res.json()
+    const matchingPosts = posts.filter(post => post.tags.includes(tag))
+		return {
+			props: { 
+        posts: matchingPosts,
+        tag
+      }
+		}
+} 
 </script>
 
 <script>
-    export let filteredPosts;
-    export let tag;
+	export let posts
+  export let tag
+  console.log(posts)
 </script>
 
 <svelte:head>
-    <title>Posts under tag</title>
+	<title>Tag: {tag}</title>
 </svelte:head>
 
-<div class="flex space-x-2"> <div class="i-mdi-tag-multiple" /><h1 class="text-3xl">{tag}</h1></div>
+
+<h2>标签： {tag}</h2>
 <hr />
-{#each filteredPosts as { path, metadata: { title, draft } }}
-{#if !draft}
-<li>
-    <a href={`/blog/${path.replace(".md", "")}`}>{title}</a>
-</li>
+
+{#if posts.length}
+  <ul class="">
+    {#each posts as post}
+      <li>
+          <a href="/blog/{post.slug}">
+            {post.title}
+          </a>
+      </li>
+    {/each}
+  </ul>
+{:else}
+<p><strong>Ope!</strong> Sorry, couldn't find any note under the tag "{tag}".</p>
+
+  <p><a href="/blog">返回列表页</a></p>
+
 {/if}
-{/each}
-<hr />
-<a href="/blog/" class="bg-zinc-700 text-yellow-500 hover:text-zinc-100 focus:text-zinc-100 rounded px-2.5 py-0.5">&larr; 返回列表</a>
