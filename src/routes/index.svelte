@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	export let src="/images/qianlijiangshantu.jpeg"
+	export let src="/images/bg.jpeg"
 	export let alt="lanke"
 </script>
 
