@@ -56,9 +56,9 @@ export const load = ({ url }) => {
 </aside>
 
 {#key currentRoute}
-    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto" in:fly={{ y:150, duration: 500, delay: 500 }} out:fly={{ y:150, duration: 250 }}>
+    <main class="pt-8 px-4 md:px-6 mx-auto w-full md:w-3/5 overflow-auto" in:fly={{ y:150, duration: 250, delay: 250 }} out:fly={{ y:150, duration: 250 }}>
         <ClickOutside on:clickoutside="{() => (open = false)}">
-        <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><span class="i-mdi-menu-right-outline icon" /><span class="text-lg font-bold">一指禅</span></button>
+        <button class:open on:click={toggleHeader} class="bg-zinc-700 text-yellow-500 px-2.5 py-0.5 mb-6 md:hidden shadow rounded  flex items-center space-x-1"><div class="i-mdi-sort-variant icon" /><span class="text-lg font-bold">一指禅</span></button>
     </ClickOutside>
         <slot />
     </main>
