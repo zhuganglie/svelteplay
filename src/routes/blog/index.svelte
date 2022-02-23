@@ -14,7 +14,6 @@
   <script lang='ts'>
     export let posts
     import {formatDate} from '$lib/date';
-import { post } from '../api/signin';
   </script>
 
 <svelte:head>
