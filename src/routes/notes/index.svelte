@@ -52,6 +52,6 @@
     {/each}
     </div>
     {:else}
-    <div>没有找到</div>
+    <div>没有找到标题中含有{textSearch}字段的笔记，请再试。</div>
     {/if}
   
