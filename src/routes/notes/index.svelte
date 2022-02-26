@@ -12,9 +12,9 @@
   </script>
   
   <script lang='ts'>
-    export let notes: Note[]
-    let textSearch: string =''
-    let filteredNotes: Note[] = []
+    export let notes: Note[];
+    let textSearch: string ='';
+    let filteredNotes: Note[] = [];
     $: {
     filteredNotes = notes.filter((note: Note) => note.title.includes(textSearch));
   }
@@ -33,8 +33,10 @@
         bind:value="{textSearch}"
         class="w-full text-gray-100 bg-zinc-700 rounded mb-6"
         type="text"
-        placeholder="Search"
+        onfocus="this.value=''"
+        placeholder="搜索"
       />
+
      {#if filteredNotes.length}
     <div class="grid place-items-center place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
     {#each filteredNotes as note}
