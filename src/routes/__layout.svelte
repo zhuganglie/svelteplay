@@ -45,7 +45,7 @@ export const load = ({ url }) => {
     <ul class="list-none text-center m-0">
         {#each routes as route}
         <li class="my-4 mx-0 border-zinc-300 " >
-    <a sveltekit:prefetch href={route.href} class=" text-zinc-300 hover:text-zinc-100 flex items-center justify-center space-x-4"><div class="{route.icon}"/><span class:border-b-2={$page.url.pathname === route.href}>{route.name}</span></a>
+    <a sveltekit:prefetch href={route.href} class=" text-zinc-300 hover:text-zinc-100 flex items-center justify-center space-x-4"><div class="{route.icon}"/><span class:border-b-2={$page.url.pathname.includes(route.href + "/" ) || $page.url.pathname === route.href}>{route.name}</span></a>
         </li>
         {/each}
     </ul>	
