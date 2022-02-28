@@ -14,6 +14,12 @@
   <script lang='ts'>
     export let posts;
     import {formatDate} from '$lib/date';
+    import { paginate, DarkPaginationNav } from 'svelte-paginate'
+
+  let items = posts
+  let currentPage = 1
+  let pageSize = 4
+  $: paginatedItems = paginate({ items, pageSize, currentPage })
   </script>
 
 <svelte:head>
@@ -24,7 +30,7 @@
     <h1 class="text-3xl">博 客</h1>
     <hr />
     
-    {#each posts as item}
+    {#each paginatedItems as item}
     {#if !item.draft}
     <div class="mb-4">
     <span class="text-sm border-b border-zinc-300 px-2 py-0.5 mb-3 min-w-max">{formatDate(item.date)}</span>
@@ -41,3 +47,25 @@
     {/if}
     {/each}
     
+    <div class="pagination mt-6">
+    <DarkPaginationNav
+  totalItems="{items.length}"
+  pageSize="{pageSize}"
+  currentPage="{currentPage}"
+  limit="{1}"
+  showStepOptions="{true}"
+  on:setPage="{(e) => currentPage = e.detail.page}"
+    />
+    </div>
+
+<style>
+.pagination :global(.pagination-nav) {
+  background-color: #27272a;
+  }
+.pagination :global(.option):hover{
+  background-color: #18181b;
+}
+.pagination :global(.option.active){
+  color: rgb(234 179 8); 
+}
+</style>
