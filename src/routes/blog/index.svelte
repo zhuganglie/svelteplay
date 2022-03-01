@@ -11,7 +11,7 @@
     }
   </script>
   
-  <script lang='ts'>
+  <script lang=''>
     export let posts;
     import {formatDate} from '$lib/date';
     import { paginate, DarkPaginationNav } from 'svelte-paginate'
