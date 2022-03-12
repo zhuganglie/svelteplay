@@ -22,9 +22,12 @@
 		"baseUrl": ".",
 		"allowJs": false,
 		"checkJs": false,
+		"$lib":["src/lib"],
+		"$lib/*":["src/lib/*"],
 		"paths": {
 			"$lib/*": ["src/lib/*"]
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
+	"extends": "./.svelte-kit/tsconfig.json"
 }
