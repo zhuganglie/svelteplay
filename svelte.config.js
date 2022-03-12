@@ -5,7 +5,7 @@ import adapter from '@sveltejs/adapter-vercel';
 import Unocss from 'unocss/vite';
 import transformerDirective from '@unocss/transformer-directives'
 import { presetUno, presetIcons } from 'unocss';
-import { extractorSvelte } from '@unocss/core'
+import { extractorSvelte } from '@unocss/core';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
