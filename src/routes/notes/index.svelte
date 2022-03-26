@@ -16,7 +16,9 @@
     let textSearch = ''
     let filteredNotes = [];
     $: {
-    filteredNotes = notes.filter((note) => note.title.includes(textSearch));
+    filteredNotes = notes.filter((note) => {
+      return (note.title.toLowerCase().includes(textSearch.toLowerCase()));
+    });
   }
   </script>
 
