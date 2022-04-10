@@ -25,6 +25,7 @@
 		//"$lib":["src/lib"],
 		//"$lib/*":["src/lib/*"],
 		"paths": {
+			"$lib": ["src/lib"],
 			"$lib/*": ["src/lib/*"]
 		}
 	},
