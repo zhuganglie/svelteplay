@@ -277,6 +277,6 @@ article,
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: #424242;
+  outline: 1px solid #424242;
 }
