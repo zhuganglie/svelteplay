@@ -17,7 +17,7 @@
     let filteredNotes = [];
     $: {
     filteredNotes = notes.filter((note) => {
-      return (note.title.toLowerCase().includes(textSearch.toLowerCase()));
+      return (note.title.toLowerCase().includes(textSearch.toLowerCase())||note.html.toLowerCase().includes(textSearch.toLowerCase()));
     });
   }
   </script>

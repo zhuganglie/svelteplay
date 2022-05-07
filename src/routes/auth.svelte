@@ -47,7 +47,7 @@
 		</div>
 	</div>
 	<br />
-    <div>
+    <div class="border border-zinc-700 p-8">
 	{#if currentTab === "Signin"}
 	<form on:submit|preventDefault={signIn} class="">
 		<input id="email" name="email" type="email" placeholder="电邮" onfocus="this.value=''" class="bg-zinc-700 text-zinc-300 w-full" /><br /> <br />
@@ -68,6 +68,7 @@
 <style>
 	.tab-active {
 		border-bottom: 2px solid rgb(212 212 216);
+		font-weight: 700;
 	}
 	
 </style>
