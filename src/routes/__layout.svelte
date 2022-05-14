@@ -64,7 +64,7 @@ export const load = ({ url }) => {
     </main>
 {/key}
 
-    <aside class="md:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
+    <aside class="lg:grid self-center justify-self-center text-center mx-auto px-6 hidden md:w-1/5">
         <div class="mb-4 font-bold text-xl">联系我</div>
         <Contact />
     </aside>
