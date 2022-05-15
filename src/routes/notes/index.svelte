@@ -39,7 +39,7 @@
       />
 
      {#if filteredNotes.length}
-    <div class="grid place-items-center place-content-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+    <div class="grid place-items-center place-content-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
     {#each filteredNotes as note}
       {#if !note.draft}
     <div class="bg-zinc-700/60 gap-2 p-4 rounded shadow-lg w-full">
