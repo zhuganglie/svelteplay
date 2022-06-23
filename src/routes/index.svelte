@@ -17,8 +17,8 @@
 	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill mb-12"/>
 		
 	<div class="one text-3xl text-center">
-		<h1 class="text-3xl md:ml-12 mb-12">临江仙</h1>
-		<p class="font-bold  font-sans  text-base md:ml-12 mb-12">【明】杨慎 </p>
+		<h1 class="text-3xl md:ml-12 mb-12">临 江 仙</h1>
+		<p class="font-bold  font-sans  text-base md:ml-12 mb-12">[明] &middot; 杨慎 </p>
 				<p class="md:ml-4">滚滚长江东逝水，</p>
 				<p class="md:ml-4">浪花淘尽英雄。</p>
 				<p class="md:ml-4">是非成败转头空。</p>
