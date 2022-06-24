@@ -38,7 +38,7 @@
 <hr />
 <p>这里埋藏着一些关于我的秘密，请注册登录后浏览。</p>
 <div class="h-96 w-full lg:w-4/5 xl:w-3/5 mx-auto px-4 grid self-center justify-self-center content-center text-center ">
-	<div class="flex justify-center place-items-center space-x-2">
+	<div class="mb-6 flex justify-center place-items-center space-x-2">
 		<div class=" {currentTab == 'Signin' ? 'tab-active': ''}" on:click={() => changeTab("Signin")}>
 			<span class="px-2 py-0.5">登录</span>
 		</div>
