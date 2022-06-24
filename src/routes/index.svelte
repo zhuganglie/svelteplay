@@ -12,11 +12,10 @@
 </svelte:head>
 
 
-<section class="grid h-full w-full">
-	<div class="self-center justify-self-center">
+<section class="grid justify-center content-center h-full w-full">
 	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill mb-12"/>
 		
-	<div class="one text-3xl text-center self-center justify-self-center">
+	<div class="one text-3xl text-center">
 		<h1 class="text-3xl md:ml-12 mb-12">临 江 仙</h1>
 		<p class="font-bold  font-sans  text-base md:ml-12 mb-12">[明] &middot; 杨慎 </p>
 				<p class="md:ml-4">滚滚长江东逝水，</p>
@@ -30,8 +29,8 @@
 				<p class="md:ml-4">一壶浊酒喜相逢。</p>
 				<p class="md:ml-4">古今多少事，</p>
 				<p class="md:ml-4">都付笑谈中。</p>
-				 </div> 
-</div>
+	</div> 
+
 	</section>
 
 		<style>  
