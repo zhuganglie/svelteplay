@@ -48,6 +48,7 @@
     let sVeg = xVeg.sort(() => Math.random()- Math.random()).slice(0,2)
     //let menu = []
     let menu = sMeat.concat(sVeg)
+    
 
     export function change() {
         sVeg = xVeg.sort(() => Math.random() - Math.random()). slice(0, 2)

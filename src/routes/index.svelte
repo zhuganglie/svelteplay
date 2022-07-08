@@ -12,7 +12,7 @@
 </svelte:head>
 
 
-<section class="grid justify-center content-center h-full w-full">
+<section class="grid justify-center content-center w-full">
 	<img {src} {alt} width="1500" loading="lazy" class="max-w-full h-auto rounded object-fill mb-12"/>
 		
 	<div class="one text-3xl text-center">
