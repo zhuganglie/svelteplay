@@ -2,85 +2,85 @@
     {
     "name": "葱烧排骨",
     "type": "荤菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
   },
   {
     "name": "炒青苗",
     "type": "素菜",
-    "taste": "清淡",
+    "taste": ["清淡"],
     "recipe": ""
    },
   {
     "name": "油麦菜",
     "type": "素菜",
-    "taste": "清淡",
+    "taste": ["清淡"],
     "recipe": ""
    },
   {
     "name": "小炒肉",
     "type": "荤菜",
-    "taste": "香辣",
+    "taste": ["香辣"],
     "recipe": ""
    },
   {
     "name": "土豆丝",
     "type": "素菜",
-    "taste": "清淡",
+    "taste": ["清淡"],
     "recipe": ""
    },
   {
     "name": "清蒸尼罗红",
     "type": "荤菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
    },
   {
     "name": "干锅牛蛙",
     "type": "荤菜",
-    "taste": "香辣",
+    "taste": ["香辣"],
     "recipe": ""
      },
   {
     "name": "香辣蟹",
     "type": "荤菜",
-    "taste": "香辣",
+    "taste": ["香辣"],
     "recipe": ""
        },
   {
     "name": "滑藕片",
     "type": "素菜",
-    "taste": "清淡",
+    "taste": ["清淡"],
     "recipe": ""
   },
   {
     "name": "粉蒸肉",
     "type": "荤菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
   },
   {
     "name": "粉蒸排骨",
     "type": "荤菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
   },
   {
         "name": "羊角豆炒肉",
         "type": "荤菜",
-        "taste": "咸鲜",
+        "taste": ["咸鲜"],
         "recipe": ""
   },
   {
         "name": "芹菜炒香干",
         "type": "素菜",
-        "taste": "咸鲜",
+        "taste": ["咸鲜"],
         "recipe": ""
   },
   {
         "name": "清炒四季豆",
         "type": "素菜",
-        "taste": "清淡",
+        "taste": ["清淡"],
         "recipe": ""
   },
   {
@@ -92,103 +92,103 @@
   {
         "name": "香菇烧鸡翅",
         "type": "荤菜",
-        "taste": "咸鲜",
+        "taste": ["咸鲜"],
         "recipe": ""
   },
   {
         "name": "辣椒茄子",
         "type": "素菜",
-        "taste": "咸鲜",
+        "taste": ["咸鲜"],
         "recipe": ""
   },
   {
     "name": "豆角茄子",
     "type": "素菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
 },
   {
       "name":"蚝油生菜",
       "type":"素菜",
-      "taste":"清淡",
+      "taste":["清淡"],
       "recipe":""
   },
   {
       "name": "回锅肉",
       "type": "荤菜",
-      "taste": "咸鲜",
+      "taste": ["咸鲜"],
       "recipe": ""   
   },{
           "name": "番茄炒蛋",
           "type": "素菜",
-          "taste": "清淡",
+          "taste": ["清淡"],
           "recipe": ""
   },{
           "name": "节瓜炒肉",
           "type": "荤菜",
-          "taste": "清淡",
+          "taste": ["清淡"],
           "recipe": ""
   },{
           "name": "地三鲜",
           "type": "素菜",
-          "taste": "清淡",
+          "taste": ["清淡"],
           "recipe": ""
   },
   {
     "name": "素三烧",
     "type": "素菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
 },
   {
           "name": "素炒香菇",
           "type": "素菜",
-          "taste": "咸鲜",
+          "taste": ["咸鲜"],
           "recipe": ""
   },{
           "name": "生炒鲈鱼",
           "type": "荤菜",
-          "taste": "咸鲜",
+          "taste": ["咸鲜"],
           "recipe": ""
   },{
           "name": "砂锅黄鱼",
           "type": "荤菜",
-          "taste": "咸鲜",
+          "taste": ["咸鲜"],
           "recipe": ""
   },{
     "name": "炝炒大白菜",
     "type": "素菜",
-    "taste": "清淡",
+    "taste": ["清淡"],
     "recipe": ""
 },{
     "name": "鲜虾粉丝煲",
     "type": "荤菜",
-    "taste": "咸鲜",
+    "taste": ["咸鲜"],
     "recipe": ""
 },{
   "name": "生炒鲈鱼",
   "type": "荤菜",
-  "taste": "咸鲜",
+  "taste": ["咸鲜"],
   "recipe": ""
 },{
   "name": "豆角肉丁",
   "type": "荤菜",
-  "taste": "咸鲜",
+  "taste": ["咸鲜"],
   "recipe": ""
 },{
   "name": "辣椒炒牛肉",
   "type": "荤菜",
-  "taste": "咸鲜",
+  "taste": ["咸鲜"],
   "recipe": ""
 },{
   "name": "香炒白菜杆",
   "type": "素菜",
-  "taste": "咸鲜",
+  "taste": ["咸鲜"],
   "recipe": ""
 },{
   "name": "高芭炒肉片",
   "type": "荤菜",
-  "taste": "咸鲜",
+  "taste":[ "咸鲜"],
   "recipe": ""
 }
   

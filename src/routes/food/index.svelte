@@ -1,5 +1,5 @@
 <script context="module">
-    export async function load({fetch}){
+  /*  export async function load({fetch}){
      const res = await fetch(`/food/database.json`)
      
     if(res.ok){
@@ -9,7 +9,7 @@
             revalidate: 1,
         }
     }
-    }
+    }*/
 </script>
 
 <script lang="ts">
@@ -40,15 +40,18 @@
     },
   }
 
-    export let data
-    let x = data.map(data => data.properties)
-    let xMeat = x.filter(x => x.Category.select.name === '荤菜')
-    let xVeg = x.filter(x => x.Category.select.name === '素菜')
+    //export let data
+    //let x = data.map(data => data.properties)
+    //let xMeat = x.filter(x => x.Category.select.name === '荤菜')
+   // let xVeg = x.filter(x => x.Category.select.name === '素菜')
+   import dishes from "$lib/data/dish.json"
+   let xMeat = dishes.filter(dish =>dish.type ==='荤菜')
+   let xVeg = dishes.filter(dish => dish.type === '素菜')
     let sMeat = xMeat.sort(() => Math.random() - Math.random()).slice(0,2)
     let sVeg = xVeg.sort(() => Math.random()- Math.random()).slice(0,2)
     //let menu = []
     let menu = sMeat.concat(sVeg)
-    
+    console.log(xVeg)
 
     export function change() {
         sVeg = xVeg.sort(() => Math.random() - Math.random()). slice(0, 2)
@@ -83,14 +86,14 @@
 <div class="lg:flex lg:items-center lg:justify-center gap-2">
     {#each menu as item}
     <div class="mx-auto bg-zinc-700 w-full px-3 py-3 mb-4 rounded">
-    <a href="/blog/{item.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h4>{item.Name.title[0].plain_text}</h4></a>
-     <p class="flex gap-2 lg:gap-6"> {#each item.Tags.multi_select as i}
+    <a href="/#" class="text-zinc-300" ><h4>{item.name}</h4></a>
+     <p class="flex gap-2 lg:gap-6"> {#each item.taste as i}
       <div class="flex items-center justify-center gap-1">
-      <div class="i-mdi-tag-outline" /><span>{i.name}</span>
+      <div class="i-mdi-tag-outline" /><span>{i}</span>
       </div>
       {/each}
      </p>
-      <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{item.Category.select.name}</p>
+      <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{item.type}</p>
       </div>
     {/each}
     </div>
@@ -99,18 +102,18 @@
 <p>如果不满意随机生成的菜单，可以在这里浏览全部菜品，点选自己喜欢吃的菜。</p>
 <div class="w-full md:4/5">
 <Splide options={options}>
-  {#each x as i}
+  {#each dishes as i}
   <SplideSlide>
     <div class="mx-auto grid place-items-center bg-zinc-700 px-4 py-4 w-full lg:w-3/5">
-      <a href="/blog/{i.Slug.rich_text[0].text.content}" class="text-zinc-300" ><h3 class="text-xl">{i.Name.title[0].plain_text}</h3></a>
+      <a href="/#" class="text-zinc-300" ><h3 class="text-xl">{i.name}</h3></a>
        <p class="flex gap-6"> 
-         {#each i.Tags.multi_select as i}
+         {#each i.taste as j}
          <div class="flex items-center justify-center gap-1">
-          <div class="i-mdi-tag-outline" /><span>{i.name}</span>
+          <div class="i-mdi-tag-outline" /><span>{j}</span>
           </div>
         {/each}
        </p>
-        <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{i.Category.select.name}</p>
+        <p class="rounded bg-zinc-800 py-0.5 px-2 max-w-max">{i.type}</p>
         </div>
   </SplideSlide>
   {/each}
