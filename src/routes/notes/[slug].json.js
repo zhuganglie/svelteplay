@@ -1,6 +1,6 @@
 import { notes } from './_notes'
 
-export async function get(req) {
+export async function GET(req) {
   const { slug } = req.params
 
   const sortedNotes = Object.keys(notes).map(key => notes[key])

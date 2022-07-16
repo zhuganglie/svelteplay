@@ -1,6 +1,6 @@
 import { posts } from './_posts'
 
-export async function get(req) {
+export async function GET(req) {
   const { slug } = req.params
 
   const sortedPosts = Object.keys(posts).map(key => posts[key])

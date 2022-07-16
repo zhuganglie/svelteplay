@@ -1,6 +1,6 @@
 import { posts } from './_posts'
 
-export async function get() {
+export async function GET() {
   const sortedPosts = Object.keys(posts).map(key => posts[key])
   sortedPosts.sort((b, a) => {
     const da = new Date(a.date).getTime()

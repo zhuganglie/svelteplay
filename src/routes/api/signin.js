@@ -3,8 +3,8 @@ import supabase from '$lib/db';
 export async function post({request}) {
 	
 	const body = await request.formData()
-	const email = body.get('email')
-	const password = body.get('password')
+	const email = body.GET('email')
+	const password = body.GET('password')
 	const { session, error } = await supabase.auth.signIn({ email, password });
 	
 	if (error) {

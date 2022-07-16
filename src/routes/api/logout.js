@@ -1,6 +1,6 @@
 import supabase from '$lib/db';
 
-export async function get() {
+export async function GET() {
 	const { error } = await supabase.auth.signOut();
 
 	if (error) {
